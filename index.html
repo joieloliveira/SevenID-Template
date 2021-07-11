@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SevenID</title>
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+
+    <!-- javascript -->
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <!-- sidebar -->
+    <nav id="sidebar">
+        <div class="sidebarHeader">
+            <div class="sidebar-header">
+                <img src="img/header_logo.png" class="header_logo" style="width: 170px;">
+            </div>
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+        </div>
+        <div class="slideBody">
+            <a href="#">INÍCIO</a>
+            <a href="#">INFORMAÇÔES</a>
+            <a href="#">DOWNLOAD</a>
+            <a href="#">FÓRUM</a>
+            <a href="#">REGISTRAR</a>
+            <a href="#" class="buttonloginSlidbar" data-toggle="modal" data-target="#exampleModal">LOGIN</a>
+        </div>
+    </nav>
+    <!-- headerbar -->
+    <div class="headerBar">
+        <!-- buttonSlidebar -->
+        <div class="buttonSlidebar">
+            <button type="button" id="sidebarCollapse">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <i class="fas fa-search"></i>
+        </div>
+        <!-- fim buttonSlidebar -->
+        <div class="headerButtons">
+            <div class="dropdown">
+                <button class="dropbtn">BEM VINDO, EMANUELLE! <i class="fas fa-angle-down"></i> /</button>
+                <div class="dropdown-content">
+                    <a href="#">MINHA CONTA</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">IDIOMA: <span>PT</span> <i class="fas fa-angle-down"></i> /</button>
+                <div class="dropdown-content2">
+                    <a href="#">PORTUGUÊS</a>
+                    <a href="#">ENGLISH</a>
+                </div>
+            </div>
+            <button class="dropdown" id="sair">SAIR</button>
+        </div>
+    </div>
+
+    <div class="headerBody">
+        <div class="headerBodyBox">
+            <img src="img/icon/seven-icon.svg" alt="logo">
+            <div class="HBboxBody">
+                <div class="HBbox1Body">
+                    <i class="fas fa-user"></i>
+                    <a href="#">ÁREA DO ATLETA</a>
+                </div>
+                <div class="HBbox2Body">
+                    <i class="fas fa-envelope"></i>
+                    <div class="HBboxtxt">
+                        <p>INBOX</p>
+                        <p>8 mensagens</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="headerFooter">
+        <div class="headerBGFoot"></div>
+        <div class="headerFooterBox">
+            <a href="" style="background-color:#C7DA2C;">MEU PERFIL</a>
+            <a href="" class="headerFooterBox2A">FEED</a>
+            <div class="dropdown3">
+                <button class="dropbtn3">PESQUISAR <i class="fas fa-angle-down"></i></button>
+                <div class="dropdown-content3">
+                    <a href="#">HIGH SCHOOL</a>
+                    <hr>
+                    <a href="#">COLLEGE</a>
+                </div>
+            </div>
+            <button type="button" class="buttonSideBar" id="sidebarCollapse2">
+                <i class="fa fa-bars" style="color: white;font-size: 20px;"></i>
+            </button>
+        </div>
+    </div>
+    <!-- maimBody -->
+    <!-- footer -->
+    
+    <!-- slidebar script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+            $('#sidebarCollapse2').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- abas bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
