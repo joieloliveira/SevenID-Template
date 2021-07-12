@@ -574,6 +574,30 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+.sidebarHeader .sidebarHeaderBox1 .sidebarHeaderBox1_validacoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebarHeader .sidebarHeaderBox1 .sidebarHeaderBox1_validacoes .SHB_V1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sidebarHeader .sidebarHeaderBox1 .sidebarHeaderBox1_validacoes .SHB_V1 p:nth-child(1){
+    color: black;
+    font-size: 70%;
+    padding: 3px 10px 3px 10px;
+    background-color: var(--verde-seven);
+    margin: 20px 10px 10px 10px;
+    border-radius: 0.2rem;
+}
+.sidebarHeader .sidebarHeaderBox1 .sidebarHeaderBox1_validacoes .SHB_V1 p:nth-child(2){
+    font-size: 250%;
+}
+
+
 .sidebarHeader .sidebarHeaderBox1 .sidebarHeaderBox1_progressBar{
     display: flex;
     align-items: center;
@@ -599,7 +623,26 @@ body {
     border-top-right-radius: 0.2rem;
     border-bottom-right-radius: 0.2rem;
 }
-
+/*=======sidebarBody1=========*/
+#sidebar hr{
+    background-color: #9b9797;
+    width: 90%;
+    margin-left: 10px;
+}
+.sidebarBody{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px 20px 20px;
+}
+.sidebarBody a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.sidebarBody a:hover{
+    text-decoration: none;
+    color: var(--verde-seven);
+    transition: 0.5s;
+}
 /*================*/
 #sidebar {
     display: flex;
