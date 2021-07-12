@@ -558,15 +558,59 @@ body {
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
+/*sidebarHeader*/
+.sidebarHeader .sidebar-header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #7386D5;
+}
+.sidebarHeader .sidebar-header img{
+    margin-right: -230px;
+}
+.sidebarHeader .sidebarHeaderBox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sidebarHeader .sidebarHeaderBox1 .sidebarHeaderBox1_progressBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.sidebarHeader .sidebarHeaderBox1 .sidebarHeaderBox1_progressBar p{
+    margin: 0.5px 0 0 10px;
+}
+.sidebarHeader .sidebarHeaderBox1 .sidebarHeaderBox1_progressBar .SHB_pB1{
+    display: flex;
+    background-color: var(--verde-seven);
+    height: 10px;
+    width: 70%;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+}
+.sidebarHeader .sidebarHeaderBox1 .sidebarHeaderBox1_progressBar .SHB_pB2{
+    display: flex;
+    background-color: #C4C4C4;
+    height: 10px;
+    width: 30%;
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+}
 
+/*================*/
 #sidebar {
-    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
     position: fixed;
     top: 0;
     left: -60vw;
     height: 100vh;
     z-index: 999;
-    background-image: url(img/md/md_bg01.png);
+    background-color: var(--cinza-01);
     color: #fff;
     transition: all 0.3s;
     overflow-y: scroll;
@@ -588,7 +632,7 @@ body {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #f76402;
+    background: var(--verde-seven);
     position: absolute;
     top: 10px;
     right: 10px;
@@ -596,6 +640,7 @@ body {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    border-radius: 0.2rem;
 }
 
 #dismiss:hover {
