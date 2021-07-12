@@ -563,7 +563,6 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: #7386D5;
 }
 .sidebarHeader .sidebar-header img{
     margin-right: -230px;
@@ -661,9 +660,6 @@ body {
 }
 #sidebar .slideBody a{
     text-decoration: none;
-}
-#sidebar .slideBody a:hover{
-    color: #FF4E1A;
 }
 
 #sidebar.active {
