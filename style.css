@@ -1057,12 +1057,6 @@ body {
     overflow-y: scroll;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
-@media(max-width: 425px){
-    
-}
-@media(max-width: 375px){
-    
-}
 #sidebar-PGhome .slideBody-PGhome a{
     text-decoration: none;
 }
@@ -1131,6 +1125,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     background-color: var(--cinza-01);
 }
@@ -1140,7 +1135,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
-    width: 65%;
+    width: 60%;
     text-align: center;
 }
 .PGhome-SEVENID123-BG .PGhome-SEVENID123-box1 p:nth-child(1){
@@ -1150,9 +1145,80 @@ body {
 }
 .PGhome-SEVENID123-BG .PGhome-SEVENID123-box1 p:nth-child(2){
     color: white;
-    opacity: 0.5;
+    opacity: 0.6;
     font-weight: 100;
 }
 .PGhome-SEVENID123-BG .PGhome-SEVENID123-box1 span{
     color: var(--verde-seven);
+}
+.PGhome-SEVENID123-box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-top: 30px;
+}
+.PGhome-SEVENID123-box2 .PGhome-SID123{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.3%;
+}
+.PGhome-SEVENID123-box2 .PGhome-SID123 .PGhome-SID123b1 p{
+    font-size: 900%;
+    font-weight: 700;
+    color: var(--verde-seven);
+    height: 310px;
+}
+.PGhome-SEVENID123-box2 .PGhome-SID123 .PGhome-SID123b2{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 310px;
+}
+.PGhome-SEVENID123-box2 .PGhome-SID123 .PGhome-SID123b2 p:nth-child(1){
+    color: white;
+    font-size: 160%;
+    font-weight: 700;
+}
+.PGhome-SEVENID123-box2 .PGhome-SID123 .PGhome-SID123b2 p:nth-child(2){
+    opacity: 0.6;
+    font-weight: 100;
+}
+.PGhome-SEVENID123-box2 .PGhome-SID123 .PGhome-SID123b2 p:nth-child(3){
+    opacity: 0.6;
+    font-weight: 100;
+}
+@media(max-width: 1600px){
+    .PGhome-SEVENID123-box2{
+        width: 80%;
+    }
+    .PGhome-SEVENID123-BG .PGhome-SEVENID123-box1{
+        width: 80%;
+    }
+}
+@media(max-width: 1200px){
+    .PGhome-SEVENID123-box2{
+        width: 90%;
+    }
+    .PGhome-SEVENID123-BG .PGhome-SEVENID123-box1{
+        width: 90%;
+    }
+}
+@media(max-width: 768px){
+    .PGhome-SEVENID123-box2{
+        flex-direction: column;
+    }
+    .PGhome-SID123{
+        width: 100% !important;
+        height: 250px;
+    }
+    .PGhome-SID123{
+        width: 100% !important;
+        height: 200px;
+    }
+    .PGhome-SEVENID123-BG .PGhome-SEVENID123-box1{
+        margin-bottom: 40px;
+    }
+
 }
