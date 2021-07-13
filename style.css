@@ -747,3 +747,412 @@ body {
     top: 0;
     right: 0;
 }
+/*===========================================================================*/
+/*===pagina HOME=============================================================*/
+/*===========================================================================*/
+/*===headerBar===*/
+.buttonSlidebar-PGhome{
+    display: none;
+}
+.headerBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cinza-01);
+    width: 100%;
+}
+.headerBar .headerBarBox{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+    width: 65%;
+}
+.headerBar .headerBarBox a{
+    color: white;
+    font-size: 70%;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.headerBar .headerBarBox a:hover{
+    color: var(--verde-seven);
+    text-decoration: none;
+    transition: 0.5s;
+}
+.headerBar .headerBarBox span{
+    color: white;
+    font-size: 70%;
+    margin-right: 15px;
+}
+.headerBar .headerBarBox h5{
+    color: var(--verde-seven);
+    margin: 0 10px 1px -2px;
+    font-size: 100%;
+}
+.headerBar .headerBarBox span{
+    opacity: 0.5;
+}/*===Dropdown do side bar pg Home=========================================*/
+.dropdown-PGhome {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-PGhome button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 70%;
+    font-weight: 500;
+}
+.dropdown-PGhome .dropbtn-PGhome{
+    font-size: 110%;
+}
+.dropdown-PGhome .dropbtn-PGhome h5{
+    margin: 1px 5px 0 5px;
+    color: #C7DA2C;
+}
+.dropdown-PGhome .dropbtn-PGhome .fa-angle-down{
+    margin-right: 5px;
+}
+.dropdown-content-PGhome {
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    margin: -1px 0 0 100px;
+    border-radius: 0.2rem;
+}
+.dropdown-content-PGhome a{
+    color: black !important;
+    padding: 0 10px 15px 10px;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+}
+.dropdown-content-PGhome a:hover {
+    text-decoration: none;
+    color: var(--verde-seven) !important;
+    transition: 0.5s;
+}
+.dropdown-PGhome:hover .dropdown-content-PGhome {
+    display: block;
+}
+.dropbtn-PGhome .fa-angle-down{
+    width: 12px;
+    color: white;
+}
+.dropbtn-PGhome span{
+    color: var(--verde-seven);
+}
+/*dropDown-Home*/
+.dropdown-home {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-home button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 70%;
+    font-weight: 500;
+}
+.dropdown-home .dropbtn-home h5{
+    margin-left: 5px;
+}
+.dropdown-home .dropbtn-home .fa-angle-down{
+    margin-right: 5px;
+}
+.dropdown-content-home {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    margin: -1px 0 0 18px;
+    border-radius: 0.2rem;
+}
+.dropdown-content-home a{
+    color: black !important;
+    padding: 20px 26px;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+}
+.dropdown-content-home a:hover {
+    text-decoration: none;
+    color: var(--verde-seven) !important;
+    transition: 0.5s;
+}
+.dropdown-home:hover .dropdown-content-home {
+    display: block;
+}
+.dropbtn-home .fa-angle-down{
+    width: 12px;
+    color: white;
+}
+.dropbtn-home span{
+    color: var(--verde-seven);
+}
+/*===headerBG===*/
+.headerBG{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: url(img/img/page-heading-3.jpg) top center;
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+}
+.headerBG .headerBGLogo img{
+    width: 200px;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+.headerBG .headerBGLogin{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 800px;
+    margin: 40px 150px 40px 0;
+}
+.headerBG .headerBGLogin button:nth-child(1){
+    border: none;
+    padding: 12px 0 12px 0;
+    width: 130PX;
+    background-color: var(--verde-seven);
+    border-radius: 0.2rem;
+    color: white;
+    font-weight: 600;
+    font-size: 80%;
+    float: right;
+}
+.headerBG .headerBGLogin button:nth-child(1):hover{
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.headerBG .headerBGLogin button:nth-child(5){
+    border: none;
+    padding: 12px 0 12px 0;
+    width: 230px;
+    background-color: var(--verde-seven);
+    border-radius: 0.2rem;
+    color: white;
+    font-weight: 600;
+    font-size: 80%;
+    margin-top: 40px;
+}
+.headerBG .headerBGLogin button:nth-child(5):hover{
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.headerBG .headerBGLogin p{
+    margin: 0;
+}
+.headerBG .headerBGLogin p:nth-child(2){
+    font-size: 400%;
+    font-weight: 700;
+    color: var(--verde-seven);
+    margin-right: 90px;
+}
+.headerBG .headerBGLogin p:nth-child(3){
+    font-size: 400%;
+    font-weight: 700;
+    color: var(--verde-seven);
+    margin-top: -15px;
+}
+.headerBG .headerBGLogin p:nth-child(4){
+    font-size: 400%;
+    font-weight: 700;
+    color: var(--verde-01);
+    margin-top: -15px;
+}
+@media(max-width: 1550px){
+    .headerBG{
+        justify-content: center;
+    }
+    .headerBG .headerBGLogo img{
+        margin: 40px 30px 0 10px;
+    }
+    .headerBG .headerBGLogin{
+        margin: 40px 10px 40px 20px;
+    }
+}
+@media(max-width: 1023px){
+    .buttonSlidebar-PGhome{
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 30px 0 0;
+    }
+    .buttonSlidebar-PGhome button{
+        display: flex;
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+    .header_logo-PGhome{
+        margin: 20px 0 20px 20px !important;
+    }
+    .headerBG .headerBGLogin button{
+        display: none;
+    }
+    .headerBG{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -60px;
+    }
+    .headerBG .headerBGLogin p{
+        font-size: 300% !important;
+    }
+    .headerBG .headerBGLogin{
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+    }
+    .headerBG .headerBGLogo img{
+        width: 100px;
+    }
+    .headerBar .headerBarBox{
+        display: none;
+    }
+}
+/*===sideBar-PGhome===corpo do side bar PGhome*/
+#sidebar-PGhome .sidebarBody-PGhome{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+#sidebar-PGhome .sidebarBody-PGhome a{
+    color: white;
+    margin-top: 20px;
+    font-size: 110%;
+    font-weight: 500;
+}
+#sidebar-PGhome .sidebarBody-PGhome a:hover{
+    color: var(--verde-seven);
+    text-decoration: none;
+}
+/*===sideBar-PGhome===*/
+#sidebar-PGhome {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    position: fixed;
+    top: 0;
+    left: -160vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: var(--cinza-01);
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+@media(max-width: 425px){
+    
+}
+@media(max-width: 375px){
+    
+}
+#sidebar-PGhome .slideBody-PGhome a{
+    text-decoration: none;
+}
+
+#sidebar-PGhome.active {
+    left: 0;
+}
+
+#dismiss-PGhome {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: var(--verde-seven);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 0.2rem;
+}
+
+#dismiss-PGhome:hover {
+    background: #fff;
+    color: #7386D5;
+}
+
+.overlay-PGhome {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    margin-top: -30px;
+}
+.overlay-PGhome.active {
+    display: block;
+    opacity: 1;
+}
+.dropdown-toggle-PGhome::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content-PGhome {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*PGhome-SEVENID123*/
+.PGhome-SEVENID123-BG{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--cinza-01);
+}
+.PGhome-SEVENID123-BG .PGhome-SEVENID123-box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 65%;
+    text-align: center;
+}
+.PGhome-SEVENID123-BG .PGhome-SEVENID123-box1 p:nth-child(1){
+    font-size: 160%;
+    color: white;
+    font-weight: 700;
+}
+.PGhome-SEVENID123-BG .PGhome-SEVENID123-box1 p:nth-child(2){
+    color: white;
+    opacity: 0.5;
+    font-weight: 100;
+}
+.PGhome-SEVENID123-BG .PGhome-SEVENID123-box1 span{
+    color: var(--verde-seven);
+}
