@@ -1335,3 +1335,185 @@ body {
         width: 90%;
     }
 }
+/*===O que oferecemos=======================================================*/
+.oferecemos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--verde-seven);
+}
+.oferecemos .oferecemosBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    width: 65%;
+    text-align: center;
+}
+.oferecemos .oferecemosBox button{
+    border: none;
+    padding: 12px 35px;
+    background-color: #918d8d;
+    border-radius: 0.2rem;
+    font-size: 80%;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: white;
+}
+.oferecemos .oferecemosBox p:nth-child(1){
+    font-size: 150%;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.oferecemos .oferecemosBox p:nth-child(4){
+    font-size: 150%;
+    font-weight: 700;
+}
+.oferecemos .oferecemosBox img{
+    width: 70px;
+}
+.oferecemos .oferecemosBox .oferecemosBox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.oferecemos .oferecemosBox .oferecemosBox1 .FERRAMENTAS{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px 5px;
+    width: 33%;
+    height: 350px;
+}
+.oferecemos .oferecemosBox .oferecemosBox1 .FERRAMENTAS p:nth-child(2){
+    font-size: 150%;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.oferecemos .oferecemosBox .oferecemosBox1 .CURSO{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px 5px;
+    width: 33%;
+    height: 350px;
+}
+.oferecemos .oferecemosBox .oferecemosBox1 .CURSO p:nth-child(2){
+    font-size: 150%;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.oferecemos .oferecemosBox .oferecemosBox1 .ASSESSORIA{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px 5px;
+    width: 33%;
+    height: 350px;
+}
+.oferecemos .oferecemosBox .oferecemosBox1 .ASSESSORIA p:nth-child(2){
+    font-size: 150%;
+    font-weight: 700;
+    margin-top: 5px;
+}
+@media(max-width: 1040px){
+    .oferecemos .oferecemosBox{
+        width: 80%;
+    }
+}
+@media(max-width: 850px){
+    .oferecemos .oferecemosBox{
+        width: 90%;
+    }
+}
+@media(max-width: 765px){
+    .oferecemos .oferecemosBox1{
+        flex-direction: column;
+    }
+    .oferecemos .oferecemosBox .oferecemosBox1 .FERRAMENTAS{
+        width: 90%;
+        height: 250px;
+    }
+    .oferecemos .oferecemosBox .oferecemosBox1 .CURSO{
+        width: 90%;
+        height: 250px;
+    }
+    .oferecemos .oferecemosBox .oferecemosBox1 .ASSESSORIA{
+        width: 90%;
+        height: 250px;
+    }
+}
+@media(max-width: 450px){
+    .oferecemos .oferecemosBox1{
+        flex-direction: column;
+    }
+    .oferecemos .oferecemosBox .oferecemosBox1 .FERRAMENTAS{
+        width: 95%;
+        height: 300px;
+    }
+    .oferecemos .oferecemosBox .oferecemosBox1 .CURSO{
+        width: 95%;
+        height: 300px;
+    }
+    .oferecemos .oferecemosBox .oferecemosBox1 .ASSESSORIA{
+        width: 95%;
+        height: 300px;
+    }
+}
+/*===footerPerfil===========================================================*/
+.footerPerfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #f1eded;
+}
+.footerPerfil .footerPerfilBox{
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.footerPerfil .footerPerfilBox img:nth-child(1){
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin-right: 30px;
+}
+.footerPerfil .footerPerfilBox .footerPerfilBoxTxt{
+    width: 40%;
+    color: black;
+}
+.footerPerfil .footerPerfilBox .footerPerfilBoxTxt p:nth-child(2){
+    font-weight: 800;
+    color: var(--verde-seven);
+    text-align: right;
+}
+.footerPerfil .footerPerfilBox img:nth-child(2){
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+@media(max-width: 765px){
+    .footerPerfil .footerPerfilBox{
+        width: 85%;
+    }
+}
+@media(max-width: 545px){
+    .footerPerfil .footerPerfilBox{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerPerfil .footerPerfilBox .footerPerfilBoxTxt{
+        width: 85%;
+    }
+    .footerPerfil .footerPerfilBox img:nth-child(2){
+        margin-left: -280px;
+    }
+}
