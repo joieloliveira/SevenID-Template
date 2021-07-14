@@ -44,7 +44,7 @@
             <a href="">PLANOS</a>
             <a href="">ACADEMY</a>
             <a href="">COACH</a>
-            <button class="BTSidLogin">LOGIN</button>
+            <button class="BTSidLogin" data-toggle="modal" data-target="#exampleModalCenter">LOGIN</button>
             <button class="BTSidCad">QUERO FAZER PARTE</button>
         </div>
     </nav>
@@ -55,6 +55,36 @@
         </button>
     </div>
     <!-- fim buttonSlidebar -->
+    <!-- modal-login -->
+    <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-content-box">
+                    <div class="PGhome-logoImg">
+                        <p>Ainda não faz parte do nosso time? <a href="">Cadastre-se agora</a>
+                            e inicie sua jornada conosco!</p>
+                    </div>
+                    <div class="PGhome-login">
+                        <form method="post">
+                            <label>ACESSAR O SEVEN<span>ID</span></label>
+                            <input class="inputText" type="text" name="Usuário" placeholder="Usuário" />
+                            <input class="inputText" type="text" name="Usuário" placeholder="Senha" />
+                            <div class="lembrarsenha">
+                                <div style="display: flex;align-items: center;">
+                                    <input type="checkbox" id="lembrarsenha" name="lembrarsenha">
+                                    <label for="lembrarsenha">LEMBRAR SENHA</label>
+                                </div>
+                                <a href="">Esqueci minha senha.</a>
+                            </div>
+                            <button class="buton" type="submit">LOGIN</button>
+                            <button class="PGhome-loginCad">Cadastre-se</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- header -->
     <div class="headerBar">
         <div class="headerBarBox">
@@ -75,7 +105,7 @@
             <img src="img/img/id-badge-green.png" alt="">
         </div>
         <div class="headerBGLogin">
-            <button>LOGIN</button>
+            <button data-toggle="modal" data-target="#exampleModalCenter">LOGIN</button>
             <p>TRANSFORMANDO O</p>
             <p>RECRUTAMENTO</p>
             <p>ACADÊMICO ESPORTIVO</p>
