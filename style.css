@@ -907,7 +907,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background: url(img/img/page-heading-3.jpg) top center;
+    background: url(img/images/page-heading_old.jpg) top center;
     background-repeat: no-repeat;
     background-size: 100% 500px;
 }
@@ -1707,6 +1707,10 @@ body {
     color: var(--verde-seven);
     transition: 0.5s;
 }
+.abas_linksBG .abas_links #abas_linksBox a:hover{
+    color: var(--cinza-02);
+    transition: 1s;
+}
 /*===linksBody================================================================*/
 .linksBody{
     display: flex;
@@ -1808,4 +1812,149 @@ body {
     width: 60px;
     height: 60px;
     margin: 0 0 10px 10px;
+}
+/*===homeEnglish============================================================*/
+.english_headerBG{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: url(img/images/page-heading_old.jpg) top center;
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+}
+.english_headerBG .english_headerBGLogo img{
+    width: 200px;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+.english_headerBGLogin{
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    flex-direction: column;
+    width: 700px;
+    margin: 40px 150px 40px 0;
+}
+.english_headerBGLogin button{
+    border: none;
+    padding: 12px 0 12px 0;
+    width: 230px;
+    background-color: var(--verde-seven);
+    border-radius: 0.2rem;
+    color: white;
+    font-weight: 600;
+    font-size: 80%;
+    margin-top: 40px;
+}
+.english_headerBGLogin button:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.english_headerBGLogin p{
+    margin: 0;
+}
+.english_headerBGLogin p:nth-child(1){
+    font-size: 400%;
+    font-weight: 700;
+    color: var(--verde-seven);
+}
+.english_headerBGLogin p:nth-child(2){
+    font-size: 400%;
+    font-weight: 700;
+    color: var(--verde-seven);
+    margin-top: -20px;
+}
+.english_headerBGLogin p:nth-child(3){
+    font-size: 400%;
+    font-weight: 700;
+    color: var(--verde-seven);
+    margin-top: -20px;
+}
+.english_headerBGLogin p:nth-child(4){
+    color: white;
+    font-size: 150%;
+    font-weight: 600;
+}
+@media(max-width: 1070px){
+    .english_headerBG{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -60px;
+    }
+    .english_headerBGLogin{
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 500px;
+        margin: 10px 0 15px 0;
+        font-size: 70%;
+    }
+    .english_headerBG .english_headerBGLogo img{
+        width: 80px;
+        margin: 70px 0 0 15px;
+    }
+    .english_headerBGLogin button{
+        margin-top: 15px;
+        font-size: 100%;
+    }
+}
+@media(max-width: 999px){
+    .english_headerBG .english_headerBGLogo img{
+        margin-top: 30px;
+    }
+}
+@media(max-width: 530px){
+    .english_headerBGLogin{
+        width: 95%;
+        font-size: 60%;
+    }
+    .english_headerBG .english_headerBGLogo img{
+        width: 70px;
+    }
+    .english_headerBGLogin button{
+        margin-top: 15px;
+        font-size: 100%;
+    }
+}
+/*===GET STARTED============================================================*/
+.started{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+.started p:nth-child(1){
+    font-size: 150%;
+    font-weight: 700;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 4px;
+    opacity: 0.9;
+}
+.started p:nth-child(2){
+    color: black;
+    opacity: 0.6;
+}
+.started button{
+    color: white;
+    background-color: var(--verde-seven);
+    padding: 10px 40px;
+    border-radius: 0.2rem;
+    margin-bottom: 70px;
+    margin-top: 10px;
+    border: none;
+    font-size: 80%;
+    font-weight: 600;
+}
+@media(max-width: 424px){
+    .started p:nth-child(2){
+        font-size: 90%;
+    }
+}
+/*===WHAT WE DO=============================================================*/
+.whatwedo{
+
 }
