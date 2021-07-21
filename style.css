@@ -1667,17 +1667,25 @@ body {
 ===Area do atleta headerBG====================================================*/
 .areaAtletaBG{
     display: flex;
-    align-items: center;
+    text-align: start;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 400px;
     background: url(img/img/areaAtleta.png) top center;
     background-size: 100% 400px;
 }
-.areaAtletaBG p{
-    font-size: 200%;
-    font-weight: 700;
-    color: black;
+.areaAtletaBG p:nth-child(1){
+    font-size: 150%;
+    color: white;
+    margin-bottom: 1px;
+    margin-left: 400px;
+}
+.areaAtletaBG p:nth-child(2){
+    font-size: 500%;
+    font-weight: 600;
+    color: var(--verde-seven);
+    margin-left: 400px;
 }
 /*===abas_links===*/
 .abas_linksBG{
@@ -1691,25 +1699,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 65%;
 }
 .abas_linksBG .abas_links .abas_linksBox{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 30px;
+    padding: 15px 45px;
     color: white;
-    border-left: solid 1px white;
-    border-right: solid 1px white;
     text-align: center;
-    background-color: var(--cinza-01);
+    background-color: var(--cinza-02);
 }
 .abas_linksBG .abas_links .abas_linksBox a{
     color: white;
     text-decoration: none;
     margin: 0;
-    font-size: 85%;
-    font-weight: 700;
+    font-weight: 400;
 }
 .abas_linksBG .abas_links .abas_linksBox a:hover{
     color: var(--verde-seven);
@@ -1719,99 +1723,197 @@ body {
     color: var(--cinza-02);
     transition: 1s;
 }
-/*===linksBody================================================================*/
-.linksBody{
+/*===escolasBody================================================================*/
+.escolasBody{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #C4C4C4;
+    background-color: #ffffff;
+    width: 100%;
 }
-.linksBody .linksBodyBox{
+.escolasBody .escolasBodyBox{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 65%;
+    width: 1250px;
 }
-.linksBody .linksBodyBox .linksBodyBox1{
+.escolasBodyBox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.escolasBody .escolasBodyBox .escolasBodyBox1Circle{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 40px 20px 20px 0;
+}
+.escolasBody .escolasBodyBox .escolasBodyBox1Txt p{
+    margin: 0;
+    font-weight: 500;
+    font-size: 90%;
+}
+.escolasBody .escolasBodyBox .escolasBodyBox1Txt{
+    display: flex;
+    background-color: #F0F0F0;
+    color: black;
+    width: 90%;
+    padding: 16px 20px;
+    margin: 40px 0 20px 0;
+    border-radius: 3rem;
+}
+.escolasBody .escolasBodyBox .escolasBodyBox1Txt p:nth-child(2){
+    margin: 0 0 0 20px;
+    opacity: 0.8;
+}
+.addEscolaBox{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
-    color: black;
     width: 100%;
-    height: 70px;
-    margin: 40px 0 20px 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-radius: 0.2rem;
-    border-left: solid 5px var(--verde-seven);
 }
-.linksBody .linksBodyBox .linksBodyBox1 p{
-    font-size: 80%;
-    font-weight: 700;
-    margin: 0 0 0 20px;
-    opacity: 0.8;
-}
-.linksBody .linksBodyBox .linksBodyBox1 .linksBodyBox1_btn{
-    margin-right: 60px;
-}
-.linksBody .linksBodyBox .linksBodyBox1 .linksBodyBox1_btn button{
+.addEscolaBox .addEscola{
     border: none;
-    background-color: transparent;
+    background-color: var(--verde-seven);
+    padding: 18px 24px;
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 90%;
+    cursor: pointer;
+    margin: 15px 0 15px 85px;
+}
+.addEscola:hover{
+    box-shadow: inset 0 0 2em rgb(100, 96, 96);
+    transition: 0.5s;
+}
+.UniversidadesHighSchools{
+    display: flex;
+    margin-right: 40px;
+}
+.Universidades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+.Universidades p{
+    margin: 0;
+    font-weight: 500;
+}
+.Universidades button{
+    border-radius: 50%;
+    border-width: 1px;
+    background-color: white;
+    border-color: #9b9797;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
-    font-size: 80%;
-    font-weight: 700;
-    margin: 0 0 0 20px;
-    opacity: 0.8;
     cursor: pointer;
 }
-.linksBody .linksBodyBox .linksBodyBox2{
+/*Universidades===================================================================================*/
+.escolasBody .escolasBodyBox .escolasBodyBox2{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
     color: black;
-    width: 100%;
-    margin: 20px 0 20px 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-radius: 0.2rem;
-    overflow: hidden;
+    width: 90%;
+    margin: 20px 0 20px 40px;
+    border-top: solid 1px #d4d1d1;
+    padding: 20px 0;
 }
-.linksBody .linksBodyBox .linksBodyBox2 img{
+.escolasBody .escolasBodyBox .escolasBodyBox2 img{
     width: 180px;
 }
-.linksBody .linksBodyBox .linksBodyBox2 .linksBodyBox2Txt{
-    width: 60%;
+.escolasBody .escolasBodyBox .escolasBodyBox2 .escolasBodyBox2Txt{
+    width: 55%;
 }
-.linksBody .linksBodyBox .linksBodyBox2 .linksBodyBox2Txt p:nth-child(1){
-    font-size: 90%;
-    opacity: 0.6;
-}
-.linksBody .linksBodyBox .linksBodyBox2 .linksBodyBox2Txt a{
+.escolasBody .escolasBodyBox .escolasBodyBox2 .escolasBodyBox2Txt a{
     font-size: 130%;
     color: black;
-    font-weight: 700;
-    opacity: 0.8;
+    font-weight: 500;
 }
-.linksBody .linksBodyBox .linksBodyBox2 .linksBodyBox2Txt a:hover{
+.escolasBody .escolasBodyBox .escolasBodyBox2 .escolasBodyBox2Txt a:hover{
     text-decoration: none;
     color: var(--verde-seven);
     transition: 0.5s;
 }
-.linksBody .linksBodyBox .linksBodyBox2 .linksBodyBox2Txt p:nth-child(3){
+.escolasBody .escolasBodyBox .escolasBodyBox2 .escolasBodyBox2Txt p{
     font-size: 90%;
     opacity: 0.6;
 }
-.linksBody .linksBodyBox .linksBodyBox2 .linksBodyBox2Progress{
+.escolasBody .escolasBodyBox .escolasBodyBox2 .escolasBodyBox2Progress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20%;
+    margin-right: 20px;
 }
-.linksBody .linksBodyBox .linksBodyBox2 .linksBodyBox2Progress p{
+.escolasBody .escolasBodyBox .escolasBodyBox2 .escolasBodyBox2Progress p{
     font-size: 80%;
     font-weight: 700;
     color: black;
     opacity: 0.5;
+    margin-left: 30px;
 }
-.linksBody .linksBodyBox .linksBodyBox2 .linksBodyBox2Progress .progressCircle{
+.escolasBody .escolasBodyBox .escolasBodyBox2 .escolasBodyBox2Progress .progressCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: solid 6px var(--verde-seven);
+    width: 60px;
+    height: 60px;
+    margin: 0 0 10px 10px;
+}
+/*High Schools================================================================*/
+.escolasBody .escolasBodyBox .escolasBodyBox3{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    width: 90%;
+    margin: 20px 0 20px 40px;
+    border-top: solid 1px #d4d1d1;
+    padding: 20px 0;
+}
+.escolasBody .escolasBodyBox .escolasBodyBox3 img{
+    width: 180px;
+}
+.escolasBody .escolasBodyBox .escolasBodyBox3 .escolasBodyBox3Txt{
+    width: 55%;
+}
+.escolasBody .escolasBodyBox .escolasBodyBox3 .escolasBodyBox3Txt a{
+    font-size: 130%;
+    color: black;
+    font-weight: 500;
+}
+.escolasBody .escolasBodyBox .escolasBodyBox3 .escolasBodyBox3Txt a:hover{
+    text-decoration: none;
+    color: var(--verde-seven);
+    transition: 0.5s;
+}
+.escolasBody .escolasBodyBox .escolasBodyBox3 .escolasBodyBox3Txt p{
+    font-size: 90%;
+    opacity: 0.6;
+}
+.escolasBody .escolasBodyBox .escolasBodyBox3 .escolasBodyBox3Progress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin-right: 20px;
+}
+.escolasBody .escolasBodyBox .escolasBodyBox3 .escolasBodyBox3Progress p{
+    font-size: 80%;
+    font-weight: 700;
+    color: black;
+    opacity: 0.5;
+    margin-left: 30px;
+}
+.escolasBody .escolasBodyBox .escolasBodyBox3 .escolasBodyBox3Progress .progressCircle{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2068,3 +2170,197 @@ body {
     cursor: pointer;
 }
 
+
+/*teste=================================================================================================*/
+.circular {
+    margin: 10px 0;
+  }
+  
+  @media (min-width: 992px) {
+    .circular {
+      margin: 0;
+    }
+  }
+  
+  .circular__bar {
+    position: relative;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .circular__bar + .circular__label {
+    margin-top: 1.2em;
+  }
+  
+  @media (min-width: 992px) {
+    .circular__bar {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .circular__bar {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  .circular__bar canvas {
+    width: 100% !important;
+    height: 100% !important;
+    vertical-align: top;
+  }
+  
+  .circular__percents {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    color: #31404b;
+    line-height: 1.2em;
+  }
+  
+  @media (min-width: 992px) {
+    .circular__percents {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .circular__percents {
+      font-size: 14px;
+    }
+  }
+  
+  .circular__percents small {
+    font-size: 10px;
+  }
+  
+  @media (min-width: 992px) {
+    .circular__percents small {
+      font-size: 12px;
+    }
+  }
+  
+  .circular__percents .circular__label {
+    display: block;
+    font-size: 9px;
+    line-height: 1.2em;
+    color: #9a9da2;
+  }
+  
+  @media (min-width: 992px) {
+    .circular__percents--lg {
+      font-size: 24px;
+    }
+  }
+  
+  .circular__label {
+    display: block;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2em;
+    text-align: center;
+  }
+  
+  @media (min-width: 992px) {
+    .circular__label {
+      font-size: 10px;
+    }
+  }
+  
+  .circular--size-70 .circular__bar {
+    width: 50px;
+    height: 50px;
+  }
+  
+  @media (min-width: 992px) {
+    .circular--size-70 .circular__bar {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .circular--size-70 .circular__bar {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .circular--size-70 .circular__bar .circular__percents {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .circular--size-70 .circular__bar .circular__percents {
+      font-size: 14px;
+    }
+  }
+  
+  .circular--size-80 .circular__bar {
+    width: 55px;
+    height: 55px;
+  }
+  
+  @media (min-width: 992px) {
+    .circular--size-80 .circular__bar {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .circular--size-80 .circular__bar {
+      width: 65px;
+      height: 65px;
+    }
+  }
+  
+  .circular--size-80 .circular__bar .circular__percents .circular__label {
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: none;
+    font-weight: 400;
+  }
+  
+  .circular--size-40 .circular__bar {
+    width: 32px;
+    height: 32px;
+  }
+  
+  @media (min-width: 768px) {
+    .circular--size-40 .circular__bar {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .circular--size-40 .circular__bar {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  
+  .circular--size-40 .circular__bar .df-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }

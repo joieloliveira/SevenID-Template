@@ -142,7 +142,7 @@
     <div class="headerFooter">
         <div class="headerBGFoot"></div>
         <div class="headerFooterBox">
-            <a href=""  class="headerFooterBox1A">MEU PERFIL</a>
+            <a href="" class="headerFooterBox1A">MEU PERFIL</a>
             <a href="" class="headerFooterBox2A">FEED</a>
             <div class="dropdown3">
                 <button class="dropbtn3">PESQUISAR <i class="fas fa-angle-down"></i></button>
@@ -160,50 +160,81 @@
     <!-- mainBody -->
     <!-- area_atleta -->
     <div class="areaAtletaBG">
-        <p>ÁREA DO ATLETA</p>
+        <p>Área do</p>
+        <p>Atleta</p>
     </div>
     <!-- abas_links -->
     <div class="abas_linksBG">
         <div class="abas_links">
-            <div class="abas_linksBox" style="background-color: rgba(194,255,71)" id="abas_linksBox">
-                <a href="">MINHAS ESCOLAS FAVORITAS</a>
+            <div class="abas_linksBox"
+                style="background-color: rgba(194,255,71);box-shadow: inset 0 0 2em rgb(100, 96, 96);"
+                id="abas_linksBox">
+                <a href="" style="color: black;font-weight: 500;">MINHAS ESCOLAS</a>
             </div>
             <div class="abas_linksBox">
-                <a href="">MINHAS PREFERÊNCIAS</a>
+                <a href="">PREFERÊNCIAS</a>
             </div>
             <div class="abas_linksBox">
                 <a href="">OVERAL SCORE</a>
             </div>
             <div class="abas_linksBox">
-                <a href="">MINHAS PROPOSTAS</a>
+                <a href="">PROPOSTAS</a>
             </div>
             <div class="abas_linksBox">
-                <a href="">PLANEJAMENTO DE EMBARQUE</a>
+                <a href="">PLANEJAMENTO</a>
             </div>
             <div class="abas_linksBox">
-                <a href="">AVALIAÇÕES E COMPLIANCE</a>
+                <a href="">AVALIZAÇÕES E COMPLIANCE</a>
             </div>
         </div>
     </div>
-    <!-- linksBody -->
-    <div class="linksBody">
-        <div class="linksBodyBox">
-            <div class="linksBodyBox1">
-                <p>ESCOLAS FAVORITAS</p>
-                <div class="linksBodyBox1_btn">
-                    <button>UNIVERSIADES</button>
-                    <button>HIGH SCHOOLS</button>
+    <!-- escolasBody -->
+    <div class="escolasBody">
+        <div class="escolasBodyBox">
+            <div class="escolasBodyBox1">
+                <div class="escolasBodyBox1Circle" style="background-color: black;"></div>
+                <div class="escolasBodyBox1Txt">
+                    <p>ESCOLAS FAVORITAS</p>
+                    <p>NENHUMA ESCOLA FAVORITA</p>
                 </div>
             </div>
-            <div class="linksBodyBox2">
+            <div class="addEscolaBox">
+                <button class="addEscola">
+                    + ADICIONAR ESCOLA
+                </button>
+                <div class="UniversidadesHighSchools">
+                    <div class="Universidades">
+                        <button onclick="escolas('Universidades')" style="background-color: rgba(194,255,71);" id="btnUniversidades"></button>
+                        <p style="opacity: 1;" id="P-Universidades">Universidades</p>
+                    </div>
+                    <div class="Universidades">
+                        <button onclick="escolas('High-Schools')" id="btnHigh-Schools"></button>
+                        <p style="opacity: 0.6;" id="P-High-Schools">High Schools</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="escolasBodyBox2">
                 <img src="img/images/2b45f3d3577055693134a009cdd079a6.jpg" alt="">
-                <div class="linksBodyBox2Txt">
-                    <p>OTHER</p>
+                <div class="escolasBodyBox2Txt">
                     <a href="">ACADIA UNIVERSITY</a>
                     <p>WOLFVILLE OTHER</p>
                 </div>
-                <div class="linksBodyBox2Progress">
+                <div class="escolasBodyBox2Progress">
                     <div class="progressCircle">100%</div>
+                    <p>COLLEGE FIT</p>
+                </div>
+            </div>
+
+            <div class="escolasBodyBox3">
+                <img src="img/images/00dae7df5b6185e7437bd098c9d7f5ec.jpg" alt="">
+                <div class="escolasBodyBox3Txt">
+                    <a href="">High Schools</a>
+                    <p>WOLFVILLE</p>
+                </div>
+                <div class="escolasBodyBox3Progress">
+                    <div class="progressCircle">90%</div>
                     <p>COLLEGE FIT</p>
                 </div>
             </div>
@@ -283,6 +314,7 @@
             });
         });
     </script>
+    <script src="js/escolas.js"></script>
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
         integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
