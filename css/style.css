@@ -1719,10 +1719,6 @@ body {
     color: var(--verde-seven);
     transition: 0.5s;
 }
-.abas_linksBG .abas_links #abas_linksBox a:hover{
-    color: var(--cinza-02);
-    transition: 1s;
-}
 /*===escolasBody================================================================*/
 .escolasBody{
     display: flex;
@@ -1923,6 +1919,131 @@ body {
     height: 60px;
     margin: 0 0 10px 10px;
 }
+/*===preferenciasBody============================================================*/
+.preferenciasBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+}
+.preferenciasBody .preferenciasBodyBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1250px;
+}
+.preferenciasBodyBox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.preferenciasBody .preferenciasBodyBox .preferenciasBodyBox1Circle{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 40px 20px 20px 0;
+}
+.preferenciasBody .preferenciasBodyBox .preferenciasBodyBox1Txt p{
+    margin: 0;
+    font-weight: 500;
+    font-size: 90%;
+}
+.preferenciasBody .preferenciasBodyBox .preferenciasBodyBox1Txt{
+    display: flex;
+    background-color: #F0F0F0;
+    color: black;
+    width: 90%;
+    padding: 16px 20px;
+    margin: 40px 0 20px 0;
+    border-radius: 3rem;
+}
+.preferenciasBody .preferenciasBodyBox .preferenciasBodyBox1Txt p:nth-child(2){
+    margin: 0 0 0 20px;
+    opacity: 0.8;
+}
+.addPreferenciasBox{
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.addPreferenciasBox .addPreferencias{
+    border: none;
+    background-color: var(--verde-seven);
+    padding: 18px 24px;
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 90%;
+    cursor: pointer;
+    margin: 30px 0 30px 85px;
+}
+.addPreferencias:hover{
+    box-shadow: inset 0 0 2em rgb(99, 100, 96);
+    transition: 0.5s;
+}
+.salvaPreferenciasBox{
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.salvaPreferenciasBox .salvaPreferencias{
+    border: none;
+    background-color: var(--cinza-02);
+    padding: 18px 24px;
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 90%;
+    cursor: pointer;
+    margin: 30px 0 30px 85px;
+    color: var(--verde-seven);
+}
+.salvaPreferencias:hover{
+    box-shadow: inset 0 0 2em rgb(182, 238, 13);
+    transition: 0.5s;
+}
+/*===preferenciasCheck=======================================================*/
+.preferenciasCheck{
+    display: flex;
+    flex-direction: column;
+    width: 87%;
+    border-bottom: solid 1px #C4C4C4;
+    padding: 40px 0 40px 0;
+    margin-left: 25px;
+}
+.preferenciasCheck p:nth-child(1){
+    color: black;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.preferenciasCheck .preferenciasCheckBox{
+    display: flex;
+    flex-direction: column;
+}
+.preferenciasCheck .preferenciasCheckBox .preferenciasCheckLinha{ 
+    display: flex;
+    align-items: center;
+}
+.preferenciasCheck .preferenciasCheckBox .preferenciasCheckLinha form{ 
+    margin-bottom: 6px;
+}
+.preferenciasCheck .preferenciasCheckBox .preferenciasCheckLinha p{ 
+    width: 200px;
+    margin: 0 0 0 30px;
+    font-size: 100%;
+}
+.preferenciasCheck .preferenciasCheckBox .preferenciasCheckLinha input{ 
+    width: 20px;
+    margin: 0 0 0 20px;
+}
+
+
+
+
+
 /*===homeEnglish============================================================*/
 .english_headerBG{
     display: flex;
