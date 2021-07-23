@@ -451,6 +451,7 @@
 .footer .footerBody2 .footerBody2Box1 .footerBody2Logos1 img:hover{
     opacity: 0.9;
     transition: 0.5s;
+    transform: translateY(-10px);
 }
 .footer .footerBody2 p{
     margin: 0 35px 0 35px;
@@ -1847,6 +1848,15 @@ body {
     width: 20%;
     margin-right: 20px;
 }
+.escolasBodyBox2Progress.scoreBox2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    margin-right: 20px;
+}
+
 .escolasBody .escolasBodyBox .escolasBodyBox2 .escolasBodyBox2Progress p{
     font-size: 80%;
     font-weight: 700;
@@ -2039,8 +2049,112 @@ body {
     width: 20px;
     margin: 0 0 0 20px;
 }
-
-
+/*===scoreBody==============================================================*/
+.scoreBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.scoreBody .scoreBodyTestes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 40px 0;
+}
+.scoreBody .scoreBodyTestes .gpa-english{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 350px;
+    height: 220px;
+    border-right: solid 1px #C4C4C4;
+}
+.scoreBody .scoreBodyTestes .gpa-english p:nth-child(1){
+    font-size: 150%;
+    font-weight: 700;
+    color: black;
+}
+.scoreBody .scoreBodyTestes .gpa-english p:nth-child(2){
+    font-size: 500%;
+    color: black;
+    opacity: 0.4;
+}
+.scoreBody .scoreBodyTestes .gpa-english span{
+    color: black;
+    opacity: 0.5;
+    margin: 0 3px 0 3px;
+}
+.scoreBody .scoreBodyTestes .gpa-english a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: var(--verde-seven);
+    font-weight: 500;
+    width: 240px;
+    height: 50px;
+    border-radius: 0.3rem;
+}
+.scoreBody .scoreBodyTestes .gpa-english a:hover{
+    text-decoration: none;
+    font-weight: 700;
+}
+.scoreBody .scoreBodyTestes .fisico{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 350px;
+    height: 220px;
+}
+.scoreBody .scoreBodyTestes .fisico a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: var(--verde-seven);
+    font-weight: 500;
+    width: 240px;
+    height: 32px;
+    margin-bottom: -4px;
+    border-radius: 0.3rem;
+}
+.scoreBody .scoreBodyTestes .fisico a:hover{
+    text-decoration: none;
+    font-weight: 700;
+}
+.scoreBody .scoreBodyTestes .fisico .fisicoP1{
+    font-size: 150%;
+    font-weight: 700;
+    color: black;
+    margin-top: -4px;
+}
+.scoreBody .scoreBodyTestes .fisico .fisicoBox{
+    display: flex;
+}
+.scoreBody .scoreBodyTestes .fisico .fisicoBox .fisicoBox1{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 0;
+}
+.scoreBody .scoreBodyTestes .fisico .fisicoBox #fisicoBox1{
+    border-left: solid 1px #C4C4C4;
+    padding-left: 10px;
+}
+.scoreBody .scoreBodyTestes .fisico .fisicoBox .fisicoBox1 p:nth-child(1){
+    font-size: 90%;
+    opacity: 0.5;
+    font-weight: 400;
+    margin: 0;
+}
+.scoreBody .scoreBodyTestes .fisico .fisicoBox .fisicoBox1 p:nth-child(2){
+    font-size: 250%;
+    opacity: 0.5;
+}
 
 
 
@@ -2484,4 +2598,44 @@ body {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+  }
+  /*===scoreDesempenho======================================================*/
+  .scoreDesempenho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    border-top: solid 1px #C4C4C4;
+    margin-bottom: 70px;
+  }
+  .scoreDesempenho h4{
+    align-self: flex-start;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-weight: 700;
+  }
+  .scoreDesempenho .scoreDesempenhoBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .scoreDesempenho .scoreDesempenhoBox p:nth-child(1){
+    background-color: black;
+    font-weight: 600;
+    padding: 0 6px;
+    color: white;
+  }
+  .scoreDesempenho .scoreDesempenhoBox .scoreDesempenhoBox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .scoreDesempenho .scoreDesempenhoBox .scoreDesempenhoBox1 .scoreDesempenhoBox2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
   }
