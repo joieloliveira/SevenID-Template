@@ -7,7 +7,7 @@
     <title>SevenID</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/progress-circle.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <!-- Owl Stylesheets -->
@@ -168,10 +168,8 @@
     <!-- abas_links -->
     <div class="abas_linksBG">
         <div class="abas_links">
-            <div class="abas_linksBox"
-                style="background-color: rgba(194,255,71);box-shadow: inset 0 0 2em rgb(100, 96, 96);"
-                id="abas_linksBox">
-                <a href="" style="color: black;font-weight: 500;">MINHAS ESCOLAS</a>
+            <div class="abas_linksBox">
+                <a href="">MINHAS ESCOLAS</a>
             </div>
             <div class="abas_linksBox">
                 <a href="">PREFERÊNCIAS</a>
@@ -185,65 +183,58 @@
             <div class="abas_linksBox">
                 <a href="">PLANEJAMENTO</a>
             </div>
-            <div class="abas_linksBox">
-                <a href="">AVALIZAÇÕES E COMPLIANCE</a>
+            <div class="abas_linksBox"
+                style="background-color: rgba(194,255,71);box-shadow: inset 0 0 2em rgb(100, 96, 96);">
+                <a href="" style="color: black;font-weight: 500;">COMPLIANCE</a>
             </div>
         </div>
     </div>
-    <!-- escolasBody -->
-    <div class="escolasBody">
-        <div class="escolasBodyBox">
-            <div class="escolasBodyBox1">
-                <div class="escolasBodyBox1Circle" style="background-color: black;"></div>
-                <div class="escolasBodyBox1Txt">
-                    <p>ESCOLAS FAVORITAS</p>
-                    <p>NENHUMA ESCOLA FAVORITA</p>
+    <!-- complianceBody -->
+    <div class="complianceBody">
+        <div class="complianceBodyBox">
+            <div class="complianceBodyBox1">
+                <div class="complianceBodyBox1Circle" style="background-color: black;"></div>
+                <div class="complianceBodyBox1Txt">
+                    <p>O QUE É E PARA QUE SERVE O COMPLIANCE?</p>
                 </div>
             </div>
-            <div class="addEscolaBox">
-                <button class="addEscola">
-                    + ADICIONAR ESCOLA
-                </button>
-                <div class="UniversidadesHighSchools">
-                    <div class="Universidades">
-                        <button onclick="escolas('Universidades')" style="background-color: rgba(194,255,71);" id="btnUniversidades"></button>
-                        <p style="opacity: 1;" id="P-Universidades">Universidades</p>
-                    </div>
-                    <div class="Universidades">
-                        <button onclick="escolas('High-Schools')" id="btnHigh-Schools"></button>
-                        <p style="opacity: 0.6;" id="P-High-Schools">High Schools</p>
-                    </div>
+            <p>COMPLIANCE</p>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>ATIVIDADE:</td>
+                        <td style="text-align: center;">NOTA</td>
+                        <td style="padding-left: 120px;">STATUS</td>
+                    </tr>
+                    <tr>
+                        <th>GPA<button>CALCULAR</button></th>
+                        <td class="complianceTdShadow">2,92</td>
+                        <td class="complianceTdShadowInp"><input type="text" placeholder="2,92"></td>
+                        <td style="padding-left: 120px;"><img src="img/icon/verificado.png" alt="verificado"></td>
+                    </tr>
+                    <tr>
+                        <th>TOEFL</th>
+                        <td class="complianceTdShadow">98</td>
+                        <td class="complianceTdShadowInp"><input type="text" placeholder="98"></td>
+                        <td style="padding-left: 120px;"><img src="img/icon/upload-big-arrow.png"
+                                alt="upload"><span>UPLOAD DO DOCUMENTO</span></td>
+                    </tr>
+                    <tr>
+                        <th>SAT</th>
+                        <td class="complianceTdShadow">1200</td>
+                        <td class="complianceTdShadowInp"><input type="text" placeholder="1200"></td>
+                        <td style="padding-left: 120px;"><img src="img/icon/verificado.png" alt="verificado"></td>
+                    </tr>
+                </table>
+                <div class="btnComplianceBox">
+                    <button class="btnComplianceEDITAR" onclick="Compliance('EDITAR')">
+                        EDITAR NOTAS
+                    </button>
+                    <button class="btnComplianceSALVAR" onclick="Compliance('SALVAR')">
+                        SALVAR NOTAS
+                    </button>
                 </div>
-
-            </div>
-
-            <div class="escolasBodyBox2">
-                <img src="img/images/2b45f3d3577055693134a009cdd079a6.jpg" alt="">
-                <div class="escolasBodyBox2Txt">
-                    <a href="">ACADIA UNIVERSITY</a>
-                    <p>WOLFVILLE OTHER</p>
-                </div>
-                <div class="escolasBodyBox2Progress">
-                    <div class="progress-circle-container">
-                        <div class="progress-circle progress-50"><span>50</span></div>
-                    </div>
-                    <p>COLLEGE FIT</p>
-                </div>
-            </div>
-
-            <div class="escolasBodyBox3">
-                <img src="img/images/00dae7df5b6185e7437bd098c9d7f5ec.jpg" alt="">
-                <div class="escolasBodyBox3Txt">
-                    <a href="">High Schools</a>
-                    <p>WOLFVILLE</p>
-                </div>
-                <div class="escolasBodyBox3Progress">
-                    <div class="progress-circle-container">
-                        <div class="progress-circle progress-90"><span>90</span></div>
-                    </div>
-                    <p>COLLEGE FIT</p>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 
