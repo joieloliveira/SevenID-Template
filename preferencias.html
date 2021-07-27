@@ -167,24 +167,36 @@
     </div>
     <!-- abas_links -->
     <div class="abas_linksBG">
-        <div class="abas_links">
-            <div class="abas_linksBox">
-                <a href="">MINHAS ESCOLAS</a>
+        <div class="abas_links owl-carousel">
+            <div class="carrosselItem">
+                <div class="abas_linksBox">
+                    <a href="">MINHAS ESCOLAS</a>
+                </div>
             </div>
-            <div class="abas_linksBox" style="background-color: rgba(194,255,71);box-shadow: inset 0 0 2em rgb(100, 96, 96);">
-                <a href="" style="color: black;font-weight: 500;">PREFERÊNCIAS</a>
+            <div class="carrosselItem">
+                <div class="abas_linksBox" style="background-color: rgba(194,255,71);box-shadow: inset 0 0 2em rgb(100, 96, 96);">
+                    <a href="" style="color: black;font-weight: 500;">PREFERÊNCIAS</a>
+                </div>
             </div>
-            <div class="abas_linksBox">
-                <a href="">OVERAL SCORE</a>
+            <div class="carrosselItem">
+                <div class="abas_linksBox">
+                    <a href="">OVERAL SCORE</a>
+                </div>
             </div>
-            <div class="abas_linksBox">
-                <a href="">PROPOSTAS</a>
+            <div class="carrosselItem">
+                <div class="abas_linksBox">
+                    <a href="">PROPOSTAS</a>
+                </div>
             </div>
-            <div class="abas_linksBox">
-                <a href="">PLANEJAMENTO</a>
+            <div class="carrosselItem">
+                <div class="abas_linksBox">
+                    <a href="">PLANEJAMENTO</a>
+                </div>
             </div>
-            <div class="abas_linksBox">
-                <a href="">AVALIZAÇÕES E COMPLIANCE</a>
+            <div class="carrosselItem">
+                <div class="abas_linksBox">
+                    <a href="">COMPLIANCE</a>
+                </div>
             </div>
         </div>
     </div>
@@ -405,6 +417,46 @@
             </div>
         </div>
     </div>
+    <!-- owlCarousel -->
+    <script>
+        $('.abas_links').owlCarousel({
+            responsiveClass: true,
+            responsive: {
+                375: {
+                    items: 2,
+                    nav: false,
+                    loop: true,
+                },
+                425: {
+                    items: 2,
+                    nav: false,
+                    loop: true,
+                },
+                768: {
+                    items: 3,
+                    nav: false,
+                    loop: true,
+                },
+                1024: {
+                    items: 3,
+                    nav: false,
+                    loop: true,
+                },
+                1215: {
+                    items: 4,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
+                    loop: true,
+                    nav: false,
+                },
+                1360: {
+                    items: 6,
+                    nav: false,
+                },
+            }
+        });
+    </script>
     <!-- slidebar script -->
     <script type="text/javascript">
         $(document).ready(function () {
