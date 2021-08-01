@@ -44,3 +44,40 @@ function Compliance(opc) {
         $('.complianceTdShadowInp').css("display", "none");
     }
 }
+function Biografia(opc) {
+
+    event.preventDefault()
+    
+    let buton = opc;
+
+    if (buton == "EDITAR") {
+        $('.BIOGRAFIATXT').css("display", "none");
+        $('.btnCurriculoEditar').css("display", "none");
+        $('.formBiografia').css("display", "flex");
+
+    }
+    if (buton == "SALVAR") {
+        $('.BIOGRAFIATXT').css("display", "flex");
+        $('.btnCurriculoEditar').css("display", "flex");
+        $('.formBiografia').css("display", "none");
+    }
+}
+function CurriculoInformacoes(opc) {
+
+    event.preventDefault()
+    
+    let buton = opc;
+
+    if (buton == "EDITAR") {
+        $('.btninformacoesEditar').css("display", "none");
+        $('.btninformacoesSalvar').css("display", "flex");
+        $('.informacoesBody').css("display", "none");
+        $('.informacoesBoxAtr input').css("display", "flex");
+    }
+    if (buton == "SALVAR") {
+        $('.btninformacoesEditar').css("display", "flex");
+        $('.btninformacoesSalvar').css("display", "none");
+        $('.informacoesBody').css("display", "flex");
+        $('.informacoesBoxAtr input').css("display", "none");
+    }
+}

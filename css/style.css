@@ -2811,6 +2811,341 @@ body {
     margin: 35px 300px 65px 0;
 }
 .btnComplianceSALVAR:hover{
-    box-shadow: inset 0 0 2em black;
+    box-shadow: inset 0 0 2rem black;
     transition: 0.5s;
+}
+/*===perfilCurriculo========================================================*/
+.perfilCurriculo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.perfilCurriculo .addVideo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.perfilCurriculo .addVideo img{
+    width: 1150px;
+    height: 500px;
+}
+.perfilCurriculo .addVideo button{
+    padding: 15px 30px;
+    border: none;
+    background-color: var(--verde-seven);
+    border-radius: 2rem;
+    font-size: 90%;
+    font-weight: 500;
+    align-self: flex-end;
+    margin-right: 60px;
+    margin-top: -100px;
+}
+.perfilCurriculo .addVideo button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 2rem black;
+    transition: 0.5s;
+}
+.perfilCurriculo .addVideo button img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.perfilCurriculo .addFoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.perfilCurriculo .addFoto img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+.perfilCurriculo .addFoto button{
+    border: none;
+    border-radius: 50%;
+    background-color: var(--verde-seven);
+    padding: 10px 10px;
+    margin-left: -40px;
+    margin-bottom: -50px;
+}
+.perfilCurriculo .addFoto button:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+.perfilCurriculo .addFoto button img{
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    border-radius: 0%;
+}
+.perfilCurriculo .CurriculoP{
+    font-size: 260%;
+    font-weight: 600;
+    margin-top: 20px;
+    color: black;
+}
+.perfilCurriculo .curriculoProgress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.perfilCurriculo .curriculoProgress .curriculoProgressBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.perfilCurriculo .curriculoAtributos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 20px 0 30px 0;
+    padding: 30px 0 20px 0;
+    border-top: solid 1px #C4C4C4;
+}
+.perfilCurriculo .curriculoAtributos .curriculoAtributosBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.perfilCurriculo .curriculoAtributos .curriculoAtributosBox p:nth-child(1){
+    font-weight: 500;
+    color: black;
+}
+.perfilCurriculo .curriculoAtributos .curriculoAtributosBox p:nth-child(2){
+    font-size: 140%;
+    opacity: 0.8;
+}
+/*===abas links perfil======================================================*/
+.abas_linksBG .abas_links .abas_linksBox.curriculo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-color: var(--cinza-02);
+}
+.abas_linksBG .abas_links .abas_linksBox.curriculo a{
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    font-weight: 400;
+}
+.abas_linksBG .abas_links .abas_linksBox.curriculo a:hover{
+    color: var(--verde-seven);
+    transition: 0.5s;
+}
+@media(max-width: 1360px){
+    .abas_linksBG .abas_links .abas_linksBox.curriculo{
+        padding: 15px 30px;
+    }
+}
+/*==============================================*/
+.curriculoBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+}
+.curriculoBody .curriculoBodyBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1250px;
+}
+.curriculoBody .curriculoBodyBox .BIOGRAFIA{
+    align-self: flex-start;
+    margin: 30px 0 30px 70px;
+    font-weight: 500;
+    color: black;
+    font-size: 120%;
+}
+.curriculoBody .curriculoBodyBox .BIOGRAFIATXT{
+    width: 1050px;
+    height: 180px;
+    color: black;
+    opacity: 0.8;
+    overflow-y: auto;
+}
+.curriculoBodyBox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.curriculoBody .curriculoBodyBox .curriculoBodyBox1Circle{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 40px 20px 20px 0;
+}
+.curriculoBody .curriculoBodyBox .curriculoBodyBox1Txt p{
+    margin: 0;
+    font-weight: 500;
+    font-size: 90%;
+}
+.curriculoBody .curriculoBodyBox .curriculoBodyBox1Txt{
+    display: flex;
+    background-color: #F0F0F0;
+    color: black;
+    width: 90%;
+    padding: 16px 20px;
+    margin: 40px 0 20px 0;
+    border-radius: 3rem;
+}
+.curriculoBodyBox .formBiografia{
+    display: none;
+    flex-direction: column;
+}
+.curriculoBodyBox textarea{
+    width: 1050px;
+}
+.curriculoBodyBox .btnCurriculoEditar{
+    display: flex;
+    color: black;
+    border: none;
+    align-self: flex-start;
+    background-color: var(--verde-seven);
+    padding: 18px 40px;
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 90%;
+    cursor: pointer;
+    margin: 10px 0px 65px 100px;
+}
+.curriculoBodyBox .btnCurriculoSalvar{
+    display: flex;
+    color: black;
+    border: none;
+    align-self: flex-start;
+    background-color: var(--verde-seven);
+    padding: 18px 40px;
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 90%;
+    cursor: pointer;
+    margin: 10px 0px 65px 0;
+}
+/*===informacoesBox=============================================================================================================*/
+.informacoesBox form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1050px;
+}
+.informacoesBox .informacoesBox2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.informacoesBox .informacoesBoxAtr{
+    display: flex;
+    flex-direction: column;
+}
+.informacoes{
+    font-weight: 500;
+    font-size: 140%;
+    color: black;
+    align-self: flex-start;
+    margin: 30px 0 40px 90px;
+}
+.informacoesBox .informacoesBoxAtr .informacoesTitle{
+    font-weight: 500;
+    font-size: 120%;
+    color: black;
+    margin-bottom: 40px;
+}
+.informacoesBox .informacoesBoxAtr .informacoesHeader{
+    font-weight: 500;
+    opacity: 0.8;
+    color: black;
+}
+.informacoesBox .informacoesBoxAtr .informacoesBody{
+    opacity: 0.8;
+    color: black;
+    margin-left: 10px;
+}
+.informacoesBox .informacoesBoxAtr input{
+    display: none;
+    margin-bottom: 12px;
+}
+.curriculoBodyBox .btninformacoesEditar{
+    display: flex;
+    color: black;
+    border: none;
+    align-self: flex-start;
+    background-color: var(--verde-seven);
+    padding: 18px 40px;
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 90%;
+    cursor: pointer;
+    margin: 30px 0px 65px 100px;
+}
+.curriculoBodyBox .btninformacoesSalvar{
+    display: none;
+    color: black;
+    border: none;
+    align-self: flex-start;
+    background-color: var(--verde-seven);
+    padding: 18px 40px;
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 90%;
+    cursor: pointer;
+    margin: 30px 0px 65px 0;
+}
+/*===recomendacoes===============================================================================*/
+.recomendacoesP{
+    font-size: 140%;
+    color: black;
+    font-weight: 500;
+    align-self: flex-start;
+    margin: 30px 0 40px 100px;;
+}
+.recomendacoesBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.recomendacoesBox .recomendacoesBox2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 1050px;
+}
+.recomendacoesBox .recomendacoesBox2 .recomendacoesBtn{
+    display: flex;
+    width: 250px;
+    margin-right: 10px;
+    margin-bottom: 60px;
+}
+.recomendacoesBox .recomendacoesBox2 .recomendacoesBtn p{
+    opacity: 0.8;
+}
+.recomendacoesBox .recomendacoesBox2 .recomendacoesBtn button{
+    border: none;
+    background-color: var(--verde-seven);
+    border-radius: 50%;
+    width: 70px;
+    height: 42px;
+    margin-right: 20px;
+}
+.recomendacoesBox .recomendacoesBox2 .recomendacoesBtn button:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: inset 0 0 0.5rem #616060;
 }
