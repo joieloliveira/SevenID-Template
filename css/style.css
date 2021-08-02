@@ -3149,3 +3149,126 @@ body {
     transition: 0.5s;
     box-shadow: inset 0 0 0.5rem #616060;
 }
+/*===Meus videos=================================================================================================*/
+.videosBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.videosBody .boxAddVideos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.videosBody p:first-child{
+    color: black;
+    margin-top:100px;
+}
+.videosBody .btnAddVideos{
+    display: flex;
+    color: black;
+    border: none;
+    background-color: var(--verde-seven);
+    padding: 18px 40px;
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 90%;
+    cursor: pointer;
+    margin: 30px 0px 110px 0;
+}
+.videosBody .btnUploadVideo{
+    display: flex;
+    color: black;
+    border: none;
+    background-color: var(--verde-seven);
+    padding: 18px 40px;
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 90%;
+    cursor: pointer;
+    margin: 30px 0px 60px 0;
+}
+.videosBody .videosBodyFiltro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.videosBody .videosBodyFiltro p{
+    margin: 0 70px 0 10px;
+    color: black;
+    font-weight: 500;
+}
+.videosBody .videosBodyFiltro span{
+    margin: 0 30px 0 10px;
+    color: black;
+    opacity: 0.6;
+    font-weight: 500;
+}
+.videosBody .videosBodyFiltro button{
+    border: none;
+    width: 23px;
+    height: 23px;
+    background-color: var(--cinza-04);
+    border-radius: 50%;
+}
+.videosBody .videosBodyFiltro button:hover{
+    cursor: pointer;
+    background-color: var(--verde-seven);
+    transition: 0.5s;
+}
+/*===Box Videos=============================================================================================*/
+.boxVideos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 90px;
+}
+.boxVideos .boxVideosTUDO{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1380px;
+}
+.boxVideos .boxVideosHIGHLIGHTS{
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1380px;
+}
+.boxVideos .boxVideosGOLS{
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1380px;
+}
+.boxVideos .boxVideosLANCES_DEFENSIVOS{
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1380px;
+}
+.boxVideos .boxVideosHABILIDADE{
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1380px;
+}
+.boxVideos .boxVideosFISICO{
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1380px;
+}
+.boxVideos iframe{
+    margin: 20px;
+}
+.tituloVideo{
+    margin: -20px 0 0 20px;
+    font-weight: 600;
+    color: black;
+    width: 350px;
+}

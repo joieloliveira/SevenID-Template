@@ -81,3 +81,97 @@ function CurriculoInformacoes(opc) {
         $('.informacoesBoxAtr input').css("display", "none");
     }
 }
+function videosFiltro(opc) {
+
+    event.preventDefault()
+    
+    let buton = opc;
+
+    if (buton == "TUDO") {
+        $('.boxVideosTUDO').css("display", "flex");
+        $('.boxVideosHIGHLIGHTS').css("display", "none");
+        $('.boxVideosGOLS').css("display", "none");
+        $('.boxVideosLANCES_DEFENSIVOS').css("display", "none");
+        $('.boxVideosHABILIDADE').css("display", "none");
+        $('.boxVideosFISICO').css("display", "none");
+
+        $('.btnTUDO').css("background-color", "rgba(194,255,71)");
+        $('.btnHIGHLIGHTS').css("background-color", "#e0e0e0");
+        $('.btnGOLS').css("background-color", "#e0e0e0");
+        $('.btnDEFENSIVOS').css("background-color", "#e0e0e0");
+        $('.btnHABILIDADE').css("background-color", "#e0e0e0");
+        $('.btnFISICO').css("background-color", "#e0e0e0");
+    }
+    if (buton == "HIGHLIGHTS") {
+        $('.boxVideosTUDO').css("display", "none");
+        $('.boxVideosHIGHLIGHTS').css("display", "flex");
+        $('.boxVideosGOLS').css("display", "none");
+        $('.boxVideosLANCES_DEFENSIVOS').css("display", "none");
+        $('.boxVideosHABILIDADE').css("display", "none");
+        $('.boxVideosFISICO').css("display", "none");
+
+        $('.btnTUDO').css("background-color", "#e0e0e0");
+        $('.btnHIGHLIGHTS').css("background-color", "rgba(194,255,71)");
+        $('.btnGOLS').css("background-color", "#e0e0e0");
+        $('.btnDEFENSIVOS').css("background-color", "#e0e0e0");
+        $('.btnHABILIDADE').css("background-color", "#e0e0e0");
+        $('.btnFISICO').css("background-color", "#e0e0e0");
+    }if (buton == "GOLS") {
+        $('.boxVideosTUDO').css("display", "none");
+        $('.boxVideosHIGHLIGHTS').css("display", "none");
+        $('.boxVideosGOLS').css("display", "flex");
+        $('.boxVideosLANCES_DEFENSIVOS').css("display", "none");
+        $('.boxVideosHABILIDADE').css("display", "none");
+        $('.boxVideosFISICO').css("display", "none");
+
+        $('.btnTUDO').css("background-color", "#e0e0e0");
+        $('.btnHIGHLIGHTS').css("background-color", "#e0e0e0");
+        $('.btnGOLS').css("background-color", "rgba(194,255,71)");
+        $('.btnDEFENSIVOS').css("background-color", "#e0e0e0");
+        $('.btnHABILIDADE').css("background-color", "#e0e0e0");
+        $('.btnFISICO').css("background-color", "#e0e0e0");
+    }if (buton == "DEFENSIVOS") {
+        $('.boxVideosTUDO').css("display", "none");
+        $('.boxVideosHIGHLIGHTS').css("display", "none");
+        $('.boxVideosGOLS').css("display", "none");
+        $('.boxVideosLANCES_DEFENSIVOS').css("display", "flex");
+        $('.boxVideosHABILIDADE').css("display", "none");
+        $('.boxVideosFISICO').css("display", "none");
+
+        $('.btnTUDO').css("background-color", "#e0e0e0");
+        $('.btnHIGHLIGHTS').css("background-color", "#e0e0e0");
+        $('.btnGOLS').css("background-color", "#e0e0e0");
+        $('.btnDEFENSIVOS').css("background-color", "rgba(194,255,71)");
+        $('.btnHABILIDADE').css("background-color", "#e0e0e0");
+        $('.btnFISICO').css("background-color", "#e0e0e0");
+    }if (buton == "HABILIDADE") {
+        $('.boxVideosTUDO').css("display", "none");
+        $('.boxVideosHIGHLIGHTS').css("display", "none");
+        $('.boxVideosGOLS').css("display", "none");
+        $('.boxVideosLANCES_DEFENSIVOS').css("display", "none");
+        $('.boxVideosHABILIDADE').css("display", "flex");
+        $('.boxVideosFISICO').css("display", "none");
+
+        $('.btnTUDO').css("background-color", "#e0e0e0");
+        $('.btnHIGHLIGHTS').css("background-color", "#e0e0e0");
+        $('.btnGOLS').css("background-color", "#e0e0e0");
+        $('.btnDEFENSIVOS').css("background-color", "#e0e0e0");
+        $('.btnHABILIDADE').css("background-color", "rgba(194,255,71)");
+        $('.btnFISICO').css("background-color", "#e0e0e0");
+    }
+    if (buton == "FISICO") {
+        $('.boxVideosTUDO').css("display", "none");
+        $('.boxVideosHIGHLIGHTS').css("display", "none");
+        $('.boxVideosGOLS').css("display", "none");
+        $('.boxVideosLANCES_DEFENSIVOS').css("display", "none");
+        $('.boxVideosHABILIDADE').css("display", "none");
+        $('.boxVideosFISICO').css("display", "flex");
+
+        $('.btnTUDO').css("background-color", "#e0e0e0");
+        $('.btnHIGHLIGHTS').css("background-color", "#e0e0e0");
+        $('.btnGOLS').css("background-color", "#e0e0e0");
+        $('.btnDEFENSIVOS').css("background-color", "#e0e0e0");
+        $('.btnHABILIDADE').css("background-color", "#e0e0e0");
+        $('.btnFISICO').css("background-color", "rgba(194,255,71)");
+    }
+}

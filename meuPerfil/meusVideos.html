@@ -34,7 +34,7 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-content-box">
-                   Ola mundo!!
+                    Ola mundo!!
                 </div>
             </div>
         </div>
@@ -234,14 +234,14 @@
     <div class="abas_linksBG">
         <div class="abas_links owl-carousel">
             <div class="carrosselItem">
-                <div class="abas_linksBox curriculo"
-                    style="background-color: rgba(194,255,71);box-shadow: inset 0 0 2em rgb(100, 96, 96);">
-                    <a href="" style="color: black;font-weight: 500;">MEU CURRÍCULO</a>
+                <div class="abas_linksBox curriculo">
+                    <a href="">MEU CURRÍCULO</a>
                 </div>
             </div>
             <div class="carrosselItem">
-                <div class="abas_linksBox curriculo">
-                    <a href="">MEUS VÍDEOS</a>
+                <div class="abas_linksBox curriculo"
+                    style="background-color: rgba(194,255,71);box-shadow: inset 0 0 2em rgb(100, 96, 96);">
+                    <a href="" style="color: black;font-weight: 500;">MEUS VÍDEOS</a>
                 </div>
             </div>
             <div class="carrosselItem">
@@ -251,115 +251,124 @@
             </div>
         </div>
     </div>
-    <!-- curriculo -->
-    <div class="curriculoBody">
-        <div class="curriculoBodyBox">
-            <div class="curriculoBodyBox1">
-                <div class="curriculoBodyBox1Circle" style="background-color: black;"></div>
-                <div class="curriculoBodyBox1Txt">
-                    <p>OQUE É E PARA QUE SERVE MEU CURRÍCULO?</p>
+    <!-- aba Meus videos -->
+    <div class="videosBody">
+        <div class="boxAddVideos">
+            <p>Você ainda não possui vídeos.</p>
+            <button class="btnAddVideos" data-toggle="modal" data-target="#exampleModalCenter">
+                ADICIONAR VÍDEO
+            </button>
+        </div>
+        <button class="btnUploadVideo" data-toggle="modal" data-target="#exampleModalCenter">
+            UPLOAD VÍDEO
+        </button>
+        <div class="videosBodyFiltro">
+            <p>FILTRAR POR</p>
+            <button class="btnTUDO" onclick="videosFiltro('TUDO')" style="background-color: rgba(194,255,71);"></button><Span>TUDO</Span>
+            <button class="btnHIGHLIGHTS" onclick="videosFiltro('HIGHLIGHTS')"></button><Span>HIGHLIGHTS</Span>
+            <button class="btnGOLS" onclick="videosFiltro('GOLS')"></button><Span>GOLS</Span>
+            <button class="btnDEFENSIVOS" onclick="videosFiltro('DEFENSIVOS')"></button><Span>LANCES DEFENSIVOS</Span>
+            <button class="btnHABILIDADE" onclick="videosFiltro('HABILIDADE')"></button><Span>HABILIDADE</Span>
+            <button class="btnFISICO" onclick="videosFiltro('FISICO')"></button><Span>FÍSICO</Span>
+        </div>
+        <div style="border-bottom: solid 1px #C4C4C4; width: 1050px; margin-bottom: 30px;"></div>
+        <div class="boxVideos">
+            <div class="boxVideosTUDO">
+                <div style="flex-direction: column;">
+                    <iframe width="420" height="275" src="https://www.youtube.com/embed/G5Y0OmlEv0g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="tituloVideo">Video teste Video teste Video</p>
+                </div>
+                <div style="flex-direction: column;">
+                    <iframe width="420" height="275" src="https://www.youtube.com/embed/G5Y0OmlEv0g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="tituloVideo">Video teste Video teste Video</p>
+                </div>
+                <div style="flex-direction: column;">
+                    <iframe width="420" height="275" src="https://www.youtube.com/embed/G5Y0OmlEv0g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="tituloVideo">Video teste Video teste Video</p>
+                </div>
+                <div style="flex-direction: column;">
+                    <iframe width="420" height="275" src="https://www.youtube.com/embed/G5Y0OmlEv0g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="tituloVideo">Video teste Video teste Video</p>
                 </div>
             </div>
-            <p class="BIOGRAFIA">BIOGRAFIA</p>
-            <p class="BIOGRAFIATXT">Minha biografia lorem ipsum dolorem lorem ipsum dolroem lorMinha biografia lorem
-                ipsum dolorem lorem ipsum dolroem lorMinha biografia lorem ipsum dolorem lorem ipsum dolroem lorMinha
-                biografia lorem ipsum dolorem lorem ipsum dolroem lorMinha biografia lorem ipsum dolorem lorem ipsum
-                dolroem lorMinha biografia lorem ipsum dolorem lorem ipsum dolroem lorMinha biografia lorem ipsum
-                dolorem lorem ipsum dolroem lorMinha biografia lorem ipsum dolorem lorem ipsum dolroem lorMinha
-                biografia lorem ipsum dolorem lorem ipsum dolroem lor</p>
-            <button class="btnCurriculoEditar" onclick="Biografia('EDITAR')">
-                EDITAR BIOGRAFIA
-            </button>
-            <form action="" class="formBiografia">
-                <textarea rows="8" name="msg" placeholder="Sua biografia aqui (max 960 caracteres)"
-                    maxlength="960"></textarea>
-                <button class="btnCurriculoSalvar" onclick="Biografia('SALVAR')">
-                    SALVAR BIOGRAFIA
-                </button>
-            </form>
-            <!-- linha -->
-            <div style="border-bottom: solid 1px #C4C4C4; width: 1050px; margin-bottom: 20px;"></div>
-            <p class="informacoes">INFORMAÇÕES</p>
-            <div class="informacoesBox">
-                <form action="">
-                    <div class="informacoesBox2">
-                        <div class="informacoesBoxAtr">
-                            <p class="informacoesTitle">PESSOAL</p>
-                            <p class="informacoesHeader">Nome:</p>
-                            <p class="informacoesBody">Henrique Miranda Jardim</p><input type="text"
-                                placeholder="Henrique Miranda Jardim">
-                            <p class="informacoesHeader">Idade:</p>
-                            <p class="informacoesBody">28 anos</p><input type="text" placeholder="28 anos">
-                            <p class="informacoesHeader">Peso:</p>
-                            <p class="informacoesBody">75 kg</p><input type="text" placeholder="75 kg">
-                            <p class="informacoesHeader">Altura:</p>
-                            <p class="informacoesBody">1,80 m</p><input type="text" placeholder="1,80 m">
-                            <p class="informacoesHeader">País:</p>
-                            <p class="informacoesBody">Brasil</p><input type="text" placeholder="Brasil">
-                            <p class="informacoesHeader">Seu email:</p>
-                            <p class="informacoesBody">emailhenrique@gmail.com</p><input type="text"
-                                placeholder="emailhenrique@gmail.com">
-                            <p class="informacoesHeader">Seu celular:</p>
-                            <p class="informacoesBody">31 98671-9040</p><input type="text" placeholder="31 98671-9040">
-                        </div>
-                        <div class="informacoesBoxAtr">
-                            <p class="informacoesTitle">ESPORTIVA</p>
-                            <p class="informacoesHeader">Posição:</p>
-                            <p class="informacoesBody">Atacante</p><input type="text" placeholder="Atacante">
-                            <p class="informacoesHeader">Pé dominante:</p>
-                            <p class="informacoesBody">Lorem ipsum</p><input type="text" placeholder="Lorem ipsum">
-                            <p class="informacoesHeader">Clube atual:</p>
-                            <p class="informacoesBody">Lorem ipsum</p><input type="text" placeholder="Lorem ipsum">
-                            <p class="informacoesHeader">Último clube:</p>
-                            <p class="informacoesBody">Lorem ipsum</p><input type="text" placeholder="Lorem ipsum">
-                            <p class="informacoesHeader">Outras posições:</p>
-                            <p class="informacoesBody">Lorem ipsum</p><input type="text" placeholder="Lorem ipsum">
-                            <p class="informacoesHeader">Empresário:</p>
-                            <p class="informacoesBody">Lorem ipsum</p><input type="text" placeholder="Lorem ipsum">
-                            <p class="informacoesHeader">Contrato profissional:</p>
-                            <p class="informacoesBody">Lorem ipsum</p><input type="text" placeholder="Lorem ipsum">
-                        </div>
-                        <div class="informacoesBoxAtr">
-                            <p class="informacoesTitle">ACADÊMICA</p>
-                            <p class="informacoesHeader">SAT:</p>
-                            <p class="informacoesBody">Lorem ipsum</p><input type="text" placeholder="Lorem ipsum">
-                            <p class="informacoesHeader">Toefl:</p>
-                            <p class="informacoesBody">Lorem ipsum</p><input type="text" placeholder="Lorem ipsum">
-                            <p class="informacoesHeader">ACT:</p>
-                            <p class="informacoesBody">Lorem ipsum</p><input type="text" placeholder="Lorem ipsum">
-                            <p class="informacoesHeader">GPA:</p>
-                            <p class="informacoesBody">Lorem ipsum</p><input type="text" placeholder="Lorem ipsum">
-                            <p class="informacoesHeader">Nível de Inglês:</p>
-                            <p class="informacoesBody">Lorem ipsum</p><input type="text" placeholder="Lorem ipsum">
-                            <p class="informacoesHeader">High School:</p>
-                            <p class="informacoesBody">Lorem ipsum</p><input type="text" placeholder="Lorem ipsum">
-                            <p class="informacoesHeader">Ano de Formatura:</p>
-                            <p class="informacoesBody">Lorem ipsum</p><input type="text" placeholder="Lorem ipsum">
-                        </div>
-                    </div>
-                    <button class="btninformacoesSalvar" onclick="CurriculoInformacoes('SALVAR')">
-                        SALVAR INFORMAÇÕES
-                    </button>
-                </form>
+
+            <div class="boxVideosHIGHLIGHTS">
+                <div style="flex-direction: column;">
+                    <iframe width="420" height="275" src="https://www.youtube.com/embed/G5Y0OmlEv0g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="tituloVideo">Video teste Video teste Video</p>
+                </div>
             </div>
-            <button class="btninformacoesEditar" onclick="CurriculoInformacoes('EDITAR')">
-                EDITAR INFORMAÇÕES
-            </button>
-            <div style="border-bottom: solid 1px #C4C4C4; width: 1050px; margin-bottom: 20px;"></div>
-            <p class="recomendacoesP">RECOMENDAÇÕES</p>
-            <div class="recomendacoesBox">
-                <div class="recomendacoesBox2">
-                    <div class="recomendacoesBtn">
-                        <button data-toggle="modal" data-target="#exampleModalCenter"><h4>+</h4></button><p>Adicionar carta de recomendação esportiva</p>
-                    </div>
-                    <div class="recomendacoesBtn">
-                        <button data-toggle="modal" data-target="#exampleModalCenter"><h4>+</h4></button><p>Adicionar carta de recomendação acadêmica</p>
-                    </div>
+
+            <div class="boxVideosGOLS">
+                <div style="flex-direction: column;">
+                    <iframe width="420" height="275" src="https://www.youtube.com/embed/G5Y0OmlEv0g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="tituloVideo">Video teste Video teste Video</p>
+                </div>
+                <div style="flex-direction: column;">
+                    <iframe width="420" height="275" src="https://www.youtube.com/embed/G5Y0OmlEv0g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="tituloVideo">Video teste Video teste Video</p>
+                </div>
+            </div>
+
+            <div class="boxVideosLANCES_DEFENSIVOS">
+                <div style="flex-direction: column;">
+                    <iframe width="420" height="275" src="https://www.youtube.com/embed/tTIZ29NjPqA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="tituloVideo">Video teste Video teste Video</p>
+                </div>
+            </div>
+
+            <div class="boxVideosHABILIDADE">
+                <div style="flex-direction: column;">
+                    <iframe width="420" height="275" src="https://www.youtube.com/embed/tTIZ29NjPqA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="tituloVideo">Video teste Video teste Video</p>
+                </div>
+                <div style="flex-direction: column;">
+                    <iframe width="420" height="275" src="https://www.youtube.com/embed/tTIZ29NjPqA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="tituloVideo">Video teste Video teste Video</p>
+                </div>
+            </div>
+
+            <div class="boxVideosFISICO">
+                <div style="flex-direction: column;">
+                    <iframe width="420" height="275" src="https://www.youtube.com/embed/NKvdRm055-g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="tituloVideo">Video teste Video teste Video</p>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- footer -->
     <div class="footer">
         <div class="footerBody1">
