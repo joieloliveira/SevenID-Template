@@ -27,7 +27,7 @@ function escolas(opc) {
 function Compliance(opc) {
 
     event.preventDefault()
-    
+
     let buton = opc;
 
     if (buton == "EDITAR") {
@@ -47,7 +47,7 @@ function Compliance(opc) {
 function Biografia(opc) {
 
     event.preventDefault()
-    
+
     let buton = opc;
 
     if (buton == "EDITAR") {
@@ -65,7 +65,7 @@ function Biografia(opc) {
 function CurriculoInformacoes(opc) {
 
     event.preventDefault()
-    
+
     let buton = opc;
 
     if (buton == "EDITAR") {
@@ -84,7 +84,7 @@ function CurriculoInformacoes(opc) {
 function videosFiltro(opc) {
 
     event.preventDefault()
-    
+
     let buton = opc;
 
     if (buton == "TUDO") {
@@ -116,7 +116,7 @@ function videosFiltro(opc) {
         $('.btnDEFENSIVOS').css("background-color", "#e0e0e0");
         $('.btnHABILIDADE').css("background-color", "#e0e0e0");
         $('.btnFISICO').css("background-color", "#e0e0e0");
-    }if (buton == "GOLS") {
+    } if (buton == "GOLS") {
         $('.boxVideosTUDO').css("display", "none");
         $('.boxVideosHIGHLIGHTS').css("display", "none");
         $('.boxVideosGOLS').css("display", "flex");
@@ -130,7 +130,7 @@ function videosFiltro(opc) {
         $('.btnDEFENSIVOS').css("background-color", "#e0e0e0");
         $('.btnHABILIDADE').css("background-color", "#e0e0e0");
         $('.btnFISICO').css("background-color", "#e0e0e0");
-    }if (buton == "DEFENSIVOS") {
+    } if (buton == "DEFENSIVOS") {
         $('.boxVideosTUDO').css("display", "none");
         $('.boxVideosHIGHLIGHTS').css("display", "none");
         $('.boxVideosGOLS').css("display", "none");
@@ -144,7 +144,7 @@ function videosFiltro(opc) {
         $('.btnDEFENSIVOS').css("background-color", "rgba(194,255,71)");
         $('.btnHABILIDADE').css("background-color", "#e0e0e0");
         $('.btnFISICO').css("background-color", "#e0e0e0");
-    }if (buton == "HABILIDADE") {
+    } if (buton == "HABILIDADE") {
         $('.boxVideosTUDO').css("display", "none");
         $('.boxVideosHIGHLIGHTS').css("display", "none");
         $('.boxVideosGOLS').css("display", "none");
@@ -173,5 +173,22 @@ function videosFiltro(opc) {
         $('.btnDEFENSIVOS').css("background-color", "#e0e0e0");
         $('.btnHABILIDADE').css("background-color", "#e0e0e0");
         $('.btnFISICO').css("background-color", "rgba(194,255,71)");
+    }
+}
+function cooperTest(opc) {
+
+    event.preventDefault()
+
+    let buton = opc;
+
+    if (buton == "true") {
+        $('.cooperTestBody .cooperTestBox button .btnBox2 img:nth-child(1)').css("display", "none");
+        $('.cooperTestBody .cooperTestBox button .btnBox2 img:nth-child(2)').css("display", "flex");
+        $("#cooperTestBTN").val("false");
+    }
+    if (buton == "false") {
+        $('.cooperTestBody .cooperTestBox button .btnBox2 img:nth-child(1)').css("display", "flex");
+        $('.cooperTestBody .cooperTestBox button .btnBox2 img:nth-child(2)').css("display", "none");
+        $("#cooperTestBTN").val("true");
     }
 }

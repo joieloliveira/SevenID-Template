@@ -1722,6 +1722,11 @@ body {
         width: 100%;
     }
 }
+@media(max-width: 1360px){
+    .abas_linksBG .abas_links .abas_linksBox{
+        padding: 15px 15px;
+    }
+}
 
 /*===escolasBody================================================================*/
 .escolasBody{
@@ -3616,4 +3621,222 @@ body {
     background-size: 100% 500px;
     width: 100%;
     height: 500px;
+}
+/*===avaliacoesBody============================================================================================================*/
+.avaliacoesBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+}
+.avaliacoesBody .avaliacoesBodyBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1250px;
+}
+.avaliacoesBodyBox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.avaliacoesBody .avaliacoesBodyBox .avaliacoesBodyBox1Circle{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 40px 20px 20px 0;
+}
+.avaliacoesBody .avaliacoesBodyBox .avaliacoesBodyBox1Txt p{
+    margin: 0;
+    font-weight: 500;
+    font-size: 90%;
+}
+.avaliacoesBody .avaliacoesBodyBox .avaliacoesBodyBox1Txt{
+    display: flex;
+    background-color: #F0F0F0;
+    color: black;
+    width: 90%;
+    padding: 16px 20px;
+    margin: 40px 0 20px 0;
+    border-radius: 3rem;
+}
+/*===cooperTestBody===*/
+.cooperTestBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cooperTestBody .cooperTestBox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1100px;
+    margin-left: 40px;
+    height: 500px;
+}
+.cooperTestBody .cooperTestBox button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    border-bottom: solid 1px #C4C4C4;
+    padding-bottom: 15px;
+}
+.cooperTestBody .cooperTestBox button .btnBox1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.cooperTestBody .cooperTestBox button .btnBox2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+.cooperTestBody .cooperTestBox button .btnBox2 img:nth-child(1){
+    display: flex;
+}
+.cooperTestBody .cooperTestBox button .btnBox2 img:nth-child(2){
+    display: none;
+}
+.cooperTestBody .cooperTestBox button p{
+    color: black;
+    font-size: 120%;
+    font-weight: 500;
+    margin: 0 20px 0 0 ;
+}
+.cooperTestBody .cooperTestBox button .circle{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: var(--verde-seven);
+}
+.cooperTestBody .cooperTestBox button span{
+    opacity: 0.8;
+    margin-left: 10px;
+}
+.cooperTestBody .cooperTestBox button img{
+    width: 20px;
+}
+/*==============================================*/
+.cooperTestBody .cooperTestBox .cooperTestBox1{
+    display: flex;
+    width: 1200px;
+    height: 300px;
+    margin-left: -60px;
+}
+.cooperTestBody .cooperTestBox .cooperTestBox1 p{
+    margin: 0;
+    color: black;
+    font-weight: 500;
+}
+.cooperTestBody .cooperTestBox .cooperTestBox1 .medal{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 20px;
+    width: 2%;
+}
+.cooperTestBody .cooperTestBox .cooperTestBox1 .medal img{
+    width: 35px;
+}
+.cooperTestBody .cooperTestBox .cooperTestBox1 .data{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 20px;
+    width: 15%;
+}
+.cooperTestBody .cooperTestBox .cooperTestBox1 .tempo{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 20px;
+    width: 15%;
+}
+.cooperTestBody .cooperTestBox .cooperTestBox1 .classificacao{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 20px;
+    width: 60%;
+}
+.cooperTestBody .cooperTestBox .cooperTestBox1 .classificacao .progressBar{
+    display: flex;
+}
+.cooperTestBody .cooperTestBox .cooperTestBox1 .classificacao .progressBar .progressBarL{
+    background-color: var(--verde-seven);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    height: 10px;
+}
+.cooperTestBody .cooperTestBox .cooperTestBox1 .classificacao .progressBar .progressBarR{
+    background-color: #918d8d;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    height: 10px;
+}
+@media(max-width: 1193px){
+    .cooperTestBody .cooperTestBox{
+        width: 900px;
+    }
+    .cooperTestBody .cooperTestBox .cooperTestBox1{
+        width: 900px;
+    }
+    .avaliacoesBody .avaliacoesBodyBox{
+        width: 950px;
+    }
+}
+@media(max-width: 900px){
+    .cooperTestBody .cooperTestBox{
+        width: 700px;
+    }
+    .cooperTestBody .cooperTestBox .cooperTestBox1{
+        width: 700px;
+    }
+    .avaliacoesBody .avaliacoesBodyBox{
+        width: 750px;
+    }
+}
+@media(max-width: 690px){
+    .cooperTestBody .cooperTestBox{
+        width: 500px;
+    }
+    .cooperTestBody .cooperTestBox .cooperTestBox1{
+        width: 500px;
+    }
+    .avaliacoesBody .avaliacoesBodyBox{
+        width: 500px;
+    }
+    .areaAtletaBG p:nth-child(2){
+        font-size: 300%;
+    }
+}
+@media(max-width: 530px){
+    .cooperTestBody .cooperTestBox{
+        width: 400px;
+    }
+    .cooperTestBody .cooperTestBox .cooperTestBox1{
+        width: 400px;
+    }
+    .avaliacoesBody .avaliacoesBodyBox{
+        width: 400px;
+    }
+}
+@media(max-width: 490px){
+    .cooperTestBody .cooperTestBox{
+        width: 370px;
+    }
+    .cooperTestBody .cooperTestBox .cooperTestBox1{
+        width: 370px;
+    }
+    .avaliacoesBody .avaliacoesBodyBox{
+        width: 370px;
+    }
 }
