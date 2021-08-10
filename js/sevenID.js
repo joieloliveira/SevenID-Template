@@ -192,3 +192,20 @@ function cooperTest(opc) {
         $("#cooperTestBTN").val("true");
     }
 }
+function avaliacoes(opc) {
+
+    event.preventDefault()
+
+    let buton = opc;
+
+    if (buton == "true") {
+        $('.avaliacoesBody .avaliacoesBodyBox .avaliacoesBodyBox1 .avaliacoesBodyBox1Txt .maisMenos p:nth-child(1)').css("display", "none");
+        $('.avaliacoesBody .avaliacoesBodyBox .avaliacoesBodyBox1 .avaliacoesBodyBox1Txt .maisMenos p:nth-child(2)').css("display", "flex");
+        $(".avaliacoesBody .avaliacoesBodyBox .avaliacoesBodyBox1 .avaliacoesBodyBox1Txt").val("false");
+    }
+    if (buton == "false") {
+        $('.avaliacoesBody .avaliacoesBodyBox .avaliacoesBodyBox1 .avaliacoesBodyBox1Txt .maisMenos p:nth-child(1)').css("display", "flex");
+        $('.avaliacoesBody .avaliacoesBodyBox .avaliacoesBodyBox1 .avaliacoesBodyBox1Txt .maisMenos p:nth-child(2)').css("display", "none");
+        $(".avaliacoesBody .avaliacoesBodyBox .avaliacoesBodyBox1 .avaliacoesBodyBox1Txt").val("true");
+    }
+}
