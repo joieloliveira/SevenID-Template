@@ -4010,3 +4010,103 @@ body {
         width: 80%;
     }
 }
+/*===resumo======================================================================================================*/
+.resumoBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+}
+.resumoBody .resumoBodyBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1250px;
+}
+.resumoBody .resumoBodyBox form{
+    width: 98%;
+    margin-left: 35px;
+    margin-bottom: 180px;
+    font-weight: 600;
+}
+.resumoBodyBox p:nth-child(1){
+    align-self: flex-start;
+    font-size: 130%;
+    font-weight: 700;
+    margin: 50px 0 40px 90px;
+}
+.resumoBodyBox table{
+    width: 90%;
+    margin: 0 0 0 60px;
+    color: black;
+}
+.resumoBodyBox table button{
+    border: none;
+    font-size: 80%;
+    color: white;
+    background-color: var(--cinza-02);
+    padding: 6px 15px;
+    border-radius: 3rem;
+}
+.resumoBodyBox table span{
+    opacity: 0.6;
+}
+.resumoBodyBox table .l1 th:nth-child(2){
+    color: black;
+    background-color: var(--verde-seven);
+    text-align: center;
+}
+.resumoBodyBox table .l1 th:nth-child(3){
+    text-align: center;
+}
+.resumoBodyBox table .l2 td:nth-child(2){
+    background-color: var(--verde-seven);
+    padding: 0 50px;
+}
+.resumoBodyBox table .l2 td:nth-child(3){
+    padding: 0 50px;
+}
+.resumoBodyBox table .l3 td:nth-child(2){
+    background-color: var(--verde-seven);
+    padding: 0 50px;
+}
+.resumoBodyBox table .l3 td:nth-child(3){
+    padding: 0 50px;
+}
+.resumoBodyBox table .l4 td:nth-child(2){
+    background-color: var(--verde-seven);
+    padding: 0 50px;
+}
+.resumoBodyBox table .l4 td:nth-child(3){
+    padding: 0 50px;
+}
+.resumoBodyBox td{
+    font-weight: 600;
+    height: 70px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #C4C4C4;
+}
+.resumoBodyBox th{
+    color: white;
+    background-color: var(--cinza-02);
+    height: 70px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #C4C4C4;
+    font-size: 110%;
+}
+.L_span{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    justify-self: center;
+}
+/*===teste===*/
+html, body, #container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
