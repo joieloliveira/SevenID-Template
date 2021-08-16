@@ -1,67 +1,21 @@
 <html>
-  <head>
-    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js"></script>
-    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-radar.min.js"></script>
-    <style type="text/css">
 
-    </style>
-  </head>
-  <body>
-    <div id="container"></div>
-  </body>
+<head>
+  <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-radar.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  
+  <div class="imgTeste">
+    <form action="/action_page.php">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <input type="submit">
+    </form>
+  </div>
+</body>
+
 </html>
-<script>
-    anychart.onDocumentReady(function () {
-
-    // our data from bulbapedia
-    var data1 = [
-      {x: "Spee", value: 45},
-      {x: "HPd", value: 45},
-      {x: "Speed", value: 65},
-      {x: "HP", value: 39},
-      {x: "Defense", value: 43},
-      {x: "Special Defense", value: 50},
-      {x: "Special Attack", value: 60},
-      {x: "Attack", value: 52}
-    ];
-  
-    var data2 = [
-      {x: "Spee", value: 45},
-      {x: "HPd", value: 45},
-      {x: "Speed", value: 45},
-      {x: "HP", value: 45},
-      {x: "Defense", value: 49},
-      {x: "Special Defense", value: 65},
-      {x: "Special Attack", value: 65},
-      {x: "Attack", value: 49}
-    ];  
-    // create radar chart
-    var chart = anychart.radar();
-  
-    // set chart yScale settings
-    chart.yScale()
-      .minimum(0)
-      .maximum(100)
-      .ticks({'interval':5});
-  
-    // color alternating cells
-    chart.yGrid().palette(["gray 0.1", "gray 0.2"]);
-  
-    // create first series
-    chart.area(data1).name('Charmander').markers(true).fill("#E55934", 0.3).stroke("#E55934")
-    // create second series
-    chart.area(data2).name('Bulbasaur').markers(true).fill("#9BC53D", 0.3).stroke("#9BC53D")
-    // create third series
-    
-    // set chart title
-    chart.title("Starter Pokemon Comparison Chart")
-    // set legend
-    .legend(true);
-  
-    // set container id for the chart
-    chart.container('container');
-    // initiate chart drawing
-    chart.draw();
-  
-  });
-</script>

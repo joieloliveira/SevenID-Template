@@ -3622,7 +3622,7 @@ body {
     width: 100%;
     height: 500px;
 }
-/*===avaliacoesBody============================================================================================================*/
+/*===avaliacoes Fisicas============================================================================================================*/
 .avaliacoesBody{
     display: flex;
     align-items: center;
@@ -4104,9 +4104,324 @@ body {
     justify-self: center;
 }
 /*===teste===*/
-html, body, #container {
-    width: 100%;
-    height: 100%;
-    margin: 0;
+#container {
+    width: 600px;
+    height: 600px;
+    margin: 0px 0 0 210px;
     padding: 0;
-  }
+}
+/*===avaliacoesTecnica===========================================================================================*/
+.avaliacoesTecnicaBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1250px;
+    margin-bottom: 100px;
+}
+.avaliacoesTecnicaBodyBox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 100%;
+}
+
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1Circle{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 40px 20px 20px 0;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1Txt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1Txt p{
+    margin: 0;
+    font-weight: 500;
+    font-size: 90%;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt .maisMenos{
+    display: flex;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt .maisMenos p:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    color: black;
+    font-weight: 600;
+    margin: 0 7px 5px 0;
+    height: 25px;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt .maisMenos p:nth-child(2){
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    color: black;
+    font-weight: 600;
+    margin: 0 12px 5px 0;
+    height: 25px;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1Txt{
+    display: flex;
+    background-color: #F0F0F0;
+    color: black;
+    width: 90%;
+    padding: 16px 20px;
+    margin: 40px 0 20px 0;
+    border-radius: 3rem;
+}
+/*===bodyCollapse===*/
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .bodyCollapse{
+    border-bottom: solid 1px #aaa8a8;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .bodyCollapse .P1{
+    width: 900px;
+    margin: 20px 0 40px 0;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .bodyCollapse ul{
+    width: 860px;
+    margin: 20px 0 40px 0;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .bodyCollapse img{
+    margin-bottom: -30px ;
+    margin-top: 30px;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .bodyCollapse .P2{
+    background-color: var(--cinza-02);
+    color: var(--verde-seven);
+    width: 1000px;
+    padding: 30px 60px;
+    margin-bottom: 80px;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox form{
+    display: flex;
+    align-items: flex-end;
+    width: 1100px;
+    margin-top: 60px;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .formVideoAnalise{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 30px 0;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .formVideoAnalise label{
+    font-weight: 500;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox form button{
+    border: none;
+    background-color: var(--verde-seven);
+    color: black;
+    font-size: 90%;
+    padding: 15px 30px;
+    border-radius: 3rem;
+    font-weight: 500;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox form button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 2rem #868686;
+    transition: 0.5s;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox form input{
+    border: none;
+    width: 100%;
+    height: 40px;
+    background-color: #ece9e9;
+}
+/*===ultimo Video submetido===*/
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #ultimoVideoBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    padding: 15px 25px;
+    background-color: #868686;
+    width: 1040px;
+    margin-top: 40px;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #ultimoVideoBtn p{
+    margin: 0;
+    opacity: 0.8;
+    font-size: 90%;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #ultimoVideoBtn p:nth-child(1){
+    font-weight: 500;
+    opacity: 1;
+    font-size: 100%;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #ultimoVideoBtn img{
+    width: 20px;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #ultimoVideoBtn img:nth-child(5){
+    display: none;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .ultimoVideoBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background-color: #868686;
+    width: 1040px;
+    border-top: solid 1px black;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .ultimoVideoBox p{
+    margin: 0;
+    opacity: 0.8;
+    font-size: 90%;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .ultimoVideoBox p:nth-child(1){
+    font-weight: 500;
+    opacity: 1;
+    font-size: 100%;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .ultimoVideoBox p:nth-child(3){
+    margin-right: 225px;
+}
+/*===RESULTADOS===*/
+.RESULTADOS{
+    display: flex;
+    width: 1040px;
+    font-size: 110%;
+    font-weight: 500;
+    padding-top: 30px;
+    border-top: solid 1px #C4C4C4;
+    margin-top: 50px;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #avaliacaoTecnicaBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    padding: 15px 25px;
+    background-color: var(--cinza-02);
+    width: 1040px;
+    margin-top: 30px;
+    color: white;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #avaliacaoTecnicaBtn p{
+    margin: 0;
+    opacity: 0.8;
+    font-size: 90%;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #avaliacaoTecnicaBtn p:nth-child(1){
+    font-weight: 500;
+    opacity: 1;
+    font-size: 110%;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #avaliacaoTecnicaBtn p:nth-child(3){
+    color: var(--verde-seven);
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #avaliacaoTecnicaBtn img{
+    width: 20px;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #avaliacaoTecnicaBtn img:nth-child(5){
+    display: none;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacaoTecnicaBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background-color: var(--cinza-02);
+    width: 1040px;
+    border-top: solid 1px white;
+    color: white;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacaoTecnicaBox p{
+    margin: 0;
+    opacity: 0.8;
+    font-size: 90%;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacaoTecnicaBox p:nth-child(1){
+    font-weight: 500;
+    opacity: 1;
+    font-size: 100%;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacaoTecnicaBox p:nth-child(3){
+    margin-right: 225px;
+    color: var(--verde-seven);
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacaoTecnicaBox .progressBox{
+    display: flex;
+}
+.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacaoTecnicaBox span:nth-child(2){
+    color: #616060;
+    margin-left: 20px;
+}
+.hide_trialversion{
+    width: 950px;
+    height: 20px;
+    margin-top: -20px;
+    position: absolute;
+    background-color: white;
+}
+/*===Modal-cadastro======================================================================================================================*/
+.modal-content-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cinza-02);
+    color: white;
+    padding: 20px 30px;
+}
+.modal-content-cadastro form{
+    width: 100%;
+}
+.modal-content-cadastro span{
+    color: var(--verde-seven);
+}
+.modal-content-cadastro p{
+    font-size: 150%;
+    font-weight: 700;
+    margin: 0;
+}
+.modal-content-cadastro label{
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+}
+.modal-content-cadastro input{
+    border: solid 1px #807d7d;
+    background-color: var(--cinza-01);
+    width: 100%;
+    height: 40px;
+}
+.modal-content-cadastro #termos{
+    width: 15px;
+    height: 15px;
+}
+.modal-content-cadastro .modal-cadastro-box{
+    display: flex;
+}
+.modal-content-cadastro .modal-cadastro-box2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.modal-content-cadastro select{
+    border: solid 1px #807d7d;
+    background-color: var(--cinza-01);
+    width: 100%;
+    height: 40px;
+}
+.modal-content-cadastro button{
+    border: none;
+    background-color: var(--verde-seven);
+    color: var(--cinza-02);
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 0.2rem;
+    float: right;
+}

@@ -192,20 +192,103 @@ function cooperTest(opc) {
         $("#cooperTestBTN").val("true");
     }
 }
-function avaliacoes(opc) {
+function avaliacoesTecnica(opc) {
 
     event.preventDefault()
 
     let buton = opc;
 
     if (buton == "true") {
-        $('.avaliacoesBody .avaliacoesBodyBox .avaliacoesBodyBox1 .avaliacoesBodyBox1Txt .maisMenos p:nth-child(1)').css("display", "none");
-        $('.avaliacoesBody .avaliacoesBodyBox .avaliacoesBodyBox1 .avaliacoesBodyBox1Txt .maisMenos p:nth-child(2)').css("display", "flex");
-        $(".avaliacoesBody .avaliacoesBodyBox .avaliacoesBodyBox1 .avaliacoesBodyBox1Txt").val("false");
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt .maisMenos p:nth-child(1)').css("display", "none");
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt .maisMenos p:nth-child(2)').css("display", "flex");
+        $(".avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt").val("false");
     }
     if (buton == "false") {
-        $('.avaliacoesBody .avaliacoesBodyBox .avaliacoesBodyBox1 .avaliacoesBodyBox1Txt .maisMenos p:nth-child(1)').css("display", "flex");
-        $('.avaliacoesBody .avaliacoesBodyBox .avaliacoesBodyBox1 .avaliacoesBodyBox1Txt .maisMenos p:nth-child(2)').css("display", "none");
-        $(".avaliacoesBody .avaliacoesBodyBox .avaliacoesBodyBox1 .avaliacoesBodyBox1Txt").val("true");
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt .maisMenos p:nth-child(1)').css("display", "flex");
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt .maisMenos p:nth-child(2)').css("display", "none");
+        $(".avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt").val("true");
     }
+}
+function avaliacoesTecnica(opc) {
+
+    event.preventDefault()
+
+    let buton = opc;
+
+    if (buton == "true") {
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt .maisMenos p:nth-child(1)').css("display", "none");
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt .maisMenos p:nth-child(2)').css("display", "flex");
+        $(".avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt").val("false");
+    }
+    if (buton == "false") {
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt .maisMenos p:nth-child(1)').css("display", "flex");
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt .maisMenos p:nth-child(2)').css("display", "none");
+        $(".avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt").val("true");
+    }
+}
+function ultimoVideo(opc) {
+
+    event.preventDefault()
+
+    let buton = opc;
+
+    if (buton == "true") {
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #ultimoVideoBtn img:nth-child(4)').css("display", "none");
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #ultimoVideoBtn img:nth-child(5)').css("display", "flex");
+        $(".avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #ultimoVideoBtn").val("false");
+    }
+    if (buton == "false") {
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #ultimoVideoBtn img:nth-child(4)').css("display", "flex");
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #ultimoVideoBtn img:nth-child(5)').css("display", "none");
+        $(".avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #ultimoVideoBtn").val("true");
+    }
+}
+function avaliacaoTecnica(opc) {
+
+    event.preventDefault()
+
+    let buton = opc;
+
+    if (buton == "true") {
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #avaliacaoTecnicaBtn img:nth-child(4)').css("display", "none");
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #avaliacaoTecnicaBtn img:nth-child(5)').css("display", "flex");
+        $(".avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #avaliacaoTecnicaBtn").val("false");
+    }
+    if (buton == "false") {
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #avaliacaoTecnicaBtn img:nth-child(4)').css("display", "flex");
+        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #avaliacaoTecnicaBtn img:nth-child(5)').css("display", "none");
+        $(".avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox #avaliacaoTecnicaBtn").val("true");
+    }
+}
+
+function cadastro() {
+
+    event.preventDefault()
+
+    var cadastrarSenha = document.getElementById("cadastrarSenha").value;
+    var confirmarSenha = document.getElementById("confirmarSenha").value;
+    var nome = document.getElementById("nome").value;
+    var nascimento = document.getElementById("nascimento").value;
+    var esporte = document.getElementById("esporte");
+    var option = esporte.options[esporte.selectedIndex];
+    var email = document.getElementById("email").value;
+    var termos = document.getElementById("termos");
+
+    if (!nome) {
+        alert("Preencha nome");
+    }else if (!nascimento) {
+        alert("Preencha data de nascimento");
+    }else if (option.value=="selecione") {
+        alert("Preencha esporte");
+    }else if (!email) {
+        alert("Preencha email");
+    }else if (!cadastrarSenha) {
+        alert("Preencha senha");
+    }else if (!confirmarSenha) {
+        alert("Preencha confirmar Senha");
+    }else if (cadastrarSenha!=confirmarSenha) {
+        alert("Confirmação de senha deve ser igual a senha");
+    }else if (!termos.checked) {
+        alert("Concorde com os termos");
+    }else{document.getElementById("formCadastro").submit();}
 }
