@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SevenID</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/progress-circle.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+    <!-- javascript -->
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+    <!-- gráfico em radar -->
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-radar.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <!-- sidebar -->
+    <nav id="sidebar">
+        <div class="sidebarHeader">
+            <div>
+                <div class="sidebar-header">
+                    <img src="img/icon/seven-icon.svg" class="header_logo" style="width: 350px;">
+                </div>
+                <div id="dismiss">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+            </div>
+            <div class="sidebarHeaderBox1">
+                <p>Preenchimento do perfil</p>
+                <div class="sidebarHeaderBox1_progressBar">
+                    <div class="SHB_pB1"></div>
+                    <div class="SHB_pB2"></div>
+                    <p>85%</p>
+                </div>
+                <div class="sidebarHeaderBox1_validacoes">
+                    <div class="SHB_V1">
+                        <p>Visualizações do perfil</p>
+                        <p>17</p>
+                    </div>
+                    <div class="SHB_V1">
+                        <p>Shortlist de treinadores</p>
+                        <p>2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="sidebarBody">
+            <div class="sidebarBodyBox">
+                <img src="img/icon/calendario.png" alt="">
+                <a href="#">Eventos</a>
+            </div>
+            <div class="sidebarBodyBox">
+                <img src="img/icon/cronometro.png" alt="">
+                <a href="#">Avaliações esportivas</a>
+            </div>
+            <div class="sidebarBodyBox">
+                <img src="img/icon/chave-de-fenda.png" alt="">
+                <a href="#">Serviços</a>
+            </div>
+            <div class="sidebarBodyBox">
+                <img src="img/icon/loja-de-compras.png" alt="">
+                <a href="#">Loja virtual</a>
+            </div>
+        </div>
+        <hr>
+        <div class="sidebarBody">
+            <div class="sidebarBodyBox">
+                <img src="img/icon/settings.png" alt="">
+                <a href="#">Configurações</a>
+            </div>
+            <div class="sidebarBodyBox">
+                <img src="img/icon/diamond.png" alt="">
+                <a href="#">Upgrade</a>
+            </div>
+            <div class="sidebarBodyBox">
+                <img src="img/icon/arrow-pointing-to-right.png" alt="">
+                <a href="#">Log Out</a>
+            </div>
+        </div>
+    </nav>
+    <!-- headerbar -->
+    <div class="headerBar">
+        <!-- buttonSlidebar -->
+        <div class="buttonSlidebar">
+            <button type="button" id="sidebarCollapse">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <i class="fas fa-search"></i>
+        </div>
+        <!-- fim buttonSlidebar -->
+        <div class="headerButtons">
+            <div class="dropdown">
+                <button class="dropbtn">BEM VINDO, EMANUELLE! <i class="fas fa-angle-down"></i> /</button>
+                <div class="dropdown-content">
+                    <a href="#">MINHA CONTA</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">IDIOMA: <span>PT</span> <i class="fas fa-angle-down"></i> /</button>
+                <div class="dropdown-content2">
+                    <a href="#">PORTUGUÊS</a>
+                    <a href="#">ENGLISH</a>
+                </div>
+            </div>
+            <button class="dropdown" id="sair">SAIR</button>
+        </div>
+    </div>
+
+    <div class="headerBody">
+        <div class="headerBodyBox">
+            <img src="img/icon/seven-icon.svg" alt="logo">
+            <div class="HBboxBody">
+                <div class="HBbox1Body">
+                    <i class="fas fa-user"></i>
+                    <a href="#">ÁREA DO ATLETA</a>
+                </div>
+                <div class="HBbox2Body">
+                    <i class="fas fa-envelope"></i>
+                    <div class="HBboxtxt">
+                        <p>INBOX</p>
+                        <p>8 mensagens</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="headerFooter">
+        <div class="headerBGFoot"></div>
+        <div class="headerFooterBox">
+            <a href="" class="headerFooterBox1A">MEU PERFIL</a>
+            <a href="" class="headerFooterBox2A">FEED</a>
+            <div class="dropdown3">
+                <button class="dropbtn3">PESQUISAR <i class="fas fa-angle-down"></i></button>
+                <div class="dropdown-content3">
+                    <a href="#">HIGH SCHOOL</a>
+                    <hr>
+                    <a href="#">COLLEGE</a>
+                </div>
+            </div>
+            <button type="button" class="buttonSideBar" id="sidebarCollapse2">
+                <i class="fa fa-bars" style="color: white;font-size: 20px;"></i>
+            </button>
+        </div>
+    </div>
+    <!-- mainBody -->
+    <!-- area_atleta -->
+    <div class="areaAtletaBG">
+        <p>MINHAS</p>
+        <p>AVALIAÇÕES</p>
+    </div>
+    <!-- abas_links -->
+    <div class="abas_linksBG">
+        <div class="abas_links owl-carousel">
+            <div class="carrosselItem">
+                <div class="abas_linksBox">
+                    <a href="">NIVEL INGLES</a>
+                </div>
+            </div>
+            <div class="carrosselItem">
+                <div class="abas_linksBox">
+                    <a href="">JOGOS TÁTICOS </a>
+                </div>
+            </div>
+            <div class="carrosselItem">
+                <div class="abas_linksBox">
+                    <a href="">AVALIZAÇÕES FÍSICAS</a>
+                </div>
+            </div>
+            <div class="carrosselItem">
+                <div class="abas_linksBox"
+                    style="background-color: rgba(194,255,71);box-shadow: inset 0 0 2em rgb(100, 96, 96);"
+                    id="abas_linksBox">
+                    <a href="" style="color: black;font-weight: 500;">AVALIAÇÃO TÉCNICA</a>
+                </div>
+            </div>
+            <div class="carrosselItem">
+                <div class="abas_linksBox">
+                    <a href="">RESUMO</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- embarque Body -->
+    <div class="embarqueBody">
+        <div class="embarqueBodyBox">
+            <div class="embarqueBodyBox1">
+                <div class="embarqueBodyBox1Circle" style="background-color: black;"></div>
+                <button class="embarqueBodyBox1Txt" onclick="embarque(value)" value="true" data-toggle="collapse"
+                    data-target="#collapseExample">
+                    <p>O QUE É E PARA QUE SERVE O PLANEJAMENTO DE EMBARQUE?</p>
+                    <div class="maisMenos">
+                        <p>+</p>
+                        <p>-</p>
+                    </div>
+                </button>
+            </div>
+            <div class="collapse" id="collapseExample">
+                <div class="embarqueCollapse1">
+                    <p>Estudante-atleta, esse planejamento de embarque foi desenvolvido especialmente para você. A
+                        partir de agora, você se torna um prospecto real, ou seja, está oficialmente disponível para
+                        receber contatos e negociar oportunidades. Para sucesso em sua caminhada é preciso que você siga
+                        cada um desses passos, respeitando todos os prazos.
+                        Depois de cumprir cada uma dessas etapas você certamente estará pronto para conquistar a bolsa
+                        que mais combina com o seu perfil. Vale destacar que cada documento deve estar digitalizado e o
+                        arquivo apresentar uma boa qualidade. Esses documentos são imprescindíveis nos processos, desde
+                        a entrada no SevenID até a admissão e embarque para os Estado Unidos, portanto quanto melhor
+                        eles estiverem agora, menores serão os problemas no futuro.
+                        A bola está com você e vamos juntos em busca do sucesso!</p>
+                </div>
+            </div>
+            <style>
+                .novacor {
+                    background-color: rgba(194, 255, 71);
+                }
+
+                .progressCor {
+                    background-color: rgb(100, 100, 100);
+                }
+            </style>
+            <div class="embarquePlanejmt">
+                <div class="container m-0 p-0 mb-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Planejamento de embarque 90% concluído</p>
+                            <div class="progress progressCor">
+                                <div class="progress-bar novacor" role="progressbar" style="width: 90%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- button collapseExample1-->
+                <button class="embarqueGreenbox" style="display: flex;" data-toggle="collapse"
+                    data-target="#collapseExample1">
+                    <p>Primeiros passos</p>
+                    <p>Concluído<img src="img/icon/arrow_down.png" alt=""></p>
+                </button>
+                <button class="embarqueBlackbox" style="display: none;" onclick="avaliacaoTecnica(value)" value="true"
+                    data-toggle="collapse" data-target="#collapseExample1" id="avaliacaoTecnicaBtn">
+                    <div class="container m-0 p-0">
+                        <div class="row">
+                            <div class="col-2 m-0 p-0">
+                                <span class="embarqueBlackbox-span1">Primeiros passos</span>
+                            </div>
+                            <div class="col-8 mt-1">
+                                <div class="progress progressCor">
+                                    <div class="progress-bar novacor" role="progressbar" style="width: 90%;"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <span>90% completo</span>
+                                <img src="img/icon/arrow_down_green.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <!-- collapse collapseExample1-->
+                <div class="collapse" id="collapseExample1">
+                    <div class="embarqueCollapseBox">
+                        <div class="embarqueCollapseBoxDate">
+                            <img src="img/icon/date.png" alt="">
+                            <p>PRAZO RECOMENDADO</p>
+                            <p>28/01/2021</p>
+                        </div>
+                        <div class="embarqueCollapseBoxTxt">
+                            <p>INFORMAÇÕES PESSOAIS</p>
+                            <!-- ============================================================== -->
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: flex;">
+                                    <div class="chkB-unchek" style="display: none;"></div>
+                                    <p>FOTO DE PERFIL</p>
+                                </div>
+                                <div class="embqCollapse-P">
+
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: flex;">
+                                    <div class="chkB-unchek" style="display: none;"></div>
+                                    <p>INFORMAÇÕES DE CONTATO</p>
+                                </div>
+                                <div class="embqCollapse-P">
+
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: flex;">
+                                    <div class="chkB-unchek" style="display: none;"></div>
+                                    <p>CADASTRAR O RESPONSÁVEL</p>
+                                </div>
+                                <div class="embqCollapse-P">
+
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: flex;">
+                                    <div class="chkB-unchek" style="display: none;"></div>
+                                    <p>CARTA DE APRESENTAÇÃO</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Escreva uma carta se apresentando e dizendo por que você merece uma vaga na
+                                        equipe de futebol</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: flex;">
+                                    <div class="chkB-unchek" style="display: none;"></div>
+                                    <p>DOCUMENTO DE IDENTIDADE</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Necessário para comprovação de identidade do estudante-atleta </p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: flex;">
+                                    <div class="chkB-unchek" style="display: none;"></div>
+                                    <p>ATESTADO MÉDICO</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Atestado de Aptidão física</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: flex;">
+                                    <div class="chkB-unchek" style="display: none;"></div>
+                                    <p>CAPACIDADE DE INVESTIMENTO</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Qual o valor que você e sua família estão dispostos a investir em seus estudos
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ================================================================================ -->
+                <!-- button collapseExample2-->
+                <button class="embarqueGreenbox" style="display: none;" data-toggle="collapse"
+                    data-target="#collapseExample2" id="avaliacaoTecnicaBtn">
+                    <p>Cirrículo Pessoal</p>
+                    <p>Concluído<img src="img/icon/arrow_down.png" alt=""></p>
+                </button>
+                <button class="embarqueBlackbox" style="display: flex;" onclick="avaliacaoTecnica(value)" value="true"
+                    data-toggle="collapse" data-target="#collapseExample2" id="avaliacaoTecnicaBtn">
+                    <div class="container m-0 p-0">
+                        <div class="row">
+                            <div class="col-2 m-0 p-0">
+                                <span class="embarqueBlackbox-span1">Cirrículo Pessoal</span>
+                            </div>
+                            <div class="col-8 mt-1">
+                                <div class="progress progressCor">
+                                    <div class="progress-bar novacor" role="progressbar" style="width: 30%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <span>30% completo</span>
+                                <img src="img/icon/arrow_down_green.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <!-- collapse collapseExample2-->
+                <div class="collapse" id="collapseExample2">
+                    <div class="embarqueCollapseBox">
+                        <div class="embarqueCollapseBoxDate">
+                            <img src="img/icon/date.png" alt="">
+                            <p>PRAZO RECOMENDADO</p>
+                            <p>28/01/2021</p>
+                        </div>
+                        <div class="embarqueCollapseBoxTxt">
+                            <p>INFORMAÇÕES ACADÊMICAS</p>
+                            <!-- ============================================================== -->
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check">
+                                    <div class="chkB-unchek" style="display: none;"></div>
+                                    <p>INFORMAÇÕES ACADÊMICAS</p>
+                                </div>
+                                <div class="embqCollapse-P">
+
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>TESTE DE NIVELAMENTO</p>
+                                </div>
+                                <div class="embqCollapse-P">
+
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>CÁLCULO DO GPA</p>
+                                </div>
+                                <div class="embqCollapse-P">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ================================================================================ -->
+                <!-- button collapseExample3-->
+                <button class="embarqueGreenbox" style="display: none;" data-toggle="collapse"
+                    data-target="#collapseExample3" id="avaliacaoTecnicaBtn">
+                    <p>Currículo Esportivo</p>
+                    <p>Concluído<img src="img/icon/arrow_down.png" alt=""></p>
+                </button>
+                <button class="embarqueBlackbox" style="display: flex;" onclick="avaliacaoTecnica(value)" value="true"
+                    data-toggle="collapse" data-target="#collapseExample3" id="avaliacaoTecnicaBtn">
+                    <div class="container m-0 p-0">
+                        <div class="row">
+                            <div class="col-2 m-0 p-0">
+                                <span class="embarqueBlackbox-span1">Currículo Esportivo</span>
+                            </div>
+                            <div class="col-8 mt-1">
+                                <div class="progress progressCor">
+                                    <div class="progress-bar novacor" role="progressbar" style="width: 30%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <span>30% completo</span>
+                                <img src="img/icon/arrow_down_green.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <!-- collapse collapseExample3-->
+                <div class="collapse" id="collapseExample3">
+                    <div class="embarqueCollapseBox">
+                        <div class="embarqueCollapseBoxDate">
+                            <img src="img/icon/date.png" alt="">
+                            <p>PRAZO RECOMENDADO</p>
+                            <p>28/01/2021</p>
+                        </div>
+                        <div class="embarqueCollapseBoxTxt">
+                            <p>INFORMAÇÕES ESPORTIVAS</p>
+                            <!-- ============================================================== -->
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check">
+                                    <div class="chkB-unchek" style="display: none;"></div>
+                                    <p>INFORMAÇÕES FÍSICAS</p>
+                                </div>
+                                <div class="embqCollapse-P">
+
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>POSIÇÕES EM QUE JOGA</p>
+                                </div>
+                                <div class="embqCollapse-P">
+
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>CURRÍCULO ESPORTIVO</p>
+                                </div>
+                                <div class="embqCollapse-P">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ================================================================================ -->
+                <!-- button collapseExample4-->
+                <button class="embarqueGreenbox" style="display: none;" data-toggle="collapse"
+                    data-target="#collapseExample4" id="avaliacaoTecnicaBtn">
+                    <p>Testes exigidos</p>
+                    <p>Concluído<img src="img/icon/arrow_down.png" alt=""></p>
+                </button>
+                <button class="embarqueBlackbox" style="display: flex;" onclick="avaliacaoTecnica(value)" value="true"
+                    data-toggle="collapse" data-target="#collapseExample4" id="avaliacaoTecnicaBtn">
+                    <div class="container m-0 p-0">
+                        <div class="row">
+                            <div class="col-2 m-0 p-0">
+                                <span class="embarqueBlackbox-span1">Testes exigidos</span>
+                            </div>
+                            <div class="col-8 mt-1">
+                                <div class="progress progressCor">
+                                    <div class="progress-bar novacor" role="progressbar" style="width: 30%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <span>30% completo</span>
+                                <img src="img/icon/arrow_down_green.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <!-- collapse collapseExample4-->
+                <div class="collapse" id="collapseExample4">
+                    <div class="embarqueCollapseBox">
+                        <div class="embarqueCollapseBoxDate">
+                            <img src="img/icon/date.png" alt="">
+                            <p>PRAZO RECOMENDADO</p>
+                            <p>28/01/2021</p>
+                        </div>
+                        <div class="embarqueCollapseBoxTxt">
+                            <p>AGENDAMENTO DOS TESTES</p>
+                            <!-- ============================================================== -->
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-P2">
+                                    <p>QUER SABER COMO AGENDAR O TOEFL E/OU O SAT/ACT?</p>
+                                    <p>ACESSE TODO O MATERIAL SOBRE OS TESTE NECESSÁRIOS PARA O SEU EMBARQUE NA SEVEN
+                                        SCHOOL POR <a href=""> AQUI.</a></p>
+                                    <p>DÚVIDAS?</p>
+                                    <p>BASTA ENVIAR UMA MENSAGEM DIRETA PARA ENTRAR EM CONTATO COM O SEU ASSISTENTE DE
+                                        RECRUTAMENTO, QUE PODERÁ TIRAR TODAS AS SUAS DÚVIDAS E TAMBÉM TE AUXILIAR NO
+                                        AGENDAMENTO DA PROVA. </p>
+                                </div>
+                                <div class="embqCollapse-P2">
+                                    <p><a href="">VEJA </a> AS DATAS E CIDADES QUE O TOEFL PODE SER FEITO.</p>
+                                    <p><a href="">VEJA </a> AS DATAS E CIDADES QUE O SAT PODE SER FEITO.</p>
+                                    <p><a href="">VEJA </a> AS DATAS E CIDADES QUE O ACT PODE SER FEITO.</p>
+                                    <p>OS PRAZOS AQUI RECOMENDADOS SÃO APENAS UMA SUGESTÃO PARA QUE O SEU PROCESSO
+                                        OCORRA DA MELHOR MANEIRA POSSÍVEL. DESSA FORMA, QUANTO MAIS RÁPIDO VOCÊ
+                                        COMPLETAR ESTAS ETAPAS, MELHOR.</p>
+                                    <p>VALE RESSALTAR, QUE VOCÊ PODE FAZER AS PROVAS APÓS O PRAZO RECOMENDADO PELA NOSSA
+                                        EQUIPE. CONTUDO, PARA GARANTIR QUE VOCÊ CONSIGA AS NOTAS A TEMPO DE EMBARCAR COM
+                                        MAIS TRANQUILIDADE, ORIENTAMOS QUE AS PROVAS SEJAM FEITAS DE 08 A 10 MESES ANTES
+                                        DA DATA DE EXPECTATIVA DE VIAGEM.</p>
+                                    <p>IMPORTANTE: EM CASOS ESPECÍFICOS, QUANDO O PRAZO DISPONÍVEL É MENOR, FAÇA AS
+                                        PROVAS COM O MINÍMO DE 04 MESES ATÉ A DATA PREVISTA PARA EMBARQUE. RESSALTAMOS
+                                        QUE EM CASOS ASSIM, O RECRUTAMENTO FICA AINDA MAIS DEPENDENTE DE BONS RESULTADOS
+                                        NAS PROVAS E DA NECESSIDADE E URGÊNCIA QUE ESCOLAS E TREINADORES TENHAM PARA
+                                        RECRUTAR ATLETAS NO ÚLTIMO MOMENTO.</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>COMPROVANTE DE INSCRIÇÃO DO TOEFL</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Anexar a cópia da página de agendamento</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>COMPROVANTE DE INSCRIÇÃO DO SAT</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Anexar a cópia da página de agendamento</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>COMPROVANTE DE INSCRIÇÃO DO ACT</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Anexar a cópia da página de agendamento</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ================================================================================ -->
+                <!-- button collapseExample5-->
+                <button class="embarqueGreenbox" style="display: none;" data-toggle="collapse"
+                    data-target="#collapseExample5" id="avaliacaoTecnicaBtn">
+                    <p>Vídeos highlights</p>
+                    <p>Concluído<img src="img/icon/arrow_down.png" alt=""></p>
+                </button>
+                <button class="embarqueBlackbox" style="display: flex;" onclick="avaliacaoTecnica(value)" value="true"
+                    data-toggle="collapse" data-target="#collapseExample5" id="avaliacaoTecnicaBtn">
+                    <div class="container m-0 p-0">
+                        <div class="row">
+                            <div class="col-2 m-0 p-0">
+                                <span class="embarqueBlackbox-span1">Vídeos highlights</span>
+                            </div>
+                            <div class="col-8 mt-1">
+                                <div class="progress progressCor">
+                                    <div class="progress-bar novacor" role="progressbar" style="width: 30%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <span>30% completo</span>
+                                <img src="img/icon/arrow_down_green.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <!-- collapse collapseExample5-->
+                <div class="collapse" id="collapseExample5">
+                    <div class="embarqueCollapseBox">
+                        <div class="embarqueCollapseBoxDate">
+                            <img src="img/icon/date.png" alt="">
+                            <p>PRAZO RECOMENDADO</p>
+                            <p>28/01/2021</p>
+                        </div>
+                        <div class="embarqueCollapseBoxTxt">
+                            <p>AGENDAMENTO DOS TESTES</p>
+                            <!-- ============================================================== -->
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-P2">
+                                    <p>QUER QUE UM DE NOSSOS ESPECIALISTAS MONTE O SEU VÍDEO DE MELHORES MOMENTOS?</p>
+                                    <p>ACESSE O NOSSO CENTRO DE RECURSOS E SERVIÇOS POR <a href=""> AQUI.</a></p>
+                                    <p>DÚVIDAS?</p>
+                                    <p>BASTA ENVIAR UMA MENSAGEM DIRETA PARA ENTRAR EM CONTATO COM O SEU ASSISTENTE DE
+                                        RECRUTAMENTO, QUE PODERÁ TIRAR TODAS AS SUAS DÚVIDAS E TAMBÉM TE AUXILIAR NA
+                                        CONFECÇÃO DO VÍDEO.</p>
+                                </div>
+                                <div class="embqCollapse-P2">
+                                    <p>OS PRAZOS AQUI RECOMENDADOS SÃO APENAS UMA SUGESTÃO PARA QUE O SEU PROCESSO
+                                        OCORRA DA MELHOR MANEIRA POSSÍVEL. DESSA FORMA, QUANTO MAIS RÁPIDO VOCE
+                                        COMPLETAR ESTAS ETAPAS, MELHOR.</p>
+                                    <p>VALE RESSALTAR, QUE VOCÊ CONCLUIR A EDIÇÃO DO VÍDEO APÓS O PRAZO RECOMENDADO PELA
+                                        NOSSA EQUIPE. CONTUDO, PARA GARANTIR QUE VOCÊ CONSIGA A VISIBILIBIDADE
+                                        NECESSÁRIA JUNTO AOS TREINADORES, ORIENTAMOS QUE O VÍDEO ESTEJA PRONTO DE 10 A 8
+                                        MESES ANTES DA DATA DE EXPECTATIVA DE VIAGEM.</p>
+                                    <p>IMPORTANTE: EM CASOS ESPECÍFICOS, QUANDO O PRAZO DISPONÍVEL É MENOR, O IDEAL É
+                                        TER O VÍDEO FINALIZADO COM NO MINÍMO DE 4 MESES ATÉ A DATA PREVISTA PARA
+                                        EMBARQUE. RESSALTAMOS QUE EM CASOS ASSIM, O RECRUTAMENTO FICA AINDA MAIS
+                                        DEPENDENTE DA QUALIDADE DO VÍDEO E DA NECESSIDADE E URGÊNCIA QUE ESCOLAS E
+                                        TREINADORES TENHAM PARA RECRUTAR ATLETAS NO ÚLTIMO MOMENTO.</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>VIDEOLOG</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Minutagem para edição do vídeo</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>LINK PARA O VÍDEO</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Você pode adicionar mais de um vídeo se necessário</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ================================================================================ -->
+                <!-- button collapseExample6-->
+                <button class="embarqueGreenbox" style="display: none;" data-toggle="collapse"
+                    data-target="#collapseExample6" id="avaliacaoTecnicaBtn">
+                    <p>Pontuação nos testes</p>
+                    <p>Concluído<img src="img/icon/arrow_down.png" alt=""></p>
+                </button>
+                <button class="embarqueBlackbox" style="display: flex;" onclick="avaliacaoTecnica(value)" value="true"
+                    data-toggle="collapse" data-target="#collapseExample6" id="avaliacaoTecnicaBtn">
+                    <div class="container m-0 p-0">
+                        <div class="row">
+                            <div class="col-2 m-0 p-0">
+                                <span class="embarqueBlackbox-span1">Pontuação nos testes</span>
+                            </div>
+                            <div class="col-8 mt-1">
+                                <div class="progress progressCor">
+                                    <div class="progress-bar novacor" role="progressbar" style="width: 33%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <span>33% completo</span>
+                                <img src="img/icon/arrow_down_green.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <!-- collapse collapseExample6-->
+                <div class="collapse" id="collapseExample6">
+                    <div class="embarqueCollapseBox">
+                        <div class="embarqueCollapseBoxDate">
+                            <img src="img/icon/date.png" alt="">
+                            <p>PRAZO RECOMENDADO</p>
+                            <p>28/01/2021</p>
+                        </div>
+                        <div class="embarqueCollapseBoxTxt">
+                            <p>PONTUAÇÃO</p>
+                            <!-- ============================================================== -->
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check">
+                                    <div class="chkB-unchek" style="display: none;"></div>
+                                    <p>RELATÓRIO DE PONTUAÇÃO DO TOEFL</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Anexar a cópia da página de pontuação</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>NOTA DO TOEFL</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Adicionar nota ao seu perfil acadêmico</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>RELATÓRIO DE PONTUAÇÃO DO SAT</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Anexar a cópia da página de pontuação</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check">
+                                    <div class="chkB-unchek" style="display: none;"></div>
+                                    <p>NOTA DO SAT</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Adicionar nota ao seu perfil acadêmico</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>RELATÓRIO DE PONTUAÇÃO DO ACT</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Anexar a cópia da página de pontuação</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>NOTA DO ACT</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Adicionar nota ao seu perfil acadêmico</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ================================================================================ -->
+                <!-- button collapseExample7-->
+                <button class="embarqueGreenbox" style="display: none;" data-toggle="collapse"
+                    data-target="#collapseExample7" id="avaliacaoTecnicaBtn">
+                    <p>Histórico escolar</p>
+                    <p>Concluído<img src="img/icon/arrow_down.png" alt=""></p>
+                </button>
+                <button class="embarqueBlackbox" style="display: flex;" onclick="avaliacaoTecnica(value)" value="true"
+                    data-toggle="collapse" data-target="#collapseExample7" id="avaliacaoTecnicaBtn">
+                    <div class="container m-0 p-0">
+                        <div class="row">
+                            <div class="col-2 m-0 p-0">
+                                <span class="embarqueBlackbox-span1">Histórico escolar</span>
+                            </div>
+                            <div class="col-8 mt-1">
+                                <div class="progress progressCor">
+                                    <div class="progress-bar novacor" role="progressbar" style="width: 30%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <span>30% completo</span>
+                                <img src="img/icon/arrow_down_green.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <!-- collapse collapseExample7-->
+                <div class="collapse" id="collapseExample7">
+                    <div class="embarqueCollapseBox">
+                        <div class="embarqueCollapseBoxDate">
+                            <img src="img/icon/date.png" alt="">
+                            <p>PRAZO RECOMENDADO</p>
+                            <p>28/01/2021</p>
+                        </div>
+                        <div class="embarqueCollapseBoxTxt">
+                            <p>DOCUMENTOS ESCOLARES</p>
+                            <!-- ============================================================== -->
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-P2">
+                                    <p>HISTÓRICO ENSINO MÉDIO</p>
+                                    <p>O ESTUDANTE-ATLETA QUE ESTIVER CURSANDO OU TIVER CONCLUÍDO O ENSINO MÉDIO DEVERÁ
+                                        ENVIAR O HISTÓRICO A PARTIR DO 9º ANO.</p>
+                                    <p>LEMBRAMOS QUE SE SEU OBJETIVO É EMBARCAR PARA UMA HIGH SCHOOL, PRECISAREMOS
+                                        ANALISAR O DESENVOLVIMENTO DURANTE O ANO LETIVO. ACOMPANHAREMOS O SEU
+                                        DESENVOLVIMENTO ACADÊMICO ATRAVÉS DOS RELATÓRIOS EMITIDOS PELA SUA ESCOLA AO
+                                        FINAL DE CADA ETAPA.</p>
+                                </div>
+                                <div class="embqCollapse-P2">
+                                    <p>HISTÓRICO ENSINO SUPERIOR</p>
+                                    <p>O ESTUDANTE-ATLETA QUE ESTIVER CURSANDO OU TIVER CONCLUÍDO O ENSINO SUPERIOR
+                                        DEVERÁ ENVIAR O HISTÓRICO COM TODOS OS SEMESTRES CURSADOS.</p>
+                                    <p>LEMBRAMOS QUE TODAS AS SUAS NOTAS SERÃO CONTABILIZADAS, ESPECIALMENTE A DO ÚLTIMO
+                                        SEMESTRE CURSADO. RECOMENDAMOS QUE VOCÊ TRANQUE O SEMESTRE QUE ANTECEDE A SUA
+                                        IDA PARA OS ESTADOS UNIDOS, PARA EVITAR PROBLEMAS NA PARTE BUROCRÁTICA DO
+                                        PROCESSO.</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>HISTÓRICO ESCOLAR</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>HISTÓRICO ESCOLAR TRADUZIDO</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>HISTÓRICO UNIVERSITÁRIO</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>HISTÓRICO UNIVERSITÁRIO TRADUZIDO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ================================================================================ -->
+                <!-- button collapseExample8-->
+                <button class="embarqueGreenbox" style="display: none;" data-toggle="collapse"
+                    data-target="#collapseExample8" id="avaliacaoTecnicaBtn">
+                    <p>Recomendações</p>
+                    <p>Concluído<img src="img/icon/arrow_down.png" alt=""></p>
+                </button>
+                <button class="embarqueBlackbox" style="display: flex;" onclick="avaliacaoTecnica(value)" value="true"
+                    data-toggle="collapse" data-target="#collapseExample8" id="avaliacaoTecnicaBtn">
+                    <div class="container m-0 p-0">
+                        <div class="row">
+                            <div class="col-2 m-0 p-0">
+                                <span class="embarqueBlackbox-span1">Recomendações</span>
+                            </div>
+                            <div class="col-8 mt-1">
+                                <div class="progress progressCor">
+                                    <div class="progress-bar novacor" role="progressbar" style="width: 30%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <span>30% completo</span>
+                                <img src="img/icon/arrow_down_green.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <!-- collapse collapseExample8-->
+                <div class="collapse" id="collapseExample8">
+                    <div class="embarqueCollapseBox">
+                        <div class="embarqueCollapseBoxDate">
+                            <img src="img/icon/date.png" alt="">
+                            <p>PRAZO RECOMENDADO</p>
+                            <p>28/01/2021</p>
+                        </div>
+                        <div class="embarqueCollapseBoxTxt">
+                            <p>CARTAS DE RECOMENDAÇÃO</p>
+                            <!-- ============================================================== -->
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check">
+                                    <div class="chkB-unchek" style="display: none;"></div>
+                                    <p>CARTA DE RECOMENDAÇÃO ESPORTIVA</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Carta de um treinador ou clube</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>CARTA DE RECOMENDAÇÃO ACADÊMICA</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Carta de um professor ou pessoa ligada a instituição acadêmica que você
+                                        estuda/estudou</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>CARTA DE RECOMENDAÇÃO INGLÊS</p>
+                                </div>
+                                <div class="embqCollapse-P">
+                                    <p>Carta do seu professor de inglês ou instituição que você estuda/estudou inglês</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ================================================================================ -->
+                <!-- button collapseExample9-->
+                <button class="embarqueGreenbox" style="display: none;" data-toggle="collapse"
+                    data-target="#collapseExample9" id="avaliacaoTecnicaBtn">
+                    <p>Pré-embarque</p>
+                    <p>Concluído<img src="img/icon/arrow_down.png" alt=""></p>
+                </button>
+                <button class="embarqueBlackbox" style="display: flex;" onclick="avaliacaoTecnica(value)" value="true"
+                    data-toggle="collapse" data-target="#collapseExample9" id="avaliacaoTecnicaBtn">
+                    <div class="container m-0 p-0">
+                        <div class="row">
+                            <div class="col-2 m-0 p-0">
+                                <span class="embarqueBlackbox-span1">Pré-embarque</span>
+                            </div>
+                            <div class="col-8 mt-1">
+                                <div class="progress progressCor">
+                                    <div class="progress-bar novacor" role="progressbar" style="width: 30%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <span>30% completo</span>
+                                <img src="img/icon/arrow_down_green.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <!-- collapse collapseExample9-->
+                <div class="collapse" id="collapseExample9">
+                    <div class="embarqueCollapseBox">
+                        <div class="embarqueCollapseBoxDate">
+                            <img src="img/icon/date.png" alt="">
+                            <p>PRAZO RECOMENDADO</p>
+                            <p>28/01/2021</p>
+                        </div>
+                        <div class="embarqueCollapseBoxTxt">
+                            <p>DOCUMENTOS PESSOAIS</p>
+                            <!-- ============================================================== -->
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check">
+                                    <div class="chkB-unchek" style="display: none;"></div>
+                                    <p>PASSAPORTE</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>CARTÃO DE VACINA</p>
+                                </div>
+                            </div>
+                            <div class="embarqueCollapseBoxTxtBox">
+                                <div class="embqCollapse-chkB">
+                                    <img src="img/icon/check.png" alt="check" style="display: none;">
+                                    <div class="chkB-unchek"></div>
+                                    <p>SEGURO SAÚDE</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ================================================================================ -->
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footerBody1">
+            <div class="footerBody1Box1">
+                <div class="footerBody1Txt">
+                    <p>SEVEN<span style="color: #cae01e;">ID</span></p>
+                    <p>HOME</p>
+                    <p>PLANOS</p>
+                </div>
+                <div class="footerBody1Txt">
+                    <p>ACADEMY</p>
+                    <p>CONHEÇA</p>
+                </div>
+                <div class="footerBody1Txt">
+                    <p>LEGAL</p>
+                    <p>TERMOS & PRIVACIDADE</p>
+                </div>
+            </div>
+            <div class="footerBody1Social_links">
+                <img src="img/icon/whatsapp-brands.svg" alt="">
+                <img src="img/icon/instagram-brands.svg" alt="">
+                <img src="img/icon/envelope-regular.svg" alt="">
+            </div>
+        </div>
+        <div style="display: flex;justify-content: center; width:100%;background-color:#292c31;">
+            <div class="linha"></div>
+        </div>
+        <div class="footerBody2">
+            <p>NOSSOS PARCEIROS</p>
+            <div class="footerBody2Box1">
+                <div class="footerBody2Logos1">
+                    <img src="img/images/soccer/aba.png" alt="">
+                    <img src="img/images/soccer/adidas.png" alt="">
+                    <img src="img/images/soccer/edu.png" alt="">
+                </div>
+                <div class="footerBody2Logos1">
+                    <img src="img/images/soccer/joga.png" alt="">
+                    <img src="img/images/soccer/hudl.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footerBody3">
+            <div class="footerBody3Box">
+                <p>SEVEN GROUP 2021 <span> | </span> ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </div>
+    <!-- owlCarousel -->
+    <script>
+        $('.abas_links').owlCarousel({
+            responsiveClass: true,
+            responsive: {
+                375: {
+                    items: 2,
+                    nav: false,
+                    loop: true,
+                },
+                425: {
+                    items: 2,
+                    nav: false,
+                    loop: true,
+                },
+                768: {
+                    items: 3,
+                    nav: false,
+                    loop: true,
+                },
+                1024: {
+                    items: 3,
+                    nav: false,
+                    loop: true,
+                },
+                1215: {
+                    items: 4,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
+                    loop: true,
+                    nav: false,
+                },
+                1360: {
+                    items: 5,
+                    nav: false,
+                },
+            }
+        });
+    </script>
+    <!-- slidebar script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+            $('#sidebarCollapse2').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+    <script src="js/sevenID.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- abas bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
