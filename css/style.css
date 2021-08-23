@@ -4752,5 +4752,301 @@ body {
     text-decoration: none;
     transition: 0.5s;
     color: var(--verde-seven);
+}/*===buscarEscolas========================================================================================================================================*/
+.buscarEscolasBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+}
+.buscarEscolasBody .buscarEscolasBodyBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1250px;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolas-pesquisar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 40px 0 10px 0;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolas-pesquisar form{
+    width: 100%;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolas-pesquisar input{
+    background-color: transparent;
+    width: 80%;
+    border: solid 2px var(--cinza-02);
+    height: 40px;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolas-pesquisar button{
+    color: black;
+    background-color: var(--verde-seven);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 3rem;
+    font-weight: 600;
+    margin-left: 20px;
+    font-size: 90%;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolas-pesquisar button:hover{
+    transition: 0.5s;
+    box-shadow: inset 0 0 1.5rem #616060;
+    cursor: pointer;
+}
+.buscarEscolasBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolasMap{
+    align-self: flex-start;
+    font-size: 90%;
+    font-weight: 600;
+    color: black;
+    border: none;
+    background-color: transparent;
+    margin: 10px 0 0 80px;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolasMap img{
+    width: 15px;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolasMap:hover{
+    cursor: pointer;
 }
 
+.CollapseEscolasMap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1100px;
+    background-color: var(--cinza-01);
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolasBodyBox2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    width: 90%;
+    margin: 20px 0 20px 40px;
+    border-top: solid 1px #d4d1d1;
+    padding: 20px 0;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolasBodyBox2 img{
+    width: 180px;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolasBodyBox2 .buscarEscolasBodyBox2Txt{
+    width: 55%;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolasBodyBox2 .buscarEscolasBodyBox2Txt a{
+    font-size: 130%;
+    color: black;
+    font-weight: 500;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolasBodyBox2 .buscarEscolasBodyBox2Txt a:hover{
+    text-decoration: none;
+    color: var(--verde-seven);
+    transition: 0.5s;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolasBodyBox2 .buscarEscolasBodyBox2Txt p{
+    font-size: 90%;
+    opacity: 0.6;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolasBodyBox2 .buscarEscolasBodyBox2Progress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin-right: 20px;
+}
+.buscarEscolasBodyBox2Progress.scoreBox2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    margin-right: 20px;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolasBodyBox2 .buscarEscolasBodyBox2Progress p{
+    font-size: 80%;
+    font-weight: 700;
+    color: black;
+    opacity: 0.5;
+    margin-left: 10px;
+}
+.buscarEscolasBody .buscarEscolasBodyBox .buscarEscolasBodyBox2 .buscarEscolasBodyBox2Progress .progressCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: solid 6px var(--verde-seven);
+    width: 60px;
+    height: 60px;
+    margin: 0 0 10px 10px;
+}
+/*===range-slider=============================================================================================================================================================================*/
+.range-slider{
+    font-family: 'Noto Sans', sans-serif;
+    padding: 8px 73px 6px 7px;
+    margin: 0 0 30px;
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    float: left;
+}
+.range-slider input[type="range"]{
+    background: #111;
+    width: 100%;
+    height: 12px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: all 0.3s ease;
+}
+.range-slider input[type="range"]::-webkit-slider-thumb{
+    background: repeating-linear-gradient(rgba(194,255,71), rgba(194,255,71) 3px, #111 3px, #111 6px);
+    width: 25px;
+    height: 25px;
+    border-radius: 0;
+    border: 3px solid rgba(194,255,71);
+    border-top-width: 2px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out 0s;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.range-slider input[type="range"]:active::-webkit-slider-thumb,
+.range-slider input[type="range"]::-webkit-slider-thumb:hover{
+    box-shadow: 0 0 5px rgba(194,255,71),0 0 0 5px #111;
+}
+.range-slider input[type="range"]::-moz-range-thumb{
+    background: repeating-linear-gradient(rgba(194,255,71), rgba(194,255,71) 3px, #111 3px, #111 6px);
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(194,255,71);
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out 0s;
+}
+.range-slider input[type="range"]:active::-moz-range-thumb,
+.range-slider input[type="range"]::-moz-range-thumb:hover{
+    box-shadow: 0 0 5px #4CB11F, 0 0 0 5px #111;
+}
+.range-slider .range-value{
+    color: #111;
+    background-color: rgba(194,255,71);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 34px;
+    height: 100%;
+    width: 65px;
+    padding: 0 0 0 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+::-moz-range-track{
+    background: transparent;
+    border: 0;
+}
+/*===range-sliderBox============*/
+.range-sliderBox{
+    display: flex;
+    flex-direction: column;
+    width: 1100;
+    border-top: 1px solid #C4C4C4;
+}
+.range-sliderBox2{
+    margin: 30px 0 30px 20px;
+}
+.range-sliderBox p{
+    margin: 30px 0 0px 20px;
+    font-weight: 600;
+    font-size: 140%;
+    color: white;
+}
+.btn-BucaMap{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #C4C4C4;
+}
+.btn-BucaMap button{
+    padding: 10px 35px;
+    background-color: var(--verde-seven);
+    color: black;
+    font-weight: 600;
+    font-size: 90%;
+    border-radius: 2rem;
+    border: none;
+    margin-top: 50px;
+}
+.btn-BucaMap button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 2rem #616060;
+    transition: 0.5s;
+}
+.radioBtn{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #C4C4C4;
+}
+.radioBtn p{
+    margin: 30px 0 0px 20px;
+    font-weight: 600;
+    font-size: 140%;
+    color: white;
+}
+.radioBtn .radioBtnBox{
+    display: flex;
+    margin: 10px 0 20px 20px;
+}
+.radioBtn .radioBtnBox input{
+    margin-right: 60px;
+}
+
+
+
+/*radio-button-personalizado*/
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label {
+    color: white;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 10px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+}
+
+input[type="radio"] + label span {
+     background-color: white;
+}
+
+input[type="radio"]:checked + label span{
+     background-color: var(--verde-seven);
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+}
