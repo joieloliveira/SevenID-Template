@@ -4752,7 +4752,8 @@ body {
     text-decoration: none;
     transition: 0.5s;
     color: var(--verde-seven);
-}/*===buscarEscolas========================================================================================================================================*/
+}
+/*===buscarEscolas========================================================================================================================================*/
 .buscarEscolasBody{
     display: flex;
     align-items: center;
@@ -4826,7 +4827,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 1100px;
-    background-color: var(--cinza-01);
+    background-color: rgb(255, 255, 255);
 }
 .buscarEscolasBody .buscarEscolasBodyBox .buscarEscolasBodyBox2{
     display: flex;
@@ -4835,7 +4836,7 @@ body {
     color: black;
     width: 90%;
     margin: 20px 0 20px 40px;
-    border-top: solid 1px #d4d1d1;
+    border-top: solid 1px #c2c0c0;
     padding: 20px 0;
 }
 .buscarEscolasBody .buscarEscolasBodyBox .buscarEscolasBodyBox2 img{
@@ -4968,11 +4969,25 @@ body {
 .range-sliderBox2{
     margin: 30px 0 30px 20px;
 }
+.prefixo{
+    display: flex;
+    align-items: center;
+    background-color: var(--verde-seven);
+    font-family: 'Noto Sans', sans-serif;
+    height: 38px;
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 122%;
+    color: black;
+    z-index: 1;
+    margin-top: 29px;
+    margin-left: -20px;
+}
 .range-sliderBox p{
     margin: 30px 0 0px 20px;
     font-weight: 600;
     font-size: 140%;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .btn-BucaMap{
     display: flex;
@@ -5003,7 +5018,7 @@ body {
     margin: 30px 0 0px 20px;
     font-weight: 600;
     font-size: 140%;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .radioBtn .radioBtnBox{
     display: flex;
@@ -5020,7 +5035,7 @@ input[type="radio"] {
     display:none;
 }
 input[type="radio"] + label {
-    color: white;
+    color: rgb(0, 0, 0);
     font-family:Arial, sans-serif;
     font-size:14px;
 }
@@ -5036,7 +5051,8 @@ input[type="radio"] + label span {
 }
 
 input[type="radio"] + label span {
-     background-color: white;
+     background-color: transparent;
+     border: solid 1px black;
 }
 
 input[type="radio"]:checked + label span{

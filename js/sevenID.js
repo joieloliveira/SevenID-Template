@@ -276,19 +276,19 @@ function cadastro() {
 
     if (!nome) {
         alert("Preencha nome");
-    }else if (!nascimento) {
+    } else if (!nascimento) {
         alert("Preencha data de nascimento");
-    }else if (option.value=="selecione") {
+    } else if (option.value == "selecione") {
         alert("Preencha esporte");
-    }else if (!email) {
+    } else if (!email) {
         alert("Preencha email");
-    }else if (!cadastrarSenha) {
+    } else if (!cadastrarSenha) {
         alert("Preencha senha");
-    }else if (!confirmarSenha) {
+    } else if (!confirmarSenha) {
         alert("Preencha confirmar Senha");
-    }else if (cadastrarSenha!=confirmarSenha) {
+    } else if (cadastrarSenha != confirmarSenha) {
         alert("Confirmação de senha deve ser igual a senha");
-    }else if (!termos.checked) {
+    } else if (!termos.checked) {
         alert("Concorde com os termos");
-    }else{document.getElementById("formCadastro").submit();}
+    } else { document.getElementById("formCadastro").submit(); }
 }
