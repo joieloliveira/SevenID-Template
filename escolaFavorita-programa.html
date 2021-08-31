@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SevenID</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/progress-circle.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+    <!-- javascript -->
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+    <!-- gráfico em radar -->
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-radar.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <!-- sidebar -->
+    <nav id="sidebar">
+        <div class="sidebarHeader">
+            <div>
+                <div class="sidebar-header">
+                    <img src="img/icon/seven-icon.svg" class="header_logo" style="width: 350px;">
+                </div>
+                <div id="dismiss">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+            </div>
+            <div class="sidebarHeaderBox1">
+                <p>Preenchimento do perfil</p>
+                <div class="sidebarHeaderBox1_progressBar">
+                    <div class="SHB_pB1"></div>
+                    <div class="SHB_pB2"></div>
+                    <p>85%</p>
+                </div>
+                <div class="sidebarHeaderBox1_validacoes">
+                    <div class="SHB_V1">
+                        <p>Visualizações do perfil</p>
+                        <p>17</p>
+                    </div>
+                    <div class="SHB_V1">
+                        <p>Shortlist de treinadores</p>
+                        <p>2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="sidebarBody">
+            <div class="sidebarBodyBox">
+                <img src="img/icon/calendario.png" alt="">
+                <a href="#">Eventos</a>
+            </div>
+            <div class="sidebarBodyBox">
+                <img src="img/icon/cronometro.png" alt="">
+                <a href="#">Avaliações esportivas</a>
+            </div>
+            <div class="sidebarBodyBox">
+                <img src="img/icon/chave-de-fenda.png" alt="">
+                <a href="#">Serviços</a>
+            </div>
+            <div class="sidebarBodyBox">
+                <img src="img/icon/loja-de-compras.png" alt="">
+                <a href="#">Loja virtual</a>
+            </div>
+        </div>
+        <hr>
+        <div class="sidebarBody">
+            <div class="sidebarBodyBox">
+                <img src="img/icon/settings.png" alt="">
+                <a href="#">Configurações</a>
+            </div>
+            <div class="sidebarBodyBox">
+                <img src="img/icon/diamond.png" alt="">
+                <a href="#">Upgrade</a>
+            </div>
+            <div class="sidebarBodyBox">
+                <img src="img/icon/arrow-pointing-to-right.png" alt="">
+                <a href="#">Log Out</a>
+            </div>
+        </div>
+    </nav>
+    <!-- headerbar -->
+    <div class="headerBar">
+        <!-- buttonSlidebar -->
+        <div class="buttonSlidebar">
+            <button type="button" id="sidebarCollapse">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <i class="fas fa-search"></i>
+        </div>
+        <!-- fim buttonSlidebar -->
+        <div class="headerButtons">
+            <div class="dropdown">
+                <button class="dropbtn">BEM VINDO, EMANUELLE! <i class="fas fa-angle-down"></i> /</button>
+                <div class="dropdown-content">
+                    <a href="#">MINHA CONTA</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">IDIOMA: <span>PT</span> <i class="fas fa-angle-down"></i> /</button>
+                <div class="dropdown-content2">
+                    <a href="#">PORTUGUÊS</a>
+                    <a href="#">ENGLISH</a>
+                </div>
+            </div>
+            <button class="dropdown" id="sair">SAIR</button>
+        </div>
+    </div>
+
+    <div class="headerBody">
+        <div class="headerBodyBox">
+            <img src="img/icon/seven-icon.svg" alt="logo">
+            <div class="HBboxBody">
+                <div class="HBbox1Body">
+                    <i class="fas fa-user"></i>
+                    <a href="#">ÁREA DO ATLETA</a>
+                </div>
+                <div class="HBbox2Body">
+                    <i class="fas fa-envelope"></i>
+                    <div class="HBboxtxt">
+                        <p>INBOX</p>
+                        <p>8 mensagens</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="headerFooter">
+        <div class="headerBGFoot"></div>
+        <div class="headerFooterBox">
+            <a href="" class="headerFooterBox1A">MEU PERFIL</a>
+            <a href="" class="headerFooterBox2A">FEED</a>
+            <div class="dropdown3">
+                <button class="dropbtn3">PESQUISAR <i class="fas fa-angle-down"></i></button>
+                <div class="dropdown-content3">
+                    <a href="#">HIGH SCHOOL</a>
+                    <hr>
+                    <a href="#">COLLEGE</a>
+                </div>
+            </div>
+            <button type="button" class="buttonSideBar" id="sidebarCollapse2">
+                <i class="fa fa-bars" style="color: white;font-size: 20px;"></i>
+            </button>
+        </div>
+    </div>
+    <!-- mainBody -->
+    <!-- escolaFavorita-escola -->
+    <div class="escolaFavorita-escolaBgHeader">
+        <p>NCAA DII</p>
+        <p>UNIVERSITY OF WEST FLORIDA</p>
+    </div>
+    <!-- abas_links -->
+    <div class="abas_linksBG">
+        <div class="abas_links owl-carousel">
+            <div class="carrosselItem">
+                <div class="abas_linksBox">
+                    <a href="">A ESCOLA</a>
+                </div>
+            </div>
+            <div class="carrosselItem">
+                <div class="abas_linksBox"
+                style="background-color: rgba(194,255,71);box-shadow: inset 0 0 2em rgb(100, 96, 96);"
+                id="abas_linksBox">
+                    <a href="" style="color: black;font-weight: 500;">SOBRE O PROGRAMA</a>
+                </div>
+            </div>
+            <div class="carrosselItem">
+                <div class="abas_linksBox">
+                    <a href="">TREINADORES</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- escolaFavorita-escolaBody -->
+    <div class="escolaFavorita-programaBody">
+        <div class="programaBodyTable">
+            <table>
+                <tr>
+                    <th>
+                        <p>SUCESSO DO PROGRAMA</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>TÍTULOS NACIONAIS</p>
+                        <span>02</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>TÍTULOS DE CONFERÊNCIA</p>
+                        <span>13</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>PRÊMIOS ALL-AMERICAN</p>
+                        <span>45</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>PRÊMIOS ALL-CONFERENCE</p>
+                        <span>67</span>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>
+                        <p>INFO DO ELENCO</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>MÉDIA GPA</p>
+                        <span>3.2</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>ATLETAS INTERNACIONAIS</p>
+                        <span>09</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>FRESHMAN</p>
+                        <span>04</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>SENIOR</p>
+                        <span>05</span>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>
+                        <p>REQUISITOS</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>GPA</p>
+                        <span>2.0</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>SAT</p>
+                        <span>900</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>TOEFL</p>
+                        <span>70</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <button class="btnEscolaFavorita">ESCOLA FAVORITA</button>
+        <button class="btnEscolaAdicionar">ADICIONAR AOS FAVORITOS</button>
+        <div class="escolaSimilares">
+            <div class="escolaSimilaresBox">
+                <p>ESCOLAS SIMILARES</p>
+                <div class="escolaSimilaresBox1">
+                    <div class="escolaSimilaresBox2">
+                        <img src="img/images/man-city.png" alt="">
+                        <p>Stanfort University Lorem</p>
+                        <p>NCAA DII - Pensacola, FL</p>
+                    </div>
+                    <div class="escolaSimilaresBox2">
+                        <img src="img/images/man-city.png" alt="">
+                        <p>Stanfort University Lorem</p>
+                        <p>NCAA DII - Pensacola, FL</p>
+                    </div>
+                    <div class="escolaSimilaresBox2">
+                        <img src="img/images/man-city.png" alt="">
+                        <p>Stanfort University Lorem</p>
+                        <p>NCAA DII - Pensacola, FL</p>
+                    </div>
+                    <div class="escolaSimilaresBox2">
+                        <img src="img/images/man-city.png" alt="">
+                        <p>Stanfort University Lorem</p>
+                        <p>NCAA DII - Pensacola, FL</p>
+                    </div>
+                    <div class="escolaSimilaresBox2">
+                        <img src="img/images/man-city.png" alt="">
+                        <p>Stanfort University Lorem</p>
+                        <p>NCAA DII - Pensacola, FL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footerBody1">
+            <div class="footerBody1Box1">
+                <div class="footerBody1Txt">
+                    <p>SEVEN<span style="color: #cae01e;">ID</span></p>
+                    <p>HOME</p>
+                    <p>PLANOS</p>
+                </div>
+                <div class="footerBody1Txt">
+                    <p>ACADEMY</p>
+                    <p>CONHEÇA</p>
+                </div>
+                <div class="footerBody1Txt">
+                    <p>LEGAL</p>
+                    <p>TERMOS & PRIVACIDADE</p>
+                </div>
+            </div>
+            <div class="footerBody1Social_links">
+                <img src="img/icon/whatsapp-brands.svg" alt="">
+                <img src="img/icon/instagram-brands.svg" alt="">
+                <img src="img/icon/envelope-regular.svg" alt="">
+            </div>
+        </div>
+        <div style="display: flex;justify-content: center; width:100%;background-color:#292c31;">
+            <div class="linha"></div>
+        </div>
+        <div class="footerBody2">
+            <p>NOSSOS PARCEIROS</p>
+            <div class="footerBody2Box1">
+                <div class="footerBody2Logos1">
+                    <img src="img/images/soccer/aba.png" alt="">
+                    <img src="img/images/soccer/adidas.png" alt="">
+                    <img src="img/images/soccer/edu.png" alt="">
+                </div>
+                <div class="footerBody2Logos1">
+                    <img src="img/images/soccer/joga.png" alt="">
+                    <img src="img/images/soccer/hudl.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footerBody3">
+            <div class="footerBody3Box">
+                <p>SEVEN GROUP 2021 <span> | </span> ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </div>
+    <!-- owlCarousel -->
+    <script>
+        $('.abas_links').owlCarousel({
+            responsiveClass: true,
+            responsive: {
+                375: {
+                    items: 2,
+                    nav: false,
+                    loop: true,
+                },
+                425: {
+                    items: 2,
+                    nav: false,
+                    loop: true,
+                },
+                768: {
+                    items: 2,
+                    nav: false,
+                    loop: true,
+                },
+                1024: {
+                    items: 3,
+                    nav: false,
+                    loop: true,
+                },
+                1215: {
+                    items: 3,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
+                    loop: true,
+                    nav: false,
+                },
+                1360: {
+                    items: 3,
+                    nav: false,
+                },
+            }
+        });
+    </script>
+    <!-- slidebar script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+            $('#sidebarCollapse2').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+    <script src="js/sevenID.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- abas bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

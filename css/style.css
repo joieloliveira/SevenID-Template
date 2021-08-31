@@ -5066,3 +5066,268 @@ input[type="radio"]:checked + label span {
   -moz-transition:background-color 0.4s linear;
   transition:background-color 0.4s linear;
 }
+/*====escolaFavorita==========================================================================*/
+.escolaFavorita-escolaBgHeader{
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(58, 54, 54, 0.3),rgb(0, 0, 0, 0.9)), url(../img/images/BG-escola-favorita.png);
+    background-size: 100% 400px;
+}
+.escolaFavorita-escolaBgHeader p:nth-child(1){
+    font-size: 150%;
+    color: white;
+    margin-bottom: 1px;
+    margin-left: 20%;
+}
+.escolaFavorita-escolaBgHeader p:nth-child(2){
+    font-size: 500%;
+    font-weight: 600;
+    color: var(--verde-seven);
+    margin-left: 20%;
+    width: 830px;
+}
+@media(max-width: 1024px){
+    .escolaFavorita-escolaBgHeader p:nth-child(1){
+        margin-left: 10%;
+    }
+    .escolaFavorita-escolaBgHeader p:nth-child(2){
+        margin-left: 10%;
+    }
+    .escolaFavorita-escolaBgHeader{
+        height: 300px;
+        background-size: 100% 300px;
+    }
+}
+/*====escolaFavorita body===*/
+.escolaFavorita-escolaBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+.escolaFavorita-escolaBody .escolaDados{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1250px;
+}
+.escolaFavorita-escolaBody .escolaDados .escolaDados-logo img{
+    width: 250px;
+    margin-bottom: 40px;
+}
+.escolaFavorita-escolaBody .escolaDados .escolaDados-logo p{
+    margin: 0;
+    font-size: 70%;
+}
+.escolaFavorita-escolaBody .escolaDados .escolaDados-Txt tr{
+    border-bottom: 1px solid #C4C4C4;
+}
+.escolaFavorita-escolaBody .escolaDados .escolaDados-Txt th{
+    font-size: 90%;
+}
+.escolaFavorita-escolaBody .escolaDados .escolaDados-Txt td{
+    width: 350px;
+    font-size: 140%;
+}
+.escolaFavorita-escolaBody .escolaDados .escolaDados-Txt th p{
+    margin: 5px 50px 5px 50px ;
+    width: 150px;
+}
+.escolaFavorita-escolaBody .escolaDados .escolaDados-Txt .bordaBaixo{
+    border-bottom: 1px solid #ffffff;
+}
+/*===escolaInfo===*/
+.escolaFavorita-escolaBody .escolaInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 1250px;
+}
+.escolaFavorita-escolaBody .escolaInfo p{
+    color: black;
+}
+.escolaFavorita-escolaBody .escolaInfo p:nth-child(1){
+    font-weight: 700;
+    font-size: 150%;
+    align-self: flex-start;
+    margin-top: 50px;
+}
+/*===botões escola favoritas===*/
+.btnEscolaFavorita{
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 50px;
+    width: 200px;
+    color: black;
+    font-size: 70%;
+    background-color: var(--verde-seven);
+    font-weight: 600;
+    border-radius: 2rem;
+    margin: 30px 0 30px 0;
+}.btnEscolaFavorita:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 2rem #606160;
+    transition: 0.5s;
+}
+.btnEscolaAdicionar{
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 50px;
+    width: 200px;
+    color: var(--verde-seven);
+    font-size: 70%;
+    background-color: var(--cinza-01);
+    font-weight: 600;
+    border-radius: 2rem;
+    margin: 30px 0 30px 0;
+}.btnEscolaAdicionar:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 2rem #9bca2b;
+    transition: 0.5s;
+}
+/*===escolaSimilares===*/
+.escolaSimilares{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #F7F7F7;
+}
+.escolaSimilares .escolaSimilaresBox{
+    display: flex;
+    flex-direction: column;
+    width: 1250px;
+}
+.escolaSimilares .escolaSimilaresBox p:nth-child(1){
+    font-size: 110%;
+    color: black;
+    font-weight: 600;
+    margin: 30px 0 30px 0;
+}
+.escolaSimilares .escolaSimilaresBox .escolaSimilaresBox1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.escolaSimilares .escolaSimilaresBox .escolaSimilaresBox1 .escolaSimilaresBox2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.escolaSimilares .escolaSimilaresBox .escolaSimilaresBox1 .escolaSimilaresBox2 img{
+    width: 100px;
+}
+.escolaSimilares .escolaSimilaresBox .escolaSimilaresBox1 .escolaSimilaresBox2 p:nth-child(2){
+    color: black;
+    font-size: 90%;
+    font-weight: 500;
+    margin: 10px 0 0 0;
+}
+.escolaSimilares .escolaSimilaresBox .escolaSimilaresBox1 .escolaSimilaresBox2 p:nth-child(3){
+    color: black;
+    font-size: 70%;
+    opacity: 0.4;
+}
+/*===escolaFavorita-programaBody====================================================================================*/
+.escolaFavorita-programaBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+.escolaFavorita-programaBody .programaBodyTable{
+    display: flex;
+    justify-content: space-around;
+    width: 1250px;
+}
+.escolaFavorita-programaBody .programaBodyTable p{
+    margin: 0;
+}
+.escolaFavorita-programaBody .programaBodyTable span{
+    margin: 0;
+    opacity: 0.6;
+}
+.escolaFavorita-programaBody .programaBodyTable table{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.escolaFavorita-programaBody .programaBodyTable th{
+    width: 300px;
+    height: 80px;
+    color: var(--verde-seven);
+    background-color: var(--cinza-02);
+    font-weight: 600;
+}
+.escolaFavorita-programaBody .programaBodyTable td{
+    width: 270px;
+    height: 80px;
+    color: black;
+    background-color: #e9e7e7;
+    font-weight: 600;
+    border-bottom: 1px solid #838181;
+}
+/*===escolaFavorita-programaBody===============================================================*/
+.escolaFavorita-treinadoresBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+.escolaFavorita-treinadoresBody .treinadoresBodyTable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1250px;
+}
+.escolaFavorita-treinadoresBody .treinadoresBodyTable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1250px;
+}
+.escolaFavorita-treinadoresBody .treinadoresBodyTable table{
+    width: 1250px;
+    margin-bottom: 50px;
+}
+.escolaFavorita-treinadoresBody .treinadoresBodyTable p{
+    margin: 0;
+    margin-left: 10px;
+}
+.escolaFavorita-treinadoresBody .treinadoresBodyTable img{
+    width: 30px;
+    margin-right: 10px;
+}
+.escolaFavorita-treinadoresBody .treinadoresBodyTable th{
+    width: 200px;
+    background-color: var(--cinza-02);
+    color: white;
+    padding: 20px 0;
+}
+.escolaFavorita-treinadoresBody .treinadoresBodyTable td{
+    color: black;
+    padding: 20px 0;
+    border-bottom: 1px solid #C4C4C4;
+    font-weight: 600;
+}
+.escolaFavorita-treinadoresBody .treinadoresBodyTable .imgTable{
+    display: flex;
+    justify-content: space-between;
+}
+
+
