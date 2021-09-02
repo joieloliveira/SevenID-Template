@@ -180,9 +180,9 @@
             </div>
             <div class="carrosselItem">
                 <div class="abas_linksBox"
-                    style="background-color: rgba(194,255,71);box-shadow: inset 0 0 2em rgb(100, 96, 96);">
-                    <a href="" style="color: black;font-weight: 500;">OVERAL SCORE</a>
-                </div>
+                style="background-color: rgba(194,255,71);box-shadow: inset 0 0 2em rgb(100, 96, 96);">
+                <a href="" style="color: black;font-weight: 500;">OVERAL SCORE</a>
+            </div>
             </div>
             <div class="carrosselItem">
                 <div class="abas_linksBox">
@@ -204,123 +204,118 @@
     <!-- preferenciasBody -->
     <div class="preferenciasBody">
         <div class="preferenciasBodyBox">
-            <!-- inicio boxOque -->
-            <div class="boxOque">
-                <div class="boxOqueCircle" style="background-color: black;"></div>
-                <button class="boxOqueTxt" onclick="boxOque(value)" value="true" data-toggle="collapse"
-                    data-target="#collapseExample">
+            <div class="preferenciasBodyBox1">
+                <div class="preferenciasBodyBox1Circle" style="background-color: black;"></div>
+                <div class="preferenciasBodyBox1Txt">
                     <p>O QUE É O OVERAL SCORE?</p>
-                    <div class="maisMenos">
-                        <p>+</p>
-                        <p>-</p>
-                    </div>
-                </button>
-            </div>
-            <div class="collapse" id="collapseExample">
-                <div class="boxOqueCollapse1">
-                    <p>tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par
-                        vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. Tajā laikā kāds nezināms iespiedējs
-                        izveidoja teksta fragmentu, lai nodrukātu grāmatu ar burtu paraugiem.</p>
                 </div>
-            </div>
-            <!-- fim boxOque -->
-            <div class="scoreDesempenhoBox">
-                <style>
-                    .progress-circle {
-                        position: relative;
-                        display: inline-block;
-                        margin: 1rem;
-                        width: 200px;
-                        height: 200px;
-                        border-radius: 50%;
-                        background-color: #ebebeb;
-                    }
-
-                    .progress-circle:after {
-                        content: '';
-                        display: inline-block;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 50%;
-                        -webkit-animation: colorload 2s;
-                        animation: colorload 2s;
-                    }
-
-                    .progress-circle span {
-                        font-size: 2.5rem;
-                        color: #8b8b8b;
-                        position: absolute;
-                        left: 25%;
-                        top: 25%;
-                        display: block;
-                        width: 160px;
-                        height: 160px;
-                        line-height: 150px;
-                        margin-left: -30px;
-                        margin-top: -30px;
-                        text-align: center;
-                        border-radius: 50%;
-                        background: #fff;
-                        z-index: 1;
-                    }
-
-                    .progress-circle span:after {
-                        content: "/1000";
-                        font-weight: 300;
-                        color: #8b8b8b;
-                        font-size: 40%;
-                    }
-                </style>
-                <div class="escolasBodyBox2Progress scoreBox2">
-                    <div class="progress-circle progress-80">
-                        <span>802</span>
-                    </div>
-                </div>
-            </div>
-            <div class="scoreDesempenho">
-                <h5>Muito bem, Jogador!</h5>
-                <p>Com essa nota você já é considerado um bom prospecto para uma universidade americana! Mas não fique
-                    acomodado! Sempre existe algo a melhorar e assim, aumentar ainda mais suas chances de conseguir uma
-                    ótima bolsa de estudos!</p>
             </div>
             <div class="scoreBody">
                 <div class="scoreBodyTestes">
                     <div class="scoreBodyTestesBox1">
                         <p>GPA</p>
-                        <p>3.2</p>
-                        <a href="">ALTERAR NOTA</a>
+                        <p>0<span>.</span>0</p>
+                        <a href="">CALCULAR GPA</a>
                     </div>
                     <div class="scoreBodyTestesBox1">
                         <p>NÍVEL DE INGLÊS</p>
-                        <p>B2</p>
+                        <p>0<span>.</span>0</p>
                         <a href="">FAZER TESTE</a>
                     </div>
                     <div class="scoreBodyTestesBox2">
                         <p class="fisicoP1">NÍVEL FÍSICO</p>
-                        <p>COOPER TEST</p>
                         <div class="fisicoBox">
                             <div class="fisicoBox1">
-                                <p>3267 m</p>
+                                <p>COOPER TEST</p>
+                                <p>00.0 m</p>
+                            </div>
+                            <div class="fisicoBox1" id="fisicoBox1">
+                                <p>1 MILE TEST</p>
+                                <p>0 m</p>
                             </div>
                         </div>
                         <a href="">FAZER AVALIAÇÃO</a>
                     </div>
                 </div>
-                <div class="scoreBodyTestes">
-                    <div class="scoreBodyTestesBox1">
-                        <p>SAT</p>
-                        <p>1230</p>
-                        <a href="">ALTERAR NOTA</a>
+                <div class="scoreDesempenho">
+                    <h4>SCORE E DESEMPENHO</h4>
+                    <div class="scoreDesempenhoBox">
+                        <p>2021</p>
+                        <div class="scoreDesempenhoBox1">
+                            <div class="scoreDesempenhoBox2">
+                                <div class="escolasBodyBox2Progress scoreBox2">
+                                    <div class="progress-circle-container">
+                                        <div class="progress-circle progress-60"><span>550</span></div>
+                                    </div>
+                                    <p>SUMMER</p>
+                                </div>
+                                <div class="escolasBodyBox2Progress scoreBox2">
+                                    <div class="progress-circle-container">
+                                        <div class="progress-circle progress-70"><span>750</span></div>
+                                    </div>
+                                    <p>FALL</p>
+                                </div>
+                            </div>
+                            <div class="scoreDesempenhoBox1">
+                                <div class="scoreDesempenhoBox2">
+                                    <div class="escolasBodyBox2Progress scoreBox2">
+                                        <div class="progress-circle-container">
+                                            <div class="progress-circle progress-80"><span>880</span></div>
+                                        </div>
+                                        <p>WINTER</p>
+                                    </div>
+                                    <div class="escolasBodyBox2Progress scoreBox2">
+                                        <div class="progress-circle-container">
+                                            <div class="progress-circle progress-90"><span>990</span></div>
+                                        </div>
+                                        <p>SPRING</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="scoreBodyTestesBox1">
-                        <p>TOEFL</p>
-                        <p>88</p>
-                        <a href="">ALTERAR NOTA</a>
-                    </div>
-                    <div class="scoreBodyTestesBox1">
-                        <p>VIDEO HIGHLIGHTS</p>
-                        <p style="color: red;">NÃO</p>
-                        <a href="">ADICIONAR VÍDEO</a>
+                    <div class="scoreDesempenhoBox">
+                        <p style="background-color: darkgray;">2020</p>
+                        <div class="scoreDesempenhoBox1">
+                            <div class="scoreDesempenhoBox2">
+                                <div class="escolasBodyBox2Progress scoreBox2">
+                                    <div class="progress-circle-container">
+                                        <div class="progress-circle progressGray-55">
+                                            <span>550</span>
+                                        </div>
+                                    </div>
+                                    <p>SUMMER</p>
+                                </div>
+                                <div class="escolasBodyBox2Progress scoreBox2">
+                                    <div class="progress-circle-container">
+                                        <div class="progress-circle progressGray-56">
+                                            <span>566</span>
+                                        </div>
+                                    </div>
+                                    <p>FALL</p>
+                                </div>
+                            </div>
+                            <div class="scoreDesempenhoBox1">
+                                <div class="scoreDesempenhoBox2">
+                                    <div class="escolasBodyBox2Progress scoreBox2">
+                                        <div class="progress-circle-container">
+                                            <div class="progress-circle progressGray-78">
+                                                <span>786</span>
+                                            </div>
+                                        </div>
+                                        <p>WINTER</p>
+                                    </div>
+                                    <div class="escolasBodyBox2Progress scoreBox2">
+                                        <div class="progress-circle-container">
+                                            <div class="progress-circle progressGray-67">
+                                                <span>675</span>
+                                            </div>
+                                        </div>
+                                        <p>SPRING</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -401,7 +396,7 @@
             });
         });
     </script>
-    <script src="js/sevenID.js"></script>
+    <script src="js/escolas.js"></script>
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
         integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"

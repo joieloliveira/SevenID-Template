@@ -209,23 +209,6 @@ function avaliacoesTecnica(opc) {
         $(".avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt").val("true");
     }
 }
-function avaliacoesTecnica(opc) {
-
-    event.preventDefault()
-
-    let buton = opc;
-
-    if (buton == "true") {
-        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt .maisMenos p:nth-child(1)').css("display", "none");
-        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt .maisMenos p:nth-child(2)').css("display", "flex");
-        $(".avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt").val("false");
-    }
-    if (buton == "false") {
-        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt .maisMenos p:nth-child(1)').css("display", "flex");
-        $('.avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt .maisMenos p:nth-child(2)').css("display", "none");
-        $(".avaliacoesTecnicaBody .avaliacoesTecnicaBodyBox .avaliacoesTecnicaBodyBox1 .avaliacoesTecnicaBodyBox1Txt").val("true");
-    }
-}
 function ultimoVideo(opc) {
 
     event.preventDefault()
@@ -291,4 +274,21 @@ function cadastro() {
     } else if (!termos.checked) {
         alert("Concorde com os termos");
     } else { document.getElementById("formCadastro").submit(); }
+}
+function boxOque(opc) {
+
+    event.preventDefault()
+
+    let buton = opc;
+
+    if (buton == "true") {
+        $('.boxOque .boxOqueTxt .maisMenos p:nth-child(1)').css("display", "none");
+        $('.boxOque .boxOqueTxt .maisMenos p:nth-child(2)').css("display", "flex");
+        $(".boxOque .boxOqueTxt").val("false");
+    }
+    if (buton == "false") {
+        $('.boxOque .boxOqueTxt .maisMenos p:nth-child(1)').css("display", "flex");
+        $('.boxOque .boxOqueTxt .maisMenos p:nth-child(2)').css("display", "none");
+        $(".boxOque .boxOqueTxt").val("true");
+    }
 }
