@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SevenID</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/progress-circle.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+
+    <!-- javascript -->
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <!-- sidebar -->
+    <nav id="sidebar">
+        <div class="sidebarHeader">
+            <div>
+                <div class="sidebar-header">
+                    <img src="img/icon/seven-icon.svg" class="header_logo" style="width: 350px;">
+                </div>
+                <div id="dismiss">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+            </div>
+            <div class="sidebarHeaderBox1">
+                <p>Preenchimento do perfil</p>
+                <div class="sidebarHeaderBox1_progressBar">
+                    <div class="SHB_pB1"></div>
+                    <div class="SHB_pB2"></div>
+                    <p>85%</p>
+                </div>
+                <div class="sidebarHeaderBox1_validacoes">
+                    <div class="SHB_V1">
+                        <p>Visualizações do perfil</p>
+                        <p>17</p>
+                    </div>
+                    <div class="SHB_V1">
+                        <p>Shortlist de treinadores</p>
+                        <p>2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="sidebarBody">
+            <div class="sidebarBodyBox">
+                <img src="img/icon/calendario.png" alt="">
+                <a href="#">Eventos</a>
+            </div>
+            <div class="sidebarBodyBox">
+                <img src="img/icon/cronometro.png" alt="">
+                <a href="#">Avaliações esportivas</a>
+            </div>
+            <div class="sidebarBodyBox">
+                <img src="img/icon/chave-de-fenda.png" alt="">
+                <a href="#">Serviços</a>
+            </div>
+            <div class="sidebarBodyBox">
+                <img src="img/icon/loja-de-compras.png" alt="">
+                <a href="#">Loja virtual</a>
+            </div>
+        </div>
+        <hr>
+        <div class="sidebarBody">
+            <div class="sidebarBodyBox">
+                <img src="img/icon/settings.png" alt="">
+                <a href="#">Configurações</a>
+            </div>
+            <div class="sidebarBodyBox">
+                <img src="img/icon/diamond.png" alt="">
+                <a href="#">Upgrade</a>
+            </div>
+            <div class="sidebarBodyBox">
+                <img src="img/icon/arrow-pointing-to-right.png" alt="">
+                <a href="#">Log Out</a>
+            </div>
+        </div>
+    </nav>
+    <!-- headerbar -->
+    <div class="headerBar">
+        <!-- buttonSlidebar -->
+        <div class="buttonSlidebar">
+            <button type="button" id="sidebarCollapse">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <i class="fas fa-search"></i>
+        </div>
+        <!-- fim buttonSlidebar -->
+        <div class="headerButtons">
+            <div class="dropdown">
+                <button class="dropbtn">BEM VINDO, EMANUELLE! <i class="fas fa-angle-down"></i> /</button>
+                <div class="dropdown-content">
+                    <a href="#">MINHA CONTA</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">IDIOMA: <span>PT</span> <i class="fas fa-angle-down"></i> /</button>
+                <div class="dropdown-content2">
+                    <a href="#">PORTUGUÊS</a>
+                    <a href="#">ENGLISH</a>
+                </div>
+            </div>
+            <button class="dropdown" id="sair">SAIR</button>
+        </div>
+    </div>
+
+    <div class="headerBody">
+        <div class="headerBodyBox">
+            <img src="img/icon/seven-icon.svg" alt="logo">
+            <div class="HBboxBody">
+                <div class="HBbox1Body">
+                    <i class="fas fa-user"></i>
+                    <a href="#">ÁREA DO ATLETA</a>
+                </div>
+                <div class="HBbox2Body">
+                    <i class="fas fa-envelope"></i>
+                    <div class="HBboxtxt">
+                        <p>INBOX</p>
+                        <p>8 mensagens</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="headerFooter">
+        <div class="headerBGFoot"></div>
+        <div class="headerFooterBox">
+            <a href="" class="headerFooterBox1A">MEU PERFIL</a>
+            <a href="" class="headerFooterBox2A">FEED</a>
+            <div class="dropdown3">
+                <button class="dropbtn3">PESQUISAR <i class="fas fa-angle-down"></i></button>
+                <div class="dropdown-content3">
+                    <a href="#">HIGH SCHOOL</a>
+                    <hr>
+                    <a href="#">COLLEGE</a>
+                </div>
+            </div>
+            <button type="button" class="buttonSideBar" id="sidebarCollapse2">
+                <i class="fa fa-bars" style="color: white;font-size: 20px;"></i>
+            </button>
+        </div>
+    </div>
+    <!-- mainBody -->
+    <div class="atletes">
+        <div class="atletesBox1">
+            <p>Use filters</p>
+            <p>to refine your search</p>
+            <p>POSITION</p>
+            <div class="atletesBox1Bttn">
+                <button type="button">GK</button>
+                <button type="button">DM</button>
+                <button type="button">LB</button>
+                <button type="button">RB</button>
+                <button type="button">DM</button>
+                <button type="button">LM</button>
+                <button type="button">ATM</button>
+                <button type="button">RB</button>
+                <button type="button">RW</button>
+                <button type="button">LW</button>
+                <button type="button">FW</button>
+                <button type="button">OTHER</button>
+            </div>
+            <!-- hight -->
+            <div class="inputRange">
+                <p>HIGHT<span>1,75 - 1,85</span></p>
+                <div slider id="slider-distance">
+                    <div>
+                        <div inverse-left style="width:70%;"></div>
+                        <div inverse-right style="width:70%;"></div>
+                        <div range style="left:0%;right:0%;"></div>
+                        <span thumb style="left:0%;"></span>
+                        <span thumb style="left:100%;"></span>
+                        <div sign style="left:0%;">
+                            <span id="value">0</span>
+                        </div>
+                        <div sign style="left:100%;">
+                            <span id="value">3</span>
+                        </div>
+                    </div>
+                    <input type="range" value="0" max="3" min="0" step="0.01" oninput="
+                        this.value=Math.min(this.value,this.parentNode.childNodes[5].value-0.01);
+                        let value = (this.value/parseInt(this.max))*100
+                        var children = this.parentNode.childNodes[1].childNodes;
+                        children[1].style.width=value+'%';
+                        children[5].style.left=value+'%';
+                        children[7].style.left=value+'%';children[11].style.left=value+'%';
+                        children[11].childNodes[1].innerHTML=this.value;" />
+
+                    <input type="range" value="3" max="3" min="0" step="0.01" oninput="
+                        this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-0.01));
+                        let value = (this.value/parseInt(this.max))*100
+                        var children = this.parentNode.childNodes[1].childNodes;
+                        children[3].style.width=(100-value)+'%';
+                        children[5].style.right=(100-value)+'%';
+                        children[9].style.left=value+'%';children[13].style.left=value+'%';
+                        children[13].childNodes[1].innerHTML=this.value;" />
+                </div>
+            </div>
+            <!-- GPA -->
+            <div class="inputRange">
+                <p>WEIGHT<span>50kg - 80kg</span></p>
+                <div slider id="slider-distance">
+                    <div>
+                        <div inverse-left style="width:70%;"></div>
+                        <div inverse-right style="width:70%;"></div>
+                        <div range style="left:0%;right:0%;"></div>
+                        <span thumb style="left:0%;"></span>
+                        <span thumb style="left:100%;"></span>
+                        <div sign style="left:0%;">
+                            <span id="value">0</span>
+                        </div>
+                        <div sign style="left:100%;">
+                            <span id="value">300</span>
+                        </div>
+                    </div>
+                    <input type="range" value="0" max="300" min="0" step="1" oninput="
+                        this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                        let value = (this.value/parseInt(this.max))*100
+                        var children = this.parentNode.childNodes[1].childNodes;
+                        children[1].style.width=value+'%';
+                        children[5].style.left=value+'%';
+                        children[7].style.left=value+'%';children[11].style.left=value+'%';
+                        children[11].childNodes[1].innerHTML=this.value;" />
+
+                    <input type="range" value="300" max="300" min="0" step="1" oninput="
+                        this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                        let value = (this.value/parseInt(this.max))*100
+                        var children = this.parentNode.childNodes[1].childNodes;
+                        children[3].style.width=(100-value)+'%';
+                        children[5].style.right=(100-value)+'%';
+                        children[9].style.left=value+'%';children[13].style.left=value+'%';
+                        children[13].childNodes[1].innerHTML=this.value;" />
+                </div>
+            </div>
+            <!-- toefl -->
+            <div class="inputRange">
+                <p>GPA<span>2.4 - 4.0</span></p>
+                <div slider id="slider-distance">
+                    <div>
+                        <div inverse-left style="width:70%;"></div>
+                        <div inverse-right style="width:70%;"></div>
+                        <div range style="left:0%;right:0%;"></div>
+                        <span thumb style="left:0%;"></span>
+                        <span thumb style="left:100%;"></span>
+                        <div sign style="left:0%;">
+                            <span id="value">0</span>
+                        </div>
+                        <div sign style="left:100%;">
+                            <span id="value">10</span>
+                        </div>
+                    </div>
+                    <input type="range" value="0" max="10" min="0" step="0.1" oninput="
+                        this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                        let value = (this.value/parseInt(this.max))*100
+                        var children = this.parentNode.childNodes[1].childNodes;
+                        children[1].style.width=value+'%';
+                        children[5].style.left=value+'%';
+                        children[7].style.left=value+'%';children[11].style.left=value+'%';
+                        children[11].childNodes[1].innerHTML=this.value;" />
+
+                    <input type="range" value="10" max="10" min="0" step="0.1" oninput="
+                        this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                        let value = (this.value/parseInt(this.max))*100
+                        var children = this.parentNode.childNodes[1].childNodes;
+                        children[3].style.width=(100-value)+'%';
+                        children[5].style.right=(100-value)+'%';
+                        children[9].style.left=value+'%';children[13].style.left=value+'%';
+                        children[13].childNodes[1].innerHTML=this.value;" />
+                </div>
+            </div>
+            <!-- sat -->
+            <div class="inputRange">
+                <p>TOEFL<span>80 - 120</span></p>
+                <div slider id="slider-distance">
+                    <div>
+                        <div inverse-left style="width:70%;"></div>
+                        <div inverse-right style="width:70%;"></div>
+                        <div range style="left:0%;right:0%;"></div>
+                        <span thumb style="left:0%;"></span>
+                        <span thumb style="left:100%;"></span>
+                        <div sign style="left:0%;">
+                            <span id="value">0</span>
+                        </div>
+                        <div sign style="left:100%;">
+                            <span id="value">100</span>
+                        </div>
+                    </div>
+                    <input type="range" value="0" max="100" min="0" step="1" oninput="
+                        this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                        let value = (this.value/parseInt(this.max))*100
+                        var children = this.parentNode.childNodes[1].childNodes;
+                        children[1].style.width=value+'%';
+                        children[5].style.left=value+'%';
+                        children[7].style.left=value+'%';children[11].style.left=value+'%';
+                        children[11].childNodes[1].innerHTML=this.value;" />
+
+                    <input type="range" value="100" max="100" min="0" step="1" oninput="
+                        this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                        let value = (this.value/parseInt(this.max))*100
+                        var children = this.parentNode.childNodes[1].childNodes;
+                        children[3].style.width=(100-value)+'%';
+                        children[5].style.right=(100-value)+'%';
+                        children[9].style.left=value+'%';children[13].style.left=value+'%';
+                        children[13].childNodes[1].innerHTML=this.value;" />
+                </div>
+            </div>
+            <!-- hight -->
+            <div class="inputRange">
+                <p>SAT<span>500 - 1200</span></p>
+                <div slider id="slider-distance">
+                    <div>
+                        <div inverse-left style="width:70%;"></div>
+                        <div inverse-right style="width:70%;"></div>
+                        <div range style="left:0%;right:0%;"></div>
+                        <span thumb style="left:0%;"></span>
+                        <span thumb style="left:100%;"></span>
+                        <div sign style="left:0%;">
+                            <span id="value">0</span>
+                        </div>
+                        <div sign style="left:100%;">
+                            <span id="value">100</span>
+                        </div>
+                    </div>
+                    <input type="range" value="0" max="100" min="0" step="1" oninput="
+                        this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                        let value = (this.value/parseInt(this.max))*100
+                        var children = this.parentNode.childNodes[1].childNodes;
+                        children[1].style.width=value+'%';
+                        children[5].style.left=value+'%';
+                        children[7].style.left=value+'%';children[11].style.left=value+'%';
+                        children[11].childNodes[1].innerHTML=this.value;" />
+
+                    <input type="range" value="100" max="100" min="0" step="1" oninput="
+                        this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                        let value = (this.value/parseInt(this.max))*100
+                        var children = this.parentNode.childNodes[1].childNodes;
+                        children[3].style.width=(100-value)+'%';
+                        children[5].style.right=(100-value)+'%';
+                        children[9].style.left=value+'%';children[13].style.left=value+'%';
+                        children[13].childNodes[1].innerHTML=this.value;" />
+                </div>
+            </div>
+        </div>
+        <div class="atletesBox2">
+            <div class="listaVideos">
+                <p><span>Athletes</span><span>available to you</span></p>
+                <div class="listaVideos-btn">
+                    <button style="background-color: #C2FF47;" id="atletesLista"></button>
+                    <p>Lista</p>
+                    <button style="background-color: transparent;" id="atletesVideos"></button>
+                    <p>Vídeos</p>
+                </div>
+            </div>
+            <div class="lista">
+                <div class="listaBox">
+                    <div class="imagem"><img src="img/images/image_avatar01.png" alt=""><span>RB</span></div>
+                    <div class="listaAtriuto">
+                        <p>Rafael de Souza</p>
+                        <p>21 years-old l Rio de Janeiro, Brasil.</p>
+                        <div class="atriuto">
+                            <div class="atriutoBox">
+                                <p>SAT</p>
+                                <p>1200</p>
+                            </div>
+                            <div class="atriutoBox">
+                                <p>GPA</p>
+                                <p>2.9</p>
+                            </div>
+                            <div class="atriutoBox">
+                                <p>TOEFL</p>
+                                <p>88</p>
+                            </div>
+                            <div class="atriutoBox" id="atriutoBox">
+                                <p>HT</p>
+                                <p>1,81</p>
+                            </div>
+                            <div class="atriutoBox" id="atriutoBox">
+                                <p>WT</p>
+                                <p>83kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button>Add</button>
+                </div>
+            </div>
+            <div class="videos">
+                <div class="videosBox">
+                    <div class="listaBox">
+                        <div class="imgAtributos">
+                            <div class="imagem"><span><img src="img/images/image_avatar01.png" alt="">RB</span>
+                                <div class="p">
+                                    <p>Rafael de Souza</p>
+                                    <p>21 years-old l Rio de Janeiro, Brasil.</p>
+                                </div>
+                            </div>
+                            <div class="listaAtriuto">
+                                <div class="atriuto">
+                                    <div class="atriutoBox">
+                                        <p>SAT</p>
+                                        <p>1200</p>
+                                    </div>
+                                    <div class="atriutoBox">
+                                        <p>GPA</p>
+                                        <p>2.9</p>
+                                    </div>
+                                    <div class="atriutoBox">
+                                        <p>TOEFL</p>
+                                        <p>88</p>
+                                    </div>
+                                    <div class="atriutoBox" id="atriutoBox">
+                                        <p>HT</p>
+                                        <p>1,81</p>
+                                    </div>
+                                    <div class="atriutoBox" id="atriutoBox">
+                                        <p>WT</p>
+                                        <p>83kg</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button>Add</button>
+                    </div>
+                    <iframe width="320" height="225" src="https://www.youtube.com/embed/G5Y0OmlEv0g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="videosBox">
+                    <div class="listaBox">
+                        <div class="imgAtributos">
+                            <div class="imagem"><span><img src="img/images/image_avatar01.png" alt="">RB</span>
+                                <div class="p">
+                                    <p>Rafael de Souza</p>
+                                    <p>21 years-old l Rio de Janeiro, Brasil.</p>
+                                </div>
+                            </div>
+                            <div class="listaAtriuto">
+                                <div class="atriuto">
+                                    <div class="atriutoBox">
+                                        <p>SAT</p>
+                                        <p>1200</p>
+                                    </div>
+                                    <div class="atriutoBox">
+                                        <p>GPA</p>
+                                        <p>2.9</p>
+                                    </div>
+                                    <div class="atriutoBox">
+                                        <p>TOEFL</p>
+                                        <p>88</p>
+                                    </div>
+                                    <div class="atriutoBox" id="atriutoBox">
+                                        <p>HT</p>
+                                        <p>1,81</p>
+                                    </div>
+                                    <div class="atriutoBox" id="atriutoBox">
+                                        <p>WT</p>
+                                        <p>83kg</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button>Add</button>
+                    </div>
+                    <iframe width="320" height="225" src="https://www.youtube.com/embed/G5Y0OmlEv0g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footerBody1">
+            <div class="footerBody1Box1">
+                <div class="footerBody1Txt">
+                    <p>SEVEN<span style="color: #cae01e;">ID</span></p>
+                    <p>HOME</p>
+                    <p>PLANOS</p>
+                </div>
+                <div class="footerBody1Txt">
+                    <p>ACADEMY</p>
+                    <p>CONHEÇA</p>
+                </div>
+                <div class="footerBody1Txt">
+                    <p>LEGAL</p>
+                    <p>TERMOS & PRIVACIDADE</p>
+                </div>
+            </div>
+            <div class="footerBody1Social_links">
+                <img src="img/icon/whatsapp-brands.svg" alt="">
+                <img src="img/icon/instagram-brands.svg" alt="">
+                <img src="img/icon/envelope-regular.svg" alt="">
+            </div>
+        </div>
+        <div style="display: flex;justify-content: center; width:100%;background-color:#292c31;">
+            <div class="linha"></div>
+        </div>
+        <div class="footerBody2">
+            <p>NOSSOS PARCEIROS</p>
+            <div class="footerBody2Box1">
+                <div class="footerBody2Logos1">
+                    <img src="img/images/soccer/aba.png" alt="">
+                    <img src="img/images/soccer/adidas.png" alt="">
+                    <img src="img/images/soccer/edu.png" alt="">
+                </div>
+                <div class="footerBody2Logos1">
+                    <img src="img/images/soccer/joga.png" alt="">
+                    <img src="img/images/soccer/hudl.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footerBody3">
+            <div class="footerBody3Box">
+                <p>SEVEN GROUP 2021 <span> | </span> ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </div>
+    <!-- onclick lista videos -->
+    <script>
+        $('#atletesLista').on('click', function () {
+            $(".lista").fadeIn(1000);
+            $(".videos").fadeOut(0);
+            $('#atletesLista').css("background-color", "#C2FF47");
+            $('#atletesVideos').css("background-color", "transparent");
+        });
+        $('#atletesVideos').on('click', function () {
+            $(".videos").fadeIn(1000);
+            $(".lista").fadeOut(0);
+            $('.atletesBox2 .videos').css("display", "flex");
+            $('#atletesVideos').css("background-color", "#C2FF47");
+            $('#atletesLista').css("background-color", "transparent");
+        });
+    </script>
+    <!-- owlCarousel -->
+    <script>
+        $('.abas_links').owlCarousel({
+            responsiveClass: true,
+            responsive: {
+                375: {
+                    items: 2,
+                    nav: false,
+                    loop: true,
+                },
+                425: {
+                    items: 2,
+                    nav: false,
+                    loop: true,
+                },
+                768: {
+                    items: 2,
+                    nav: false,
+                    loop: true,
+                },
+                1024: {
+                    items: 3,
+                    nav: false,
+                    loop: true,
+                },
+                1215: {
+                    items: 3,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
+                    loop: true,
+                    nav: false,
+                },
+                1360: {
+                    items: 3,
+                    nav: false,
+                },
+            }
+        });
+    </script>
+    <!-- slidebar script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+            $('#sidebarCollapse2').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+    <script src="js/sevenID.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- abas bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

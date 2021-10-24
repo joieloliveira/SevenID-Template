@@ -121,7 +121,7 @@
     width: 100%;
     background-color: var(--cinza-02);
     color: white;
-    height: 90px;
+    height: 50px;
 }
 .headerBody .headerBodyBox{
     display: flex;
@@ -131,9 +131,9 @@
     font-size: 70%;
 }
 .headerBody .headerBodyBox img{
-    width: 520px;
-    height: 520px;
-    margin-top: 60px;
+    width: 500px;
+    height: 500px;
+    margin-top: 56px;
     z-index: 2;
 }
 .headerBody .headerBodyBox .HBboxBody{
@@ -158,8 +158,8 @@
     transition: 0.5s;
 }
 .headerBody .headerBodyBox .HBboxBody .HBbox1Body .fa-user{
-    width: 45px;
-    height: 30px;
+    width: 40px;
+    height: 25px;
     color: var(--verde-seven);
 }
 .headerBody .headerBodyBox .HBboxBody .HBbox2Body{
@@ -167,6 +167,22 @@
     align-items: center;
     margin-right: 50px;
     margin-left: 20px;
+}
+.headerBody .headerBodyBox .HBboxBody .HBbox2Body img{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
+.headerBody .headerBodyBox .HBboxBody .HBbox2Body a{
+    width: 30px;
+    margin-left: 12px;
+    color: white;
+}
+.headerBody .headerBodyBox .HBboxBody .HBbox2Body a:hover{
+    text-decoration: none;
+    color: white;
+    color: var(--verde-seven);
+    transition: 0.5s;
 }
 .headerBody .headerBodyBox .HBboxBody .HBbox2Body .HBboxtxt p{
     margin-left: 10px;
@@ -2797,7 +2813,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .perfilCurriculo .addVideo button{
     padding: 15px 30px;
@@ -2830,7 +2846,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-top: -30px;
+    margin-top: -90px;
     z-index: 10;
 }
 .perfilCurriculo .addFoto button{
@@ -2839,7 +2855,7 @@ body {
     background-color: var(--verde-seven);
     padding: 10px 10px;
     margin-left: -40px;
-    margin-bottom: -80px;
+    margin-bottom: -20px;
     z-index: 11;
 }
 .perfilCurriculo .addFoto button:hover{
@@ -2854,9 +2870,9 @@ body {
     border-radius: 0%;
 }
 .perfilCurriculo .CurriculoP{
-    font-size: 260%;
+    font-size: 200%;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 10px;
     color: black;
 }
 .perfilCurriculo .curriculoProgress{
@@ -2871,12 +2887,12 @@ body {
     flex-direction: column;
 }
 .perfilCurriculo .curriculoAtributos{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     width: 1100px;
-    margin: 20px 0 30px 0;
-    padding: 30px 0 20px 0;
+    margin: 0px 0 30px 0;
+    padding: 10px 0 0px 0;
     border-top: solid 1px #C4C4C4;
 }
 .perfilCurriculo .curriculoAtributos .curriculoAtributosBox{
@@ -5788,3 +5804,723 @@ input[type="radio"]:checked + label span {
         width: auto;
     }
 }
+/*===mainBody shortlist==============================*/
+.shortlistBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+}
+.shortlistBody .shortlistBodyBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1250px;
+    margin-bottom: 100px;
+}
+.shortlistBodyBox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 100%;
+}
+
+.shortlistBody .shortlistBodyBox .shortlistBodyBox1Circle{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 40px 20px 20px 0;
+}
+.shortlistBody .shortlistBodyBox .shortlistBodyBox1Txt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+}
+.shortlistBody .shortlistBodyBox .shortlistBodyBox1Txt p{
+    margin: 0;
+    font-weight: 500;
+    font-size: 90%;
+}
+.shortlistBody .shortlistBodyBox .shortlistBodyBox1 .shortlistBodyBox1Txt .maisMenos{
+    display: flex;
+}
+.shortlistBody .shortlistBodyBox .shortlistBodyBox1 .shortlistBodyBox1Txt .maisMenos p:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    color: black;
+    font-weight: 600;
+    margin: 0 7px 5px 0;
+    height: 25px;
+}
+.shortlistBody .shortlistBodyBox .shortlistBodyBox1 .shortlistBodyBox1Txt .maisMenos p:nth-child(2){
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    color: black;
+    font-weight: 600;
+    margin: 0 12px 5px 0;
+    height: 25px;
+}
+.shortlistBody .shortlistBodyBox .shortlistBodyBox1Txt{
+    display: flex;
+    background-color: #F0F0F0;
+    color: black;
+    width: 90%;
+    padding: 16px 20px;
+    margin: 40px 0 20px 0;
+    border-radius: 3rem;
+}
+/*===================================================*/
+.shortlistPlanejmt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1050px;
+    margin-top: 20px;
+}
+.shortlistPlanejmt .shortlistGreenbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    width: 1050px;
+    background-color: var(--verde-seven);
+    color: black;
+    font-weight: 600;
+    margin: 10px 0 0px 0;
+    padding: 20px 10px;
+}
+.shortlistPlanejmt .shortlistGreenbox{
+    cursor: pointer;
+}
+.shortlistPlanejmt .shortlistGreenbox p{
+    margin: 0 0 0 5px;
+}
+.shortlistPlanejmt .shortlistGreenbox img{
+    width: 15px;
+    margin: 0 10px 0 10px;
+}
+.shortlistPlanejmt .shortlistBlackbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    width: 1050px;
+    background-color: var(--cinza-02);
+    color: var(--verde-seven);
+    font-weight: 600;
+    margin: 10px 0 0px 0;
+    padding: 20px 10px;
+}
+.shortlistPlanejmt .shortlistBlackbox{
+    cursor: pointer;
+}
+.shortlistPlanejmt .shortlistBlackbox p{
+    margin: 0 0 0 5px;
+}
+.shortlistPlanejmt .shortlistBlackbox img{
+    width: 15px;
+    margin: 0 10px 0 10px;
+}@media(max-width: 1070px){
+    .shortlistPlanejmt .shortlistBlackbox{
+        width: 100%;
+    }
+    .shortlistPlanejmt .shortlistGreenbox{
+        width: 100%;
+    }
+    .shortlistBody .shortlistBodyBox{
+        width: 100%;
+    }
+    .shortlistPlanejmt{
+        width: 100%;
+    }
+    .shortlistPlanejmt p{
+        font-size: 80%;
+    }
+    .shortlistPlanejmt{
+        width: 90%;
+    }
+}
+/*==============colapseBox========================*/
+.shortlistPlanejmt .shortlistCollapseBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #C4C4C4;
+    padding-bottom: 15px;
+}
+.shortlistPlanejmt .shortlistCollapseBox .imagem{
+    display: flex;
+    align-items: center;
+}
+.shortlistPlanejmt .shortlistCollapseBox .imagem img{
+    width: 130px;
+}
+.shortlistPlanejmt .shortlistCollapseBox .imagem span{
+    font-size: 200%;
+    color: var(--verde-seven);
+    padding: 39px;
+    background-color: var(--cinza-02);
+    margin: 0;
+}
+.shortlistPlanejmt .shortlistCollapseBox .shortlistCollapseBox2 .shortlistCollapseBox2_1 p:nth-child(1){
+    color: black;
+    font-size: 140%;
+    font-weight: 600;
+    margin: 0 0 0 10px;
+}
+.shortlistPlanejmt .shortlistCollapseBox .shortlistCollapseBox2 .shortlistCollapseBox2_1 p:nth-child(2){
+    color: black;
+    font-size: 100%;
+    opacity: 0.5;
+    margin: 0 0 0 10px;
+}
+.shortlistPlanejmt .shortlistCollapseBox .shortlistCollapseBox2 .shortlistCollapseBox2_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.shortlistPlanejmt .shortlistCollapseBox .shortlistCollapseBox2 .shortlistCollapseBox2_2_1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+}
+@media(max-width: 965px){
+    .shortlistPlanejmt .shortlistCollapseBox .shortlistCollapseBox2 .shortlistCollapseBox2_2_1{
+        width: 600px;
+    }
+}
+@media(max-width: 690px){
+    .shortlistPlanejmt .shortlistCollapseBox .shortlistCollapseBox2 .shortlistCollapseBox2_2_1{
+        width: 500px;
+    }
+}
+@media(max-width: 560px){
+    .shortlistPlanejmt .shortlistCollapseBox .shortlistCollapseBox2 .shortlistCollapseBox2_2_1{
+        width: 400px;
+    }
+}
+@media(max-width: 450px){
+    .shortlistPlanejmt .shortlistCollapseBox .shortlistCollapseBox2 .shortlistCollapseBox2_2_1{
+        width: auto;
+    }
+}
+.shortlistPlanejmt .shortlistCollapseBox .shortlistCollapseBox2 .shortlistCollapseBox2_2_1 p:nth-child(1){
+    color: black;
+    font-size: 80%;
+    font-weight: 600;
+    margin: 0 0 0 10px;
+}
+.shortlistPlanejmt .shortlistCollapseBox .shortlistCollapseBox2 .shortlistCollapseBox2_2_1 .checklist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shortlistPlanejmt .shortlistCollapseBox .shortlistCollapseBox2 .shortlistCollapseBox2_2_1 .checklist p:nth-child(1){
+    color: black;
+    font-size: 80%;
+    font-weight: 600;
+    margin: 0 10px 0 0;
+    opacity: 0.5;
+}
+.shortlistPlanejmt .shortlistCollapseBox .shortlistCollapseBox2 .shortlistCollapseBox2_2_1 .checklist p:nth-child(2){
+    color: black;
+    font-size: 140%;
+    font-weight: 600;
+    margin: -5px 10px 0 0;
+    opacity: 0.5;
+}
+.shortlistPlanejmt .shortlistCollapseBox .shortlistCollapseBox2 .shortlistCollapseBox2_2_1 .checklist button:nth-child(3){
+    border: none;
+    border-radius: 3rem;
+    background-color: var(--cinza-02);
+    color: var(--verde-seven);
+    cursor: pointer;
+    padding: 6px 20px;
+}
+@media(max-width: 1100px){
+}
+@media(max-width: 960px){
+}
+@media(max-width: 737px){
+    
+}
+/*===atletes==============================================================================================================================================*/
+.atletes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.atletes .atletesBox1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    background-color: #F0F0F0;
+    padding: 30px
+}
+.atletes .atletesBox1 > p:nth-child(1){ 
+    font-size: 140%;
+    font-weight: 700;
+    margin: 40px 0 0 20px;
+}
+.atletes .atletesBox1 > p:nth-child(2){ 
+    font-size: 140%;
+    font-weight: 700;
+    margin: 0 0 0 20px;
+}
+.atletes .atletesBox1 > p:nth-child(3){ 
+    font-weight: 600;
+    margin: 60px 0 20px 20px;
+}
+.atletes .atletesBox1 .atletesBox1Bttn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 320px;
+}
+.atletes .atletesBox1 .atletesBox1Bttn button{
+    border: none;
+    background-color: #D1D1D1;
+    color: var(--cinza-01);
+    padding: 15px;
+
+}
+.atletes .atletesBox1 .atletesBox1Bttn button:nth-child(12){
+    font-size: 70%;
+    padding: 19px 3px;
+}
+.atletes .atletesBox1 .inputRange{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.atletes .atletesBox1 .inputRange > p{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    font-weight: 600;
+    color: black;
+    margin-bottom: -20px;
+}
+.atletes .atletesBox1 .inputRange p > span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cinza-02);
+    color: var(--verde-seven);
+    height: 22px;
+    width: 100px;
+}
+/*===inputRange mult===*/
+/*=========================================*/
+[slider] {
+	width: 300px;
+	position: relative;
+	height: 5px;
+	margin: 45px 0 10px 0;
+  }
+  
+  [slider] > div {
+	position: absolute;
+	left: 13px;
+	right: 15px;
+	height: 5px;
+  }
+  [slider] > div > [inverse-left] {
+	position: absolute;
+	left: 0;
+	height: 5px;
+	border-radius: 10px;
+	background-color: #CCC;
+	margin: 0 7px;
+  }
+  
+  [slider] > div > [inverse-right] {
+	position: absolute;
+	right: 0;
+	height: 5px;
+	border-radius: 10px;
+	background-color: #CCC;
+	margin: 0 7px;
+  }
+  
+  
+  [slider] > div > [range] {
+	position: absolute;
+	left: 0;
+	height: 5px;
+	border-radius: 14px;
+	background-color: var(--verde-seven);
+  }
+  
+  [slider] > div > [thumb] {
+	position: absolute;
+	top: -7px;
+	z-index: 2;
+	height: 20px;
+	width: 20px;
+	text-align: left;
+	margin-left: -11px;
+	cursor: pointer;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+	background-color: #FFF;
+	border-radius: 50%;
+	outline: none;
+  }
+  
+  [slider] > input[type=range] {
+	position: absolute;
+	pointer-events: none;
+	-webkit-appearance: none;
+	z-index: 3;
+	height: 14px;
+	top: -2px;
+	width: 100%;
+	opacity: 0;
+  }
+  
+  div[slider] > input[type=range]:focus::-webkit-slider-runnable-track {
+	background: transparent;
+	border: transparent;
+  }
+  
+  div[slider] > input[type=range]:focus {
+	outline: none;
+  }
+  
+  div[slider] > input[type=range]::-webkit-slider-thumb {
+	pointer-events: all;
+	width: 28px;
+	height: 28px;
+	border-radius: 0px;
+	border: 0 none;
+	background: var(--verde-seven);
+	-webkit-appearance: none;
+  }
+  
+  div[slider] > input[type=range]::-ms-fill-lower {
+	background: transparent;
+	border: 0 none;
+  }
+  
+  div[slider] > input[type=range]::-ms-fill-upper {
+	background: transparent;
+	border: 0 none;
+  }
+  
+  div[slider] > input[type=range]::-ms-tooltip {
+	display: none;
+  }
+  
+  [slider] > div > [sign] {
+	opacity: 0;
+	position: absolute;
+	margin-left: -11px;
+	top: -39px;
+	z-index:3;
+	background-color: var(--verde-seven);
+	color: black;
+	width: 28px;
+	height: 28px;
+	border-radius: 28px;
+	-webkit-border-radius: 28px;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	text-align: center;
+  }
+  
+  [slider] > div > [sign]:after {
+	position: absolute;
+	content: '';
+	left: 0;
+	border-radius: 16px;
+	top: 19px;
+	border-left: 14px solid transparent;
+	border-right: 14px solid transparent;
+	border-top-width: 16px;
+	border-top-style: solid;
+	border-top-color: var(--verde-seven);;
+  }
+  
+  [slider] > div > [sign] > span {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 28px;
+  }
+  
+  [slider]:hover > div > [sign] {
+	opacity: 1;
+  }
+  /*===atletesBox2============================================================*/
+  .atletesBox2{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .atletesBox2 .listaVideos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0 70px 0;
+  }
+  .atletesBox2 .listaVideos .listaVideos-btn{
+    display: flex;
+    align-items: center;
+  }
+  .atletesBox2 .listaVideos .listaVideos-btn p{
+    margin: 0 20px 0 0;
+  }
+  .atletesBox2 .listaVideos .listaVideos-btn button{
+    width: 30px;
+    height: 30px;
+    border: 0.1rem solid #C4C4C4;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+.atletesBox2 .listaVideos > p{
+    display: flex;
+    flex-direction: column;
+    font-size: 140%;
+    font-weight: 700;
+}
+/*===lista===*/
+.atletesBox2 .lista{
+    display: flex;
+    flex-direction: column;
+}
+.atletesBox2 .lista .listaBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #C4C4C4;
+    padding-bottom: 15px;
+}
+.atletesBox2 .lista .listaBox .imagem{
+    display: flex;
+    align-items: center;
+}
+.atletesBox2 .lista .listaBox .imagem img{
+    width: 130px;
+}
+.atletesBox2 .lista .listaBox .imagem span{
+    font-size: 200%;
+    color: var(--verde-seven);
+    padding: 39px;
+    background-color: var(--cinza-02);
+    margin: 0;
+}
+.atletesBox2 .lista .listaBox .featuringProgress-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+.atletesBox2 .lista .listaBox .listaAtriuto{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+.atletesBox2 .lista .listaBox .listaAtriuto p{
+    margin: 3px 0 3px 0;
+}
+.atletesBox2 .lista .listaBox .listaAtriuto p:nth-child(1){
+    color: black;
+    font-size: 130%;
+    font-weight: 600;
+}
+.atletesBox2 .lista .listaBox .listaAtriuto p:nth-child(2){
+    color: black;
+    font-size: 100%;
+    opacity: 0.5;
+}
+.atletesBox2 .lista .listaBox .listaAtriuto .atriuto{
+    display: flex;
+    flex-wrap: wrap;
+}
+.atletesBox2 .lista .listaBox .listaAtriuto .atriutoBox{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.atletesBox2 .lista .listaBox .listaAtriuto .atriutoBox p:nth-child(1){
+    color: black;
+    font-size: 75%;
+    font-weight: 700;
+    opacity: 1;
+}
+.atletesBox2 .lista .listaBox .listaAtriuto .atriutoBox p:nth-child(2){
+    color: black;
+    font-size: 110%;
+    opacity: 0.5;
+}
+.atletesBox2 .lista .listaBox button{
+    border-radius: 50%;
+    padding: 30px;
+    border: none;
+    color: var(--verde-seven);
+    font-weight: 600;
+    background-color: var(--cinza-02);
+}
+/*===videos===*/
+.atletesBox2 .videos{
+    display: none;
+    flex-wrap: wrap;
+}
+.atletesBox2 .videos .videosBox{
+    margin-right: 25px;
+}
+.atletesBox2 .videos .listaBox{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+.atletesBox2 .videos .listaBox .imgAtributos{
+    display: flex;
+    flex-direction: column;
+}
+.atletesBox2 .videos .listaBox .imgAtributos .imagem{
+    display: flex;
+    align-items: center;
+}
+.atletesBox2 .videos .listaBox .imgAtributos .imagem img{
+    width: 41px;
+    margin-right: 10px;
+}
+.atletesBox2 .videos .listaBox .imgAtributos .imagem span{
+    font-size: 120%;
+    color: var(--verde-seven);
+    background-color: var(--cinza-02);
+    margin: 0;
+    padding-right: 10px;
+}
+.atletesBox2 .videos .listaBox .imgAtributos .imagem .p{
+    display: flex;
+    flex-direction: column;
+}
+.atletesBox2 .videos .listaBox .imgAtributos .imagem .p p{
+    margin: 0 0 0 5px;
+}
+.atletesBox2 .videos .listaBox .imgAtributos .imagem .p p:nth-child(1){
+    color: black;
+    font-size: 90%;
+    font-weight: 600;
+}
+.atletesBox2 .videos .listaBox .imgAtributos .imagem .p p:nth-child(2){
+    color: black;
+    font-size: 60%;
+    opacity: 0.5;
+}
+.atletesBox2 .videos .listaBox .listaAtriuto{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.atletesBox2 .videos .listaBox .listaAtriuto p{
+    margin: 3px 0 3px 0;
+}
+.atletesBox2 .videos .listaBox .listaAtriuto .atriuto{
+    display: flex;
+    flex-wrap: wrap;
+}
+.atletesBox2 .videos .listaBox .listaAtriuto .atriutoBox{
+    display: flex;
+    background-color: #EFEFEF;
+    padding-right: 10px;
+}
+.atletesBox2 .videos .listaBox .listaAtriuto .atriutoBox p:nth-child(1){
+    color: black;
+    font-size: 60%;
+    font-weight: 700;
+    opacity: 1;
+    margin-right: 5px;
+}
+.atletesBox2 .videos .listaBox .listaAtriuto .atriutoBox p:nth-child(2){
+    color: black;
+    font-size: 60%;
+    opacity: 0.5;
+}
+.atletesBox2 .videos .listaBox button{
+    border-radius: 50%;
+    padding: 16px;
+    border: none;
+    color: var(--verde-seven);
+    font-weight: 600;
+    background-color: var(--cinza-02);
+    margin-left: 5px;
+}
+@media(max-width: 1100px){
+    .atletesBox2 .lista .featuringCoachBox1{
+        margin-right: 70px;
+    }
+    .atletesBox2 .lista .listaBox{
+        margin-left: 70px;
+    }
+    .atletesBox2 .lista .listaBox{
+        justify-content: center;
+    }
+}
+@media(max-width: 960px){
+    .atletesBox2 .lista .featuringCoachBox1{
+        margin-right: 20px;
+    }
+    .atletesBox2 .lista .listaBox{
+        margin-left: 20px;
+    }
+    .atletesBox2 .lista .listaBox .listaAtriuto #atriutoBox{
+        margin-right: 0;
+    }
+}
+@media(max-width: 820px){
+    .atletesBox2{
+        padding: 10px;
+    }
+    .atletesBox2 .videos{
+        justify-content: center;
+    }
+    .atletesBox2 .videos .videosBox{
+        margin-right: 0px;
+    }
+}
+@media(max-width: 737px){
+    .atletesBox2 .lista .listaBox .listaAtriuto{
+        align-items: center;
+        width: auto;
+    }
+    .atletesBox2 .lista .listaBox .featuringProgress-circle{
+        width: auto;
+    }
+}
+@media(max-width: 760px){
+    .atletes{
+        flex-wrap: wrap;
+        width: 95%;
+    }
+    .atletesBox1{
+        margin-left: 10%;
+        padding: 10px !important;
+    }
+}
+
+
